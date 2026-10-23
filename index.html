@@ -116,6 +116,9 @@ details.old summary{font-weight:700}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.refresh.busy svg{animation:none}}
 @media (max-width:420px){.refresh span{display:none}}
+.install{display:flex;align-items:center;gap:10px;flex-wrap:wrap;max-width:720px;margin:12px auto 0;background:var(--accent-soft);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:14px;margin-left:max(16px,env(safe-area-inset-left,0px));margin-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:752px){.install{margin-left:auto;margin-right:auto}}
+.install span{flex:1;min-width:180px}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
 .stat .big{font-family:var(--display);font-size:30px;line-height:1.1;color:var(--accent)}
 .stat p{margin:2px 0 0;font-size:14px;color:var(--muted)}
@@ -130,6 +133,11 @@ details.old summary{font-weight:700}
   <button id="refresh" class="refresh" type="button" aria-label="Vernieuwen"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2.3 5.7M20 4v7h-7"/></svg><span>Vernieuwen</span></button>
 </div></header>
 
+<div id="install" class="install" hidden>
+  <span id="installTxt">Installeer de app voor volledig scherm, zonder adresbalk.</span>
+  <button id="installBtn" type="button" class="refresh">Installeren</button>
+  <button id="installX" type="button" class="refresh" aria-label="Sluiten">✕</button>
+</div>
 <main>
 <!-- AGENDA -->
 <section id="agenda" data-view>
@@ -506,6 +514,21 @@ document.addEventListener("visibilitychange", () => { if(document.visibilityStat
 renderAgenda(); renderTodos(); renderPoints(); refreshAll();
 show((location.hash||"").slice(1) || "agenda");
 setInterval(renderAgenda, 60000);
+
+// Installeren als app (volledig scherm zonder browserbalken)
+(function(){
+  const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+  let dismissed = false; try{ dismissed = localStorage.getItem("pvv-install-x") === "1"; }catch(e){}
+  if(standalone || dismissed) return;
+  const box = document.getElementById("install"), btn = document.getElementById("installBtn"), txt = document.getElementById("installTxt");
+  let deferred = null;
+  window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferred = e; btn.hidden = false; box.hidden = false; });
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  if(ios){ txt.textContent = "Volledig scherm zonder adresbalk: tik in Safari op de deelknop en kies “Zet op beginscherm”. Open de app daarna via het icoon."; btn.hidden = true; box.hidden = false; }
+  btn.addEventListener("click", async () => { if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred = null; box.hidden = true; });
+  document.getElementById("installX").addEventListener("click", () => { box.hidden = true; try{ localStorage.setItem("pvv-install-x","1"); }catch(e){} });
+  window.addEventListener("appinstalled", () => { box.hidden = true; });
+})();
 if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
 
