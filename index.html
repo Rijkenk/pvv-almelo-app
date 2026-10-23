@@ -481,7 +481,7 @@ async function send(payload, msg, btn){
     msg.textContent = "Ingestuurd. Het staat morgenochtend in de app.";
     return true;
   }catch(err){
-    msg.textContent = String(err.message) === "code" ? "De fractiecode klopt niet." : "Insturen mislukt. Controleer je verbinding en probeer het opnieuw.";
+    msg.textContent = String(err.message) === "code" ? "De fractiecode klopt niet." : `Insturen mislukt (${err.message}). Controleer je verbinding en probeer het opnieuw.`;
     return false;
   }finally{ btn.disabled = false; }
 }
