@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fractie-app PVV Almelo</title>
+<meta name="theme-color" content="#1c3366">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PVV Almelo">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="robots" content="noindex,nofollow">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<script src="config.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+/* Layout: telefoon-app met kop, één scherm per tab en een vaste tabbalk onderin */
+:root{
+  --bg:#f3f5f9; --surface:#ffffff; --ink:#14213d; --muted:#5b6478; --line:#dde2ec;
+  --navy:#1c3366; --accent:#c8202f; --accent-soft:#fbe9ea; --ok:#2f7d4f; --ok-soft:#e5f3ea; --warn:#a15c00; --warn-soft:#fff2df;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1524; --surface:#18203a; --ink:#e8ecf5; --muted:#9aa4bb; --line:#2a3555;
+  --navy:#8fb0ff; --accent:#ff5b66; --accent-soft:#3a1d27; --ok:#6fd39a; --ok-soft:#173326; --warn:#ffb54d; --warn-soft:#3a2a12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1524; --surface:#18203a; --ink:#e8ecf5; --muted:#9aa4bb; --line:#2a3555;
+  --navy:#8fb0ff; --accent:#ff5b66; --accent-soft:#3a1d27; --ok:#6fd39a; --ok-soft:#173326; --warn:#ffb54d; --warn-soft:#3a2a12; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+a{color:var(--navy);text-underline-offset:2px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line);
+  padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hwrap{max-width:720px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;border-radius:8px;background:var(--navy);color:var(--surface);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.04em;flex:none}
+.htxt{min-width:0}
+.htxt b{display:block;font-family:var(--display);font-size:22px;line-height:1.1;letter-spacing:.01em}
+.htxt span{color:var(--muted);font-size:13px}
+main{max-width:720px;margin:0 auto;padding-block:16px 110px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h2{font-family:var(--display);font-size:26px;line-height:1.15;margin:0 0 4px;text-wrap:balance}
+h3{font-size:17px;margin:0}
+.lead{color:var(--muted);margin:0 0 16px}
+.label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-width:0}
+.next{background:var(--navy);color:var(--surface);border:0}
+.next .label{color:inherit;opacity:.8}
+.next h3{font-family:var(--display);font-size:28px;line-height:1.1;margin:4px 0}
+.next a{color:inherit}
+.count{font-family:var(--display);font-size:20px}
+.ev{display:grid;grid-template-columns:62px 1fr;gap:12px;align-items:start}
+.date{text-align:center;border:1px solid var(--line);border-radius:10px;padding:6px 0;font-variant-numeric:tabular-nums}
+.date .d{font-family:var(--display);font-size:26px;line-height:1}
+.date .m{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.ev p{margin:2px 0 0;color:var(--muted);font-size:15px}
+.pill{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px;margin-right:6px;vertical-align:2px}
+.p-raad{background:var(--accent-soft);color:var(--accent)}
+.p-beraad{background:var(--warn-soft);color:var(--warn)}
+.p-fractie{background:var(--ok-soft);color:var(--ok)}
+.p-deadline{background:var(--accent);color:var(--surface)}
+.past{opacity:.45}
+.todo{display:flex;gap:12px;align-items:flex-start}
+.todo input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok);flex:none}
+.todo label{min-width:0;cursor:pointer}
+.todo .meta{display:block;color:var(--muted);font-size:14px}
+.todo.done label>span:first-child{text-decoration:line-through;color:var(--muted)}
+.search{width:100%;font:inherit;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);margin-bottom:12px}
+details.card summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline}
+details.card summary::-webkit-details-marker{display:none}
+.num{font-family:var(--display);font-size:22px;color:var(--accent);min-width:26px;font-variant-numeric:tabular-nums}
+details ul{margin:10px 0 0;padding-left:20px}
+details li{margin:4px 0}
+.rule{display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+.rule .art{font-family:var(--display);font-size:15px;color:var(--muted);white-space:nowrap}
+.rule .big{font-family:var(--display);font-size:21px;line-height:1.15}
+.rule p{grid-column:2;margin:0;color:var(--muted);font-size:15px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:460px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.z{font-variant-numeric:tabular-nums;text-align:right}
+tr.pvv td{background:var(--accent-soft);font-weight:600}
+.person{color:var(--ink);text-decoration:underline dotted var(--muted);text-underline-offset:3px}
+.person:hover,.person:focus-visible{color:var(--navy)}
+.copy{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
+.src{font-size:13px;color:var(--muted)}
+.btn{display:inline-block;background:var(--navy);color:var(--surface);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:10px}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(8px,env(safe-area-inset-left,0px));padding-right:max(8px,env(safe-area-inset-right,0px))}
+.tabs{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr)}
+.tabs button{font:inherit;font-size:12px;font-weight:600;background:none;border:0;color:var(--muted);padding:8px 2px 10px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer}
+.tabs svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabs button[aria-selected="true"]{color:var(--accent)}
+button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.md{min-width:0;overflow-wrap:anywhere}
+.md h1{font-family:var(--display);font-size:24px;line-height:1.15;margin:0 0 8px}
+.md h2{font-size:21px;margin:18px 0 6px}
+.md h3{font-size:17px;margin:14px 0 4px}
+.md table{min-width:520px;font-size:14px}
+.md .tw{overflow-x:auto;margin:8px 0}
+.md blockquote{margin:8px 0;padding-left:12px;border-left:3px solid var(--line);color:var(--muted)}
+details.old summary{font-weight:700}
+.stamp{display:block;font-size:12px;color:var(--muted)}
+.fld{display:flex;flex-direction:column;gap:4px;min-width:0}
+.fld input,.fld select,.fld textarea,#addOut{font:inherit;font-size:16px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+.refresh{flex:none;font:inherit;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--bg);color:var(--navy);border-radius:10px;padding:8px 10px;cursor:pointer}
+.refresh svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.refresh.busy svg{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.refresh.busy svg{animation:none}}
+@media (max-width:420px){.refresh span{display:none}}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.stat .big{font-family:var(--display);font-size:30px;line-height:1.1;color:var(--accent)}
+.stat p{margin:2px 0 0;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+
+<header><div class="hwrap">
+  <div class="logo" aria-hidden="true">PVV</div>
+  <div class="htxt" style="flex:1"><b>Fractie PVV Almelo</b><span>Manon Kuipers · Marnick Nijland · Kenneth Rijken · Remco Timmers · Mart van de Lisdonk</span><span id="stamp" class="stamp"></span></div>
+  <button id="refresh" class="refresh" type="button" aria-label="Vernieuwen"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2.3 5.7M20 4v7h-7"/></svg><span>Vernieuwen</span></button>
+</div></header>
+
+<main>
+<!-- AGENDA -->
+<section id="agenda" data-view>
+  <div class="stack">
+    <div class="card next" id="nextCard"></div>
+    <div>
+      <h2>Agenda</h2>
+      <p class="lead">Raad, beraden, fractieoverleg en deadlines. Bron: <a href="https://almelo.bestuurlijkeinformatie.nl" target="_blank" rel="noopener">almelo.bestuurlijkeinformatie.nl</a>.</p>
+    </div>
+    <div class="stack" id="eventList"></div>
+    <div id="docsBox" hidden><h2 style="margin-top:8px">Ingestuurde documenten</h2><div class="stack" id="docList"></div></div>
+    <div class="grid2">
+      <div class="card stat"><div class="label">Woonlasten 2027</div><div class="big">+8,6%</div><p>gemiddeld € 86 per huishouden</p></div>
+      <div class="card stat"><div class="label">OZB</div><div class="big">+2,5%</div><p>extra, bovenop 3,5% indexatie</p></div>
+      <div class="card stat"><div class="label">Tekort 2028</div><div class="big">€ 7,3 mln</div><p>structureel; tekst noemt elders 6 à 7 mln</p></div>
+    </div>
+    <p class="src">Begrotingscijfers: <a href="https://almelo.bestuurlijkeinformatie.nl/Agenda/Document/941cdd86-89fe-4271-8105-9338b45faa7d?documentId=89587736-3ba5-40d3-bbb5-df5ac6c7108e&amp;agendaItemId=5d713998-7c3d-4618-b211-0ca3882b00be" target="_blank" rel="noopener">raadsvoorstel Programmabegroting 2027</a>.</p>
+    <div class="card" id="add">
+      <div class="label">Toevoegen</div>
+      <h3 style="margin:4px 0 6px">Agendapunt of document insturen</h3>
+      <p style="margin:0 0 12px;color:var(--muted);font-size:15px">Wat je instuurt komt in de inzendmap van de fractie en staat na de volgende verwerking (elke ochtend) in de app.</p>
+      <div class="stack" style="gap:10px">
+        <div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">
+          <label class="fld"><span class="label">Van</span><select id="addFrom"><option>Manon</option><option>Marnick</option><option>Kenneth</option><option>Remco</option><option>Mart</option></select></label>
+          <label class="fld"><span class="label">Fractiecode</span><input id="addCode" type="password" autocomplete="off" placeholder="Eenmalig invullen"></label>
+        </div>
+      </div>
+      <form id="addForm" class="stack" style="gap:10px;margin-top:14px">
+        <div class="label">Agendapunt</div>
+        <div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">
+          <label class="fld"><span class="label">Datum</span><input id="addDate" type="date" required></label>
+          <label class="fld"><span class="label">Tijd (optioneel)</span><input id="addTime" type="time"></label>
+        </div>
+        <label class="fld"><span class="label">Soort</span><select id="addType"><option value="fractie">Fractie</option><option value="raad">Raad</option><option value="beraad">Beraad</option><option value="deadline">Deadline</option><option value="overig">Overig</option></select></label>
+        <label class="fld"><span class="label">Titel</span><input id="addTitle" type="text" required placeholder="Bijv. Werkbezoek Stadslab Indië"></label>
+        <label class="fld"><span class="label">Omschrijving en wie gaat</span><textarea id="addDesc" rows="3" placeholder="Locatie, wie gaat, wat voorbereiden"></textarea></label>
+        <div><button class="btn" type="submit" style="border:0;font:inherit;font-weight:700;cursor:pointer">Agendapunt insturen</button></div>
+        <p id="addMsg" class="src" role="status" style="margin:0"></p>
+      </form>
+      <form id="docForm" class="stack" style="gap:10px;margin-top:14px;border-top:1px solid var(--line);padding-top:14px">
+        <div class="label">Document</div>
+        <label class="fld"><span class="label">Bestand (pdf, Word, foto; max. 20 MB)</span><input id="docFile" type="file" required></label>
+        <label class="fld"><span class="label">Toelichting (optioneel)</span><input id="docNote" type="text" placeholder="Waar gaat het over?"></label>
+        <div><button class="btn" type="submit" style="border:0;font:inherit;font-weight:700;cursor:pointer;background:var(--accent);display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M6 10l6-6 6 6M4 20h16"/></svg>Document uploaden</button></div>
+        <p id="docMsg" class="src" role="status" style="margin:0"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- UPDATE -->
+<section id="update" data-view hidden>
+  <h2>Raadsupdate</h2>
+  <p class="lead">Elke maandag een overzicht van vergaderingen, raadsvoorstellen en aandachtspunten. Nieuwste bovenaan.</p>
+  <div class="stack" id="updList"><div class="card">Raadsupdates laden…</div></div>
+</section>
+
+<!-- TAKEN -->
+<section id="taken" data-view hidden>
+  <h2>Actiepunten</h2>
+  <p class="lead">Uit de fractievergaderingen van 5 en 19 oktober. Afvinken bewaart alleen op dit toestel.</p>
+  <div class="stack" id="todoList"></div>
+  <p class="src" style="margin-top:12px">Bijgewerkt 22-10-2026. Huishoudelijke en financiële fractiezaken staan bewust niet in deze app.</p>
+</section>
+
+<!-- STANDPUNTEN -->
+<section id="standpunten" data-view hidden>
+  <h2>10-puntenplan</h2>
+  <p class="lead">Kernpunten uit het verkiezingsprogramma PVV Almelo 2026-2030. Zoek op een woord, bijvoorbeeld "OZB", "BOA" of "parkeren".</p>
+  <label class="label" for="q">Zoek in standpunten</label>
+  <input id="q" class="search" type="search" placeholder="Zoekwoord…" autocomplete="off">
+  <div class="stack" id="pointList"></div>
+  <p class="src" style="margin-top:12px">Bron: definitief verkiezingsprogramma PVV Almelo 2026-2030 (januari 2026). Punten ingekort; bij citeren de originele tekst gebruiken.</p>
+</section>
+
+<!-- SPELREGELS -->
+<section id="regels" data-view hidden>
+  <h2>Spelregels raad</h2>
+  <p class="lead">De termijnen die je het vaakst nodig hebt, uit het reglement van orde (Gemeenteblad 2026, nr. 146259, 31 maart 2026).</p>
+  <div class="stack" id="ruleList"></div>
+  <div class="card" style="margin-top:12px">
+    <div class="label">Griffie</div>
+    <p style="margin:4px 0 8px">Griffier Hans Scherpenzeel; plv. griffiers Meriam Lütjann en Dörte Jürgensen. Moties, vragen en aanmeldingen gaan via de griffie.</p>
+    <a href="https://almelo.bestuurlijkeinformatie.nl" target="_blank" rel="noopener">Contactgegevens op iBabs</a>
+  </div>
+</section>
+
+<!-- RAAD -->
+<section id="raad" data-view hidden>
+  <h2>Wie is wie</h2>
+  <p class="lead">35 zetels, 15 fracties. Coalitie (20 zetels): VVD, CDA, LAS, PRO Almelo en D66.</p>
+  <div class="card" style="margin-bottom:12px">
+    <div class="label">Fractie PVV Almelo</div>
+    <p style="margin:4px 0 0"><b>Manon Kuipers</b> (fractievoorzitter), Marnick Nijland (raadslid), Kenneth Rijken (raadsvolger en fractieondersteuner), Remco Timmers en Mart van de Lisdonk (fractieondersteuners).</p>
+  </div>
+  <div class="stack" id="raadTables"></div>
+  <p class="src" style="margin-top:8px">Vetgedrukt: fractievoorzitter. Tik op een naam voor het iBabs-profiel met e-mail en telefoonnummer.</p>
+  <div class="card" style="margin-top:12px">
+    <div class="label">College</div>
+    <p style="margin:4px 0 0">Burgemeester Richard Korteland. Wethouders <span id="college"></span>.</p>
+  </div>
+  <p class="src" style="margin-top:12px">Bron: <a href="https://almelo.bestuurlijkeinformatie.nl" target="_blank" rel="noopener">iBabs › Wie is wie</a>, stand 20-10-2026.</p>
+</section>
+</main>
+
+<nav><div class="tabs" role="tablist">
+  <button role="tab" data-tab="agenda" aria-selected="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Agenda</button>
+  <button role="tab" data-tab="taken" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.5 1.5L7 5M3.5 12l1.5 1.5L7 11M3.5 18l1.5 1.5L7 17"/></svg>Taken</button>
+  <button role="tab" data-tab="update" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Update</button>
+  <button role="tab" data-tab="standpunten" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>Standpunten</button>
+  <button role="tab" data-tab="regels" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg>Spelregels</button>
+  <button role="tab" data-tab="raad" aria-selected="false"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0112 0M14 20a4.5 4.5 0 017 0"/></svg>Raad</button>
+</div></nav>
+
+<script src="marked.min.js"></script>
+<script>
+const IB ="https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/";
+let EVENTS = [
+  {t:"2026-10-26T19:00", end:"2026-10-26T22:00", type:"fractie", title:"Fractievergadering", desc:"Voorbereiding beraad begroting 2027.", noTime:true},
+  {t:"2026-10-27T19:30", type:"beraad", title:"Politieke avond: beraad begroting 2027", desc:"Spreekrecht, quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadszaal.", link:IB+"941cdd86-89fe-4271-8105-9338b45faa7d"},
+  {t:"2026-11-02T09:00", type:"deadline", title:"Vragenhalfuur aanmelden", desc:"Onderwerp bij de griffier vóór 09.00 uur, de dag vóór de raad (art. 42)."},
+  {t:"2026-11-03T09:00", type:"deadline", title:"Motie vreemd indienen", desc:"Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."},
+  {t:"2026-11-03T19:30", type:"raad", title:"Raad: algemene beschouwingen", desc:"1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.", link:IB+"dff36205-575c-49fa-adb1-7e4e0311c5c5"},
+  {t:"2026-11-05T10:00", type:"raad", title:"Raad: besluit begroting 2027", desc:"Reactie college, 2e termijn, stemming over amendementen, begroting, belastingverordeningen en moties.", link:IB+"97293f37-41de-4ff9-ae37-04a4abbcfb45"},
+  {t:"2026-11-09T19:00", type:"fractie", title:"Fractievergadering", desc:"Volgens ritme om de week op maandag; nog bevestigen.", noTime:true}
+];
+const TYPE = {raad:["Raad","p-raad"], beraad:["Beraad","p-beraad"], fractie:["Fractie","p-fractie"], deadline:["Deadline","p-deadline"], overig:["Overig","p-fractie"]};
+const MONTHS = ["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
+const DAYS = ["zo","ma","di","wo","do","vr","za"];
+const fmtTime = d => String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function renderAgenda(){
+  const now = new Date();
+  const list = document.getElementById("eventList");
+  list.innerHTML = EVENTS.map(e => {
+    const d = new Date(e.t), past = new Date(e.end||e.t) < now;
+    const [lbl, cls] = TYPE[e.type];
+    return `<div class="card ev${past?" past":""}">
+      <div class="date"><div class="m">${DAYS[d.getDay()]}</div><div class="d">${d.getDate()}</div><div class="m">${MONTHS[d.getMonth()]}</div></div>
+      <div style="min-width:0"><span class="pill ${cls}">${lbl}</span>${e.noTime?"":`<span class="src">${fmtTime(d)} uur</span>`}
+        <h3 style="margin-top:4px">${e.link?`<a href="${e.link}" target="_blank" rel="noopener">${esc(e.title)}</a>`:esc(e.title)}</h3>
+        <p>${esc(e.desc)}</p></div></div>`;
+  }).join("");
+  const next = EVENTS.find(e => new Date(e.end||e.t) >= now);
+  const card = document.getElementById("nextCard");
+  if(!next){ card.innerHTML = `<div class="label">Eerstvolgende</div><h3>Geen geplande items</h3><p style="margin:0">De agenda wordt bijgewerkt na de begrotingsbehandeling.</p>`; return; }
+  const d = new Date(next.t);
+  const days = Math.round((new Date(d.getFullYear(),d.getMonth(),d.getDate()) - new Date(now.getFullYear(),now.getMonth(),now.getDate()))/864e5);
+  const when = days<=0 ? "Vandaag" : days===1 ? "Morgen" : `Over ${days} dagen`;
+  card.innerHTML = `<div class="label">Eerstvolgende · ${TYPE[next.type][0]}</div>
+    <h3>${esc(next.title)}</h3>
+    <div class="count">${when} · ${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}${next.noTime?"":" · "+fmtTime(d)}</div>
+    <p style="margin:6px 0 0;opacity:.9">${esc(next.desc)}${next.link?` <a href="${next.link}" target="_blank" rel="noopener">Agenda en stukken</a>`:""}</p>`;
+}
+
+let TODOS = [
+  {id:"maiden", who:"Manon", what:"Maidenspeech schrijven, wordt verwerkt in de spreektekst begroting", when:"vóór beraad 27-10"},
+  {id:"tb", who:"Marnick en Manon", what:"Bepalen wat ze overnemen uit motie en technische vragen begroting (door Kenneth bijgewerkt)", when:"vóór beraad 27-10"},
+  {id:"motie", who:"Kenneth", what:"Eigen motie uitwerken, losgekoppeld van de VVD-motie van 6-10", when:"open"},
+  {id:"site", who:"Kenneth", what:"Voorstel stukjes voor de PVV Almelo-site bekijken", when:"week van 19-10"}
+];
+function store(k,v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)||"null"); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; } }
+function renderTodos(){
+  const done = store("pvv-done") || {};
+  document.getElementById("todoList").innerHTML = TODOS.map(t => `
+    <div class="card todo${done[t.id]?" done":""}">
+      <input type="checkbox" id="todo-${t.id}" data-id="${t.id}"${done[t.id]?" checked":""}>
+      <label for="todo-${t.id}"><span>${esc(t.what)}</span><span class="meta">${esc(t.who)} · ${esc(t.when)}</span></label>
+    </div>`).join("");
+}
+document.getElementById("todoList").addEventListener("change", e => {
+  const id = e.target.dataset.id; if(!id) return;
+  const done = store("pvv-done") || {}; done[id] = e.target.checked; store("pvv-done", done);
+  e.target.closest(".todo").classList.toggle("done", e.target.checked);
+});
+
+const POINTS = [
+  ["Veiligheid: onze wijken weer van ons", ["Zerotolerance tegen overlast, straattuig, drugsdeals en straatintimidatie","Meer BOA's zichtbaar en actief op straat","Wijkagenten weer herkenbaar aanwezig in de wijken","Cameratoezicht op openbare en risicovolle locaties","Harde aanpak van seksueel geweld en straatintimidatie","Consequent optreden tegen georganiseerde criminaliteit","Fietsverbod in het kernwinkelgebied"]],
+  ["Wonen: eerst bouwen voor de Almeloër", ["Woningbouw versnellen, nadruk op betaalbare koop- en huurwoningen","Voorrang voor Almelose woningzoekenden; geen voorrang voor statushouders bij sociale huur","Verzet tegen de Spreidingswet","Afspraak met corporaties: reparaties binnen twee weken","Isolatie en verduurzaming stimuleren","Leegstand op bedrijventerreinen tijdelijk benutten voor wonen en werken"]],
+  ["Zorg en koopkracht: sociaal waar het moet", ["Zerotolerance tegen zorgfraude; alleen betrouwbare zorgaanbieders","Geen bezuinigingen op huishoudelijke hulp","Mantelzorgers actief belonen","Wachtlijsten jeugdzorg en GGZ terugdringen","Effectieve schuldhulp en vroege signalering","Gratis OV voor hulpbehoevenden en 65-plussers"]],
+  ["Almeloër op één: grenzen aan islamisering", ["Geen (nieuw) AZC in Almelo","Geen nieuwe grootschalige moskeeën","Geen versterkte gebedsoproep","Geen oprichting of financiering van islamitisch onderwijs","Geen vergunningen voor antisemitische of haatdragende bijeenkomsten","Geen overheidspromotie van islamitische feestdagen"]],
+  ["Armoedebestrijding: helpen waar het nodig is", ["Bezuinigingen op het sociaal domein terugdraaien","Voedselbank Almelo structureel steunen","Humaan en begrijpelijk beleid bij hulpaanvragen zoals Wmo","Professionele begeleiding bij schulden","Om- en bijscholing voor langdurig werklozen vereenvoudigen"]],
+  ["Onderwijs en jeugd: kansen met gezond verstand", ["Extra inzet op taalachterstanden, met ouderverantwoordelijkheid","Meer aandacht voor vak- en praktijkonderwijs en stageplekken","Herinvoering van schoolzwemmen","Harde aanpak van pesten, fysiek en digitaal","Geen islamitische scholen en geen ideologische indoctrinatie","Feestdagen volgens Nederlandse tradities"]],
+  ["Economie en werk: focus op kerntaken", ["Gemeente richt zich op kerntaken","Bestemmingsplan XL Businesspark 2.0 versoepelen","Lagere lasten voor ondernemers; precariobelasting afschaffen","Minder regeldruk, eenvoudiger vergunningen","Vrije openingstijden voor winkels en supermarkten","Gemeente verstrekt geen leningen"]],
+  ["Milieu en energie: nuchter en betaalbaar", ["Geen windturbines in Almelo","Geen zonneparken op landbouwgrond of in het landschap","Lagere kosten voor afvalverwerking; nascheiding in plaats van extra containers","PMD-container afschaffen","Ruimere openingstijden afvalstortplaats; gratis grof afval voor kleine beurs"]],
+  ["Bereikbaarheid: vrijheid van vervoer voor iedereen", ["Verkeersdruk op de singels verminderen","Geen emissievrije zones","Lagere parkeertarieven in het centrum","Ruimte voor auto, fiets en OV; bestaande buslijnen blijven","Busstation in het centrum vereenvoudigen tot halte"]],
+  ["Bestuur: meer zeggenschap voor inwoners", ["Inwoners vooraf betrekken bij ingrijpende plannen","Bindende referenda over belangrijke onderwerpen","Wijkraden als volwaardige gesprekspartner","Plannen heroverwegen bij verzet van een meerderheid van omwonenden","Volledige transparantie van het gemeentebestuur","Kritische toetsing van regionale samenwerkingen"]]
+];
+function renderPoints(q=""){
+  const s = q.trim().toLowerCase();
+  const html = POINTS.map(([title, items], i) => {
+    const hit = !s || title.toLowerCase().includes(s) || items.some(x => x.toLowerCase().includes(s));
+    if(!hit) return "";
+    const shown = s && !title.toLowerCase().includes(s) ? items.filter(x => x.toLowerCase().includes(s)) : items;
+    return `<details class="card"${s?" open":""}><summary><span class="num">${i+1}</span><h3>${esc(title)}</h3></summary>
+      <ul>${shown.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>`;
+  }).join("");
+  document.getElementById("pointList").innerHTML = html || `<div class="card">Geen standpunt gevonden voor "${esc(q)}". Probeer een ander woord.</div>`;
+}
+document.getElementById("q").addEventListener("input", e => renderPoints(e.target.value));
+
+const RULES = [
+  ["art. 36","Motie vreemd: vóór 09.00 uur","Een motie over een onderwerp dat niet op de agenda staat gaat vóór 09.00 uur op de vergaderdag naar de griffier. Behandeling na de agendapunten."],
+  ["art. 36","Motie: schriftelijk en ondertekend","Bij de voorzitter indienen. Intrekken kan tot de stemming begint. Over een motie wordt gestemd ná het voorstel."],
+  ["art. 35","Amendement: tot sluiten beraadslaging","Schriftelijk bij de voorzitter. Alleen indieners die de presentielijst tekenden en aanwezig zijn. Eerst stemming over het meest verstrekkende amendement."],
+  ["art. 41","Schriftelijke vragen: antwoord binnen 30 dagen","Indienen via de griffier, kort en duidelijk. Lukt het niet, dan meldt het college gemotiveerd een nieuwe termijn."],
+  ["art. 42","Vragenhalfuur: aanmelden vóór 09.00 uur, dag ervoor","Onderwerp bij de griffier. Vragen moeten schriftelijk, politiek actueel en kort zijn. Geen moties en geen interrupties."],
+  ["art. 40","Interpellatie: 48 uur vooraf","Schriftelijk verzoek bij de voorzitter met onderwerp en vragen. De raad stemt over het verzoek."],
+  ["art. 23","Maximaal twee termijnen","Per termijn één keer het woord per onderwerp, behalve voor wie een motie of amendement indient."],
+  ["art. 28","Stemverklaring","Na sluiten van de beraadslaging mag ieder raadslid de stem kort motiveren."],
+  ["art. 8","Raadsvolger","Kenneth mag namens de fractie spreken in politieke beraden, niet in de raadsvergadering. Wel inzage in geheime stukken."],
+  ["art. 54","Insprekers: aanmelden vóór 15.00 uur, dag ervoor","Max. 5 minuten spreektijd; raadsleden samen max. 5 minuten verduidelijkende vragen. Meer dan drie sprekers schuift door."]
+];
+document.getElementById("ruleList").innerHTML = RULES.map(([a,b,c]) => `<div class="card rule"><span class="art">${a}</span><span class="big">${esc(b)}</span><p>${esc(c)}</p></div>`).join("");
+
+const RAAD = [
+  ["VVD",5,1,"Ger Vermeulen",["Max van de Velde","Anne Marije Egberink-Hollander","Esther Reinders","Raimond Hilberink"],"Take Amsing"],
+  ["CDA",5,1,"Dorien Wind",["Herman Geerdink","Vera Zonnebeld","Liesbeth ter Haar-Tulp","Rogier Wouters"],"Dick Klapwijk"],
+  ["LAS",4,1,"Nynke Veurink",["Louis Kampman","Martijn Makkinga","Mats de Groot"],"Tjamme Kamst"],
+  ["PRO Almelo",4,1,"Jorien Geerdink",["Alfer Ekizkuyu","Ineke Munter-Bronsvoort","Anke Morsing"],"Hermien de Bruijn-Franken"],
+  ["D66",2,1,"Max Christen",["Henk Huisman"],"Dani Joëlle Theisens"],
+  ["Forum voor Democratie",3,0,"Sten Bellers",["Bart Maneschijn","Vincent Beld"],"Wouter Ravenshorst"],
+  ["PVV",2,0,"Manon Kuipers",["Marnick Nijland"],"Kenneth Rijken"],
+  ["ChristenUnie",2,0,"Wouter Teeuw",["Mases Marteros"],"Timon Vrijmoeth"],
+  ["Democraten.Nu",2,0,"Fred Gerritsen",["Monique Lansink"],"Herman Zwerink"],
+  ["Almelo Centraal",1,0,"Israa Abdullatif",[],"Ruud Schraven"],["DENK",1,0,"Mustafa Kocabiyik",[],"Ümit Uysal"],
+  ["PVA",1,0,"Harry de Olde",[],"Bernhard Deuss"],["Lijst Çete",1,0,"Uğur Çete",[],"Edith van den Ham"],
+  ["50Plus",1,0,"Jan van Gorkum",[],"Gerrit Jan Ardesch"],["Lijst Middelkamp",1,0,"Marcel Middelkamp",[],"Jeroen Lohuis"]
+];
+const PROFILE = {
+  "Ger Vermeulen":"1c1de7ff-ed8a-49e5-a7c0-649c1fba366f","Max van de Velde":"17f567e7-4a08-4ebb-a428-889c7dc31600","Anne Marije Egberink-Hollander":"609ec91f-c326-411f-b128-995321f4f979",
+  "Esther Reinders":"e6d54e7e-4e58-4c81-b721-99deed6e075e","Raimond Hilberink":"1be71188-4885-47af-bef2-714fd473a0ed","Dorien Wind":"84b32ce9-675f-4d7e-b041-eef6018d3654",
+  "Herman Geerdink":"74bf461d-82a2-41b9-b321-4bd001210d28","Vera Zonnebeld":"3c72ad25-6266-4f53-8d9b-c5d52a887164","Liesbeth ter Haar-Tulp":"bb68f71a-31c0-45d2-8409-66b0096ef8dc",
+  "Rogier Wouters":"8a879622-a201-4d16-a970-c62e42126b37","Nynke Veurink":"aab2c5f1-9384-43dc-bed0-3e961c4391ad","Louis Kampman":"8ed197cb-204f-4d11-bada-4a124f85d155",
+  "Martijn Makkinga":"0445bd25-9ccf-4892-a53a-cdcd13776ead","Mats de Groot":"4052afb8-3cbe-4de8-8d68-c37933c1c405","Jorien Geerdink":"6f380d5c-68ca-4825-9819-23632a87a04c",
+  "Alfer Ekizkuyu":"84004ac0-0a06-4251-bac1-460b89da26e7","Ineke Munter-Bronsvoort":"2ba38ecc-af2d-4bfe-8e90-7fbaa7740790","Anke Morsing":"01a499a6-08f5-4006-a8c9-bf69295ec935",
+  "Sten Bellers":"5034b25c-9996-450d-ac15-9fe7cfa9f581","Bart Maneschijn":"77d8a4e8-3b23-4329-b558-cda37e4b25cd","Vincent Beld":"22a85738-c423-4798-bc14-1efbddcb247a",
+  "Manon Kuipers":"196a766b-22a8-4d1f-8d9f-06faa0625fb3","Marnick Nijland":"3c76c948-95f5-41a2-a4fc-01535c9161e6","Wouter Teeuw":"a0ab60f8-8ede-45af-8bfc-67b532327134",
+  "Mases Marteros":"a946ec58-a9a6-4b4e-b278-51713e645d30","Fred Gerritsen":"1bcfe3ff-f3e9-4a95-ad1b-d5b4a6a8346a","Monique Lansink":"7f0a353f-f01d-4284-b879-178cbf4eb4c1",
+  "Max Christen":"81ddce1f-1813-49c2-a769-be32560e74ed","Henk Huisman":"f68d86e4-fac1-496f-bdd0-dbeb39953272","Israa Abdullatif":"23b1e13d-ab62-4b8b-a7b4-7d934d051878",
+  "Mustafa Kocabiyik":"bf5cf9f3-eaaf-45e4-9009-789d557d5e14","Harry de Olde":"213555f5-660c-4046-b82e-f9bd7ccd1013","Uğur Çete":"e1f0d5f9-5440-48c0-a919-5d9e81e7ae61",
+  "Jan van Gorkum":"6ea58db2-75a1-48c7-b0af-f31004cb7d61","Marcel Middelkamp":"54c6607b-2d64-4f1d-ad43-0c95ef15540a",
+  "Take Amsing":"6e599e31-84f0-4de0-a993-06ce69309096","Dick Klapwijk":"bdd928b6-dd8d-4faf-ac6b-584926cc342d","Tjamme Kamst":"5e5555be-155e-4d1c-84a8-a08aa0b6b8be",
+  "Hermien de Bruijn-Franken":"098e2bfd-9d27-4d9a-a259-ee161bda5fdc","Wouter Ravenshorst":"c8a86742-d2ac-44cf-b667-d2a4ae215695","Kenneth Rijken":"8dd98955-43e8-4a8d-85b0-dc75a8f65fcc",
+  "Timon Vrijmoeth":"da7960a6-1edb-425a-b773-8a01052ca620","Herman Zwerink":"c45b111a-6889-4f1d-8e91-93f6f8547cc4","Dani Joëlle Theisens":"cb0fbd9c-2a51-45d3-a30a-a00c63bb8eb6",
+  "Ruud Schraven":"ccef357b-6ee5-4c70-a8ff-5f1ba1e1b968","Ümit Uysal":"0284c194-f6aa-4b78-a5dd-3e53e72d9ce2","Bernhard Deuss":"2ee3ccb6-6075-4bfb-824c-cecadb04face",
+  "Edith van den Ham":"f71c93df-09aa-4196-b40f-be8d285ee563","Gerrit Jan Ardesch":"3dbea489-1f63-4a49-9068-5abda0b69ec8","Jeroen Lohuis":"9cff5417-1bf3-4440-86a6-8e70fe67d65a"
+};
+function person(n){
+  const id = PROFILE[n]; if(!id) return esc(n);
+  return `<a class="person" href="https://almelo.bestuurlijkeinformatie.nl/People/Details/${id}" target="_blank" rel="noopener" title="iBabs-profiel: e-mail en telefoon">${esc(n)}</a>`;
+}
+const COLLEGE = [["Jeffrey Hinnen","VVD","851a8e4d-89de-4a9f-b40d-7b17ac2a0c3d"],["Eugène van Mierlo","CDA, financiën","a2d54bb9-0c24-4510-a855-bad025821ea5"],["Jan Martin van Rees","LAS","85ec958a-480f-49af-a6af-ef3d4ea6a04c"],["Marjolein Wessels","PRO Almelo","c7f6d2a3-452f-4ec2-bb17-91fe52dbe9ca"],["Margreet Overmeen-Bakhuis","D66","dd16153f-d9b2-401f-bf92-205ff0b4a332"]];
+COLLEGE.forEach(([n,,id]) => PROFILE[n] = id);
+function raadTable(coal){
+  const rows = RAAD.filter(r => r[2]===coal);
+  const seats = rows.reduce((a,r)=>a+r[1],0);
+  return `<div><h3 style="margin:8px 0"><span class="pill ${coal?"p-beraad":"p-raad"}">${coal?"Coalitie":"Oppositie"}</span>${seats} zetels</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Fractie</th><th style="text-align:right">Zetels</th><th>Raadsleden</th><th>Raadsvolger</th></tr></thead>
+    <tbody>${rows.map(([f,z,c,v,m,r]) => `<tr class="${f==="PVV"?"pvv":""}"><td>${esc(f)}</td><td class="z">${z}</td><td><b>${person(v)}</b>${m.length?", "+m.map(person).join(", "):""}</td><td>${person(r)}</td></tr>`).join("")}</tbody>
+  </table></div></div>`;
+}
+document.getElementById("raadTables").innerHTML = raadTable(1) + raadTable(0);
+document.getElementById("college").innerHTML = COLLEGE.map(([n,p]) => `${person(n)} (${esc(p)})`).join(", ");
+
+function mdHtml(md){
+  const div = document.createElement("div"); div.className = "md";
+  div.innerHTML = window.marked ? marked.parse(md) : `<pre style="white-space:pre-wrap">${esc(md)}</pre>`;
+  div.querySelectorAll("table").forEach(t => { const w = document.createElement("div"); w.className = "tw"; t.replaceWith(w); w.appendChild(t); });
+  div.querySelectorAll("a[href^='http']").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
+  return div;
+}
+async function loadUpdates(){
+  const box = document.getElementById("updList");
+  try{
+    const res = await fetch("updates.json", {cache:"no-store"});
+    if(!res.ok) throw new Error(res.status);
+    const list = (await res.json()).sort((a,b) => b.datum.localeCompare(a.datum));
+    if(!list.length){ box.innerHTML = `<div class="card">Nog geen raadsupdates. De eerste verschijnt maandagochtend.</div>`; return; }
+    box.innerHTML = "";
+    for(const [i,u] of list.entries()){
+      const md = await (await fetch(u.bestand, {cache:"no-store"})).text();
+      if(i === 0){ const c = document.createElement("div"); c.className = "card"; c.appendChild(mdHtml(md)); box.appendChild(c); }
+      else{
+        const d = document.createElement("details"); d.className = "card old";
+        d.innerHTML = `<summary>${esc(u.titel)}</summary>`; d.appendChild(mdHtml(md)); box.appendChild(d);
+      }
+    }
+  }catch(e){
+    box.innerHTML = `<div class="card">De raadsupdates konden niet worden geladen. Controleer je verbinding en open de app opnieuw.</div>`;
+  }
+}
+
+const VIEWS = ["agenda","update","taken","standpunten","regels","raad"];
+function show(v){
+  if(!VIEWS.includes(v)) v = "agenda";
+  document.querySelectorAll("[data-view]").forEach(s => s.hidden = s.id !== v);
+  document.querySelectorAll("[data-tab]").forEach(b => b.setAttribute("aria-selected", b.dataset.tab===v));
+  store("pvv-tab", v); window.scrollTo(0,0);
+}
+document.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => show(b.dataset.tab)));
+
+async function loadData(){
+  try{
+    const res = await fetch("data.json", {cache:"no-store"});
+    if(!res.ok) throw new Error(res.status);
+    const d = await res.json();
+    if(Array.isArray(d.events)) EVENTS = d.events;
+    if(Array.isArray(d.todos)) TODOS = d.todos;
+    const docs = Array.isArray(d.docs) ? d.docs : [];
+    document.getElementById("docsBox").hidden = !docs.length;
+    document.getElementById("docList").innerHTML = docs.map(x => `<div class="card"><h3><a href="${esc(x.link||"#")}" target="_blank" rel="noopener">${esc(x.titel||"Document")}</a></h3><p class="src" style="margin:2px 0 0">${esc([x.datum,x.van].filter(Boolean).join(" · "))}${x.kern?" — "+esc(x.kern):""}</p></div>`).join("");
+    renderAgenda(); renderTodos();
+    return d.bijgewerkt || "";
+  }catch(e){ return null; }
+}
+async function refreshAll(){
+  const btn = document.getElementById("refresh"), stamp = document.getElementById("stamp");
+  btn.classList.add("busy"); btn.disabled = true;
+  const [b] = await Promise.all([loadData(), loadUpdates()]);
+  const now = new Date();
+  stamp.textContent = b === null ? "Vernieuwen mislukt; je ziet de laatst geladen gegevens."
+    : `Gegevens van ${b.split("-").reverse().join("-")} · geladen om ${fmtTime(now)}`;
+  btn.classList.remove("busy"); btn.disabled = false;
+}
+document.getElementById("refresh").addEventListener("click", refreshAll);
+const UPLOAD_URL = (window.APP_CONFIG && window.APP_CONFIG.uploadUrl) || "";
+function remember(){
+  try{ localStorage.setItem("pvv-from", document.getElementById("addFrom").value);
+       localStorage.setItem("pvv-code", document.getElementById("addCode").value); }catch(e){}
+}
+try{
+  const f = localStorage.getItem("pvv-from"), c = localStorage.getItem("pvv-code");
+  if(f) document.getElementById("addFrom").value = f;
+  if(c) document.getElementById("addCode").value = c;
+}catch(e){}
+async function send(payload, msg, btn){
+  if(!UPLOAD_URL){ msg.textContent = "Insturen is nog niet ingesteld. Gebruik voorlopig de inzendmap in Google Drive."; return false; }
+  const code = document.getElementById("addCode").value.trim();
+  if(!code){ msg.textContent = "Vul eerst de fractiecode in (vraag Kenneth)."; return false; }
+  remember(); btn.disabled = true; msg.textContent = "Bezig met insturen…";
+  try{
+    const res = await fetch(UPLOAD_URL, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body: JSON.stringify(Object.assign({code, from: document.getElementById("addFrom").value}, payload))});
+    const out = await res.json();
+    if(!out.ok) throw new Error(out.error || "onbekend");
+    msg.textContent = "Ingestuurd. Het staat morgenochtend in de app.";
+    return true;
+  }catch(err){
+    msg.textContent = String(err.message) === "code" ? "De fractiecode klopt niet." : "Insturen mislukt. Controleer je verbinding en probeer het opnieuw.";
+    return false;
+  }finally{ btn.disabled = false; }
+}
+document.getElementById("addForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const [y,m,d] = v("addDate").split("-");
+  const text = `AGENDAPUNT VOOR DE APP\nDatum: ${d}-${m}-${y}${v("addTime")?" om "+v("addTime"):""}\nSoort: ${v("addType")}\nTitel: ${v("addTitle")}\nOmschrijving: ${v("addDesc")||"-"}\nVan: ${v("addFrom")}`;
+  const ok = await send({kind:"agenda", title: v("addTitle"), text}, document.getElementById("addMsg"), e.submitter || e.target.querySelector("button"));
+  if(ok) e.target.reset();
+});
+document.getElementById("docForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const file = document.getElementById("docFile").files[0], msg = document.getElementById("docMsg");
+  if(!file) return;
+  if(file.size > 20*1024*1024){ msg.textContent = "Dit bestand is groter dan 20 MB. Zet het via Google Drive in de inzendmap."; return; }
+  const data = await new Promise((ok, fail) => { const r = new FileReader(); r.onload = () => ok(String(r.result).split(",")[1]); r.onerror = fail; r.readAsDataURL(file); });
+  const sent = await send({kind:"document", filename: file.name, mime: file.type || "application/octet-stream", note: document.getElementById("docNote").value.trim(), data}, msg, e.submitter || e.target.querySelector("button"));
+  if(sent) e.target.reset();
+});
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible") refreshAll(); });
+renderAgenda(); renderTodos(); renderPoints(); refreshAll();
+show((location.hash||"").slice(1) || "agenda");
+setInterval(renderAgenda, 60000);
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+
+</body>
+</html>

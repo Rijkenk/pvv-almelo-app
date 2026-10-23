@@ -1,0 +1,79 @@
+{
+ "bijgewerkt": "2026-10-23",
+ "events": [
+  {
+   "t": "2026-10-26T19:00",
+   "end": "2026-10-26T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Voorbereiding beraad begroting 2027.",
+   "noTime": true
+  },
+  {
+   "t": "2026-10-27T19:30",
+   "type": "beraad",
+   "title": "Politieke avond: beraad begroting 2027",
+   "desc": "Spreekrecht, quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadszaal.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/941cdd86-89fe-4271-8105-9338b45faa7d"
+  },
+  {
+   "t": "2026-11-02T09:00",
+   "type": "deadline",
+   "title": "Vragenhalfuur aanmelden",
+   "desc": "Onderwerp bij de griffier vóór 09.00 uur, de dag vóór de raad (art. 42)."
+  },
+  {
+   "t": "2026-11-03T09:00",
+   "type": "deadline",
+   "title": "Motie vreemd indienen",
+   "desc": "Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."
+  },
+  {
+   "t": "2026-11-03T19:30",
+   "type": "raad",
+   "title": "Raad: algemene beschouwingen",
+   "desc": "1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5"
+  },
+  {
+   "t": "2026-11-05T10:00",
+   "type": "raad",
+   "title": "Raad: besluit begroting 2027",
+   "desc": "Reactie college, 2e termijn, stemming over amendementen, begroting, belastingverordeningen en moties.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/97293f37-41de-4ff9-ae37-04a4abbcfb45"
+  },
+  {
+   "t": "2026-11-09T19:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Volgens ritme om de week op maandag; nog bevestigen.",
+   "noTime": true
+  }
+ ],
+ "todos": [
+  {
+   "id": "maiden",
+   "who": "Manon",
+   "what": "Maidenspeech schrijven, wordt verwerkt in de spreektekst begroting",
+   "when": "vóór beraad 27-10"
+  },
+  {
+   "id": "tb",
+   "who": "Marnick en Manon",
+   "what": "Bepalen wat ze overnemen uit motie en technische vragen begroting (door Kenneth bijgewerkt)",
+   "when": "vóór beraad 27-10"
+  },
+  {
+   "id": "motie",
+   "who": "Kenneth",
+   "what": "Eigen motie uitwerken, losgekoppeld van de VVD-motie van 6-10",
+   "when": "open"
+  },
+  {
+   "id": "site",
+   "who": "Kenneth",
+   "what": "Voorstel stukjes voor de PVV Almelo-site bekijken",
+   "when": "week van 19-10"
+  }
+ ]
+}
