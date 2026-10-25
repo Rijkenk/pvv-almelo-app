@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-10-24",
+ "bijgewerkt": "2026-10-25",
  "events": [
   {
    "t": "2026-10-26T19:00",
@@ -23,6 +23,14 @@
    "desc": "Onderwerp bij de griffier vóór 09.00 uur, de dag vóór de raad (art. 42)."
   },
   {
+   "t": "2026-11-02T19:00",
+   "end": "2026-11-02T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Wekelijks op maandag, behalve in recessen.",
+   "noTime": true
+  },
+  {
    "t": "2026-11-03T09:00",
    "type": "deadline",
    "title": "Motie vreemd indienen",
@@ -44,9 +52,10 @@
   },
   {
    "t": "2026-11-09T19:00",
+   "end": "2026-11-09T22:00",
    "type": "fractie",
    "title": "Fractievergadering",
-   "desc": "Volgens ritme om de week op maandag; nog bevestigen.",
+   "desc": "Wekelijks op maandag, behalve in recessen.",
    "noTime": true
   }
  ],
