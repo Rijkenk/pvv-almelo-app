@@ -6,7 +6,7 @@
    "end": "2026-10-26T22:00",
    "type": "fractie",
    "title": "Fractievergadering",
-   "desc": "Voorbereiding beraad begroting 2027.",
+   "desc": "Voorbereiding beraad begroting 2027 (dinsdag 27-10).",
    "noTime": true
   },
   {
@@ -27,7 +27,7 @@
    "end": "2026-11-02T22:00",
    "type": "fractie",
    "title": "Fractievergadering",
-   "desc": "Wekelijks op maandag, behalve in recessen.",
+   "desc": "Dinsdag 3-11: raad, algemene beschouwingen.",
    "noTime": true
   },
   {
@@ -55,7 +55,63 @@
    "end": "2026-11-09T22:00",
    "type": "fractie",
    "title": "Fractievergadering",
-   "desc": "Wekelijks op maandag, behalve in recessen.",
+   "desc": "Onder voorbehoud: dinsdag 10-11 staat alleen een reserve-avond in het vergaderschema.",
+   "noTime": true
+  },
+  {
+   "t": "2026-11-16T19:00",
+   "end": "2026-11-16T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Dinsdag 17-11: politieke avond.",
+   "noTime": true
+  },
+  {
+   "t": "2026-11-23T19:00",
+   "end": "2026-11-23T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Dinsdag 24-11: hoorzitting en fractievoorzittersoverleg.",
+   "noTime": true
+  },
+  {
+   "t": "2026-11-30T19:00",
+   "end": "2026-11-30T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Dinsdag 1-12: hamerraad en politieke avond.",
+   "noTime": true
+  },
+  {
+   "t": "2026-12-07T19:00",
+   "end": "2026-12-07T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Dinsdag 8-12: auditcommissie en rekenkamer.",
+   "noTime": true
+  },
+  {
+   "t": "2026-12-14T19:00",
+   "end": "2026-12-14T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Dinsdag 15-12: raad (o.a. slotrapportage).",
+   "noTime": true
+  },
+  {
+   "t": "2026-12-21T00:00",
+   "end": "2026-12-21T23:59",
+   "type": "reces",
+   "title": "Reces",
+   "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
+   "noTime": true
+  },
+  {
+   "t": "2026-12-28T00:00",
+   "end": "2026-12-28T23:59",
+   "type": "reces",
+   "title": "Reces",
+   "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
    "noTime": true
   }
  ],

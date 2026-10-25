@@ -64,6 +64,7 @@ h3{font-size:17px;margin:0}
 .p-raad{background:var(--accent-soft);color:var(--accent)}
 .p-beraad{background:var(--warn-soft);color:var(--warn)}
 .p-fractie{background:var(--ok-soft);color:var(--ok)}
+.p-reces{background:var(--line);color:var(--muted)}
 .p-deadline{background:var(--accent);color:var(--surface)}
 .past{opacity:.45}
 .todo{display:flex;gap:12px;align-items:flex-start}
@@ -264,7 +265,7 @@ let EVENTS = [
   {t:"2026-11-05T10:00", type:"raad", title:"Raad: besluit begroting 2027", desc:"Reactie college, 2e termijn, stemming over amendementen, begroting, belastingverordeningen en moties.", link:IB+"97293f37-41de-4ff9-ae37-04a4abbcfb45"},
   {t:"2026-11-09T19:00", type:"fractie", title:"Fractievergadering", desc:"Volgens ritme om de week op maandag; nog bevestigen.", noTime:true}
 ];
-const TYPE = {raad:["Raad","p-raad"], beraad:["Beraad","p-beraad"], fractie:["Fractie","p-fractie"], deadline:["Deadline","p-deadline"], overig:["Overig","p-fractie"]};
+const TYPE = {raad:["Raad","p-raad"], beraad:["Beraad","p-beraad"], fractie:["Fractie","p-fractie"], deadline:["Deadline","p-deadline"], overig:["Overig","p-fractie"], reces:["Reces","p-reces"]};
 const MONTHS = ["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
 const DAYS = ["zo","ma","di","wo","do","vr","za"];
 const fmtTime = d => String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
