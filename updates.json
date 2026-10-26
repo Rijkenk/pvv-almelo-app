@@ -1,3 +1,12 @@
 [
-  {"datum": "2026-10-20", "titel": "Raadsupdate dinsdag 20 oktober 2026", "bestand": "updates/raadsupdate-2026-10-20.md"}
+  {
+    "datum": "2026-10-26",
+    "titel": "Raadsupdate maandag 26 oktober 2026",
+    "bestand": "updates/raadsupdate-2026-10-26.md"
+  },
+  {
+    "datum": "2026-10-20",
+    "titel": "Raadsupdate dinsdag 20 oktober 2026",
+    "bestand": "updates/raadsupdate-2026-10-20.md"
+  }
 ]
