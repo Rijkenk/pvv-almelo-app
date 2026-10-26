@@ -104,7 +104,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{o
 .md h1{font-family:var(--display);font-size:24px;line-height:1.15;margin:0 0 8px}
 .md h2{font-size:21px;margin:18px 0 6px}
 .md h3{font-size:17px;margin:14px 0 4px}
-.md table{min-width:520px;font-size:14px}
+.md table{min-width:680px;width:max-content;max-width:none;font-size:14px}
+.md .tw table th,.md .tw table td{overflow-wrap:normal;word-break:normal;min-width:120px;max-width:340px}
+.md .tw table td:first-child,.md .tw table th:first-child{white-space:nowrap;min-width:0}
+.md .tw{-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px}
 .md .tw{overflow-x:auto;margin:8px 0}
 .md blockquote{margin:8px 0;padding-left:12px;border-left:3px solid var(--line);color:var(--muted)}
 details.old summary{font-weight:700}
