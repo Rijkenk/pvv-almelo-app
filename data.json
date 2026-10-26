@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-10-25",
+ "bijgewerkt": "2026-10-26",
  "events": [
   {
    "t": "2026-10-26T19:00",
@@ -11,10 +11,17 @@
   },
   {
    "t": "2026-10-27T19:30",
+   "type": "deadline",
+   "title": "Amendementen en moties aankondigen",
+   "desc": "Voorgenomen amendementen en moties begroting 2027 aankondigen in het oordeelsvormend beraad.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
+  },
+  {
+   "t": "2026-10-27T19:30",
    "type": "beraad",
    "title": "Politieke avond: beraad begroting 2027",
-   "desc": "Spreekrecht, quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadszaal.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/941cdd86-89fe-4271-8105-9338b45faa7d"
+   "desc": "Spreekrecht, zienswijze Veiligheidsregio Twente (KCR2), quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadzaal.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
   },
   {
    "t": "2026-11-02T09:00",
@@ -35,6 +42,13 @@
    "type": "deadline",
    "title": "Motie vreemd indienen",
    "desc": "Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."
+  },
+  {
+   "t": "2026-11-03T19:30",
+   "type": "deadline",
+   "title": "Amendementen en moties definitief indienen",
+   "desc": "In de 1e termijn van de begrotingsraad.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5"
   },
   {
    "t": "2026-11-03T19:30",
