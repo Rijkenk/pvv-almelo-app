@@ -1,4 +1,4 @@
-# Haalt elk uur nieuwskoppen op (Oost, NOS Politiek, Tweede en Eerste Kamer) voor de tab Nieuws.
+# Haalt elk uur nieuwskoppen op (Oost, 1Twente, NOS Politiek, Tweede en Eerste Kamer) voor de tab Nieuws.
 # Het resultaat staat als nieuws.json op de aparte branch nieuws-data, zodat main schoon blijft.
 name: Nieuws ophalen
 on:

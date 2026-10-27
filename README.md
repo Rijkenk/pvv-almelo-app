@@ -8,7 +8,7 @@ Web-app voor de fractie (agenda, actiepunten, raadsupdate, standpunten, spelrege
 - `updates.json` + `updates/*.md`: de wekelijkse raadsupdates.
 - `config.js`: `uploadUrl` = de /exec-URL van het Google-script.
 - `apps-script/Code.gs`: script dat inzendingen in de Drive-inzendmap zet.
-- `scripts/nieuws.py` + `.github/workflows/nieuws.yml`: haalt elk uur (6-23 uur) koppen op van Oost, NOS Politiek en de Tweede en Eerste Kamer. Het resultaat staat als `nieuws.json` op de branch `nieuws-data`; de tab Nieuws leest dat bestand. Handmatig starten: tab Actions › Nieuws ophalen › Run workflow.
+- `scripts/nieuws.py` + `.github/workflows/nieuws.yml`: haalt elk uur (6-23 uur) koppen op van Oost, 1Twente (dubbele berichten met Oost eruit gefilterd), NOS Politiek en de Tweede en Eerste Kamer. Het resultaat staat als `nieuws.json` op de branch `nieuws-data`; de tab Nieuws leest dat bestand. Handmatig starten: tab Actions › Nieuws ophalen › Run workflow.
 
 ## Op het beginscherm zetten
 - iPhone (Safari): deelknop › Zet op beginscherm.
