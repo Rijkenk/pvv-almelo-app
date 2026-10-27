@@ -1,0 +1,31 @@
+# Haalt elk uur nieuwskoppen op (Oost, NOS Politiek, Tweede en Eerste Kamer) voor de tab Nieuws.
+# Het resultaat staat als nieuws.json op de aparte branch nieuws-data, zodat main schoon blijft.
+name: Nieuws ophalen
+on:
+  schedule:
+    - cron: "12 4-21 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: nieuws
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vorige stand ophalen
+        run: |
+          mkdir -p out
+          if git fetch -q --depth=1 origin nieuws-data; then git show FETCH_HEAD:nieuws.json > vorige.json; else echo '{}' > vorige.json; fi
+      - name: Koppen ophalen
+        run: python3 scripts/nieuws.py vorige.json out/nieuws.json
+      - name: Publiceren op branch nieuws-data
+        working-directory: out
+        run: |
+          git init -q -b nieuws-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nieuws.json
+          git commit -qm "Nieuws $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:nieuws-data
