@@ -1,4 +1,4 @@
-"""Haalt nieuwskoppen op voor de tab Nieuws en schrijft nieuws.json.
+"""Haalt nieuwskoppen op voor de tab Nieuws (Oost, 1Twente, NOS, Tweede en Eerste Kamer) en schrijft nieuws.json.
 
 Alleen kop, datum, bron en link; geen intro's of foto's (auteursrecht).
 Valt een bron uit, dan blijven de koppen van de vorige run staan.
@@ -38,14 +38,40 @@ def rss(url, bron):
 
 def almelo(i): return "almelo" in i["titel"].lower()
 
+def woorden(titel):
+    return {w for w in re.findall(r"\w+", titel.lower()) if len(w) > 3}
+
+def dubbel(a, b):
+    # Zelfde nieuws bij twee omroepen: (bijna) dezelfde kop
+    wa, wb = woorden(a["titel"]), woorden(b["titel"])
+    return bool(wa and wb) and len(wa & wb) / min(len(wa), len(wb)) >= 0.6
+
 def oost():
     twente = rss("https://www.oost.nl/rss/twente.xml", "Oost")
     alles = rss("https://www.oost.nl/rss/nieuws.xml", "Oost")
-    gezien, uit = set(), []
-    for i in twente + [i for i in alles if almelo(i)]:
-        if i["link"] in gezien: continue
-        gezien.add(i["link"]); i["almelo"] = almelo(i); uit.append(i)
-    return sorted(uit, key=lambda i: i["datum"], reverse=True)[:30]
+    return twente + [i for i in alles if almelo(i)]
+
+def een_twente():
+    eigen = rss("https://www.1twente.nl/feed/almelo", "1Twente")
+    for i in eigen: i["almelo"] = True
+    return eigen + rss("https://www.1twente.nl/feed/politiek", "1Twente")
+
+def lokaal(vorig):
+    # Elke omroep apart ophalen; valt er één uit, dan blijven diens vorige koppen staan.
+    items, fouten = [], []
+    for bron, fn in (("Oost", oost), ("1Twente", een_twente)):
+        try: items += fn()
+        except Exception as e:
+            fouten.append(f"{bron}: {e}")
+            items += [i for i in vorig.get("lokaal", []) if i.get("bron") == bron]
+    if not items: raise ValueError("; ".join(fouten))
+    uit = []
+    for i in sorted(items, key=lambda i: i["bron"] != "Oost"):  # Oost eerst; 1Twente vult aan zonder dubbele koppen
+        if any(i["link"] == j["link"] or dubbel(i, j) for j in uit): continue
+        i["almelo"] = i.get("almelo") or almelo(i); uit.append(i)
+    uit.sort(key=lambda i: i["datum"], reverse=True)
+    if fouten: print("; ".join(fouten), file=sys.stderr)
+    return uit[:40]
 
 def nos():
     return rss("https://feeds.nos.nl/nosnieuwspolitiek", "NOS")[:20]
@@ -79,7 +105,7 @@ def eerste_kamer():
         except Exception: pass
     raise ValueError("geen feed gevonden")
 
-BRONNEN = {"lokaal": oost, "kamer": tweede_kamer, "landelijk": nos, "eerstekamer": eerste_kamer}
+BRONNEN = {"lokaal": lokaal, "kamer": tweede_kamer, "landelijk": nos, "eerstekamer": eerste_kamer}
 
 def main(vorig_pad, uit_pad):
     try: vorig = json.load(open(vorig_pad, encoding="utf-8"))
@@ -87,7 +113,7 @@ def main(vorig_pad, uit_pad):
     uit = {"bijgewerkt": NU.strftime("%Y-%m-%dT%H:%M:%SZ"), "status": {}}
     for naam, fn in BRONNEN.items():
         try:
-            uit[naam] = fn(); uit["status"][naam] = {"ok": True, "sinds": uit["bijgewerkt"]}
+            uit[naam] = fn(vorig) if naam == "lokaal" else fn(); uit["status"][naam] = {"ok": True, "sinds": uit["bijgewerkt"]}
         except Exception as e:
             uit[naam] = vorig.get(naam, [])
             oud = vorig.get("status", {}).get(naam, {})

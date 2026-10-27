@@ -211,7 +211,7 @@ details.old summary{font-weight:700}
   <h2>Nieuws</h2>
   <p class="lead">Koppen uit de regio en Den Haag, elk uur automatisch bijgewerkt. Wat het betekent voor Almelo staat in de raadsupdate van maandag.</p>
   <div class="stack" id="nwsList"><div class="card">Nieuws laden…</div></div>
-  <p class="src" style="margin-top:12px">Alleen koppen en links; lees het bericht bij de bron. Bronnen: <a href="https://www.oost.nl" target="_blank" rel="noopener">Oost</a>, <a href="https://nos.nl/politiek" target="_blank" rel="noopener">NOS Politiek</a>, <a href="https://opendata.tweedekamer.nl" target="_blank" rel="noopener">open data Tweede Kamer</a>, <a href="https://www.eerstekamer.nl/planning_livestreams" target="_blank" rel="noopener">Eerste Kamer</a>.</p>
+  <p class="src" style="margin-top:12px">Alleen koppen en links; lees het bericht bij de bron. Bronnen: <a href="https://www.oost.nl" target="_blank" rel="noopener">Oost</a>, <a href="https://www.1twente.nl/almelo" target="_blank" rel="noopener">1Twente</a>, <a href="https://nos.nl/politiek" target="_blank" rel="noopener">NOS Politiek</a>, <a href="https://opendata.tweedekamer.nl" target="_blank" rel="noopener">open data Tweede Kamer</a>, <a href="https://www.eerstekamer.nl/planning_livestreams" target="_blank" rel="noopener">Eerste Kamer</a>.</p>
 </section>
 
 <!-- TAKEN -->
@@ -467,8 +467,8 @@ function renderNieuws(n){
   const st = n.status || {}, oud = k => st[k] && !st[k].ok ? ` <span class="pill p-deadline">bron tijdelijk niet bereikbaar</span>` : "";
   const ek = n.eerstekamer || [];
   document.getElementById("nwsList").innerHTML =
-    nwsBlok("Almelo en Twente · Oost" + oud("lokaal"), n.lokaal || [],
-      i => `${i.almelo ? `<span class="pill p-raad">Almelo</span>` : ""}${fmtDag(i.datum)} · ${fmtTime(new Date(i.datum))}`) +
+    nwsBlok("Almelo en Twente · Oost en 1Twente" + oud("lokaal"), n.lokaal || [],
+      i => `${i.almelo ? `<span class="pill p-raad">Almelo</span>` : ""}${esc(i.bron || "")} · ${fmtDag(i.datum)} · ${fmtTime(new Date(i.datum))}`) +
     nwsBlok("Tweede Kamer · komende 2 weken" + oud("kamer"), n.kamer || [],
       i => `${i.gemeente ? `<span class="pill p-beraad">raakt gemeenten</span>` : ""}${fmtDag(i.datum)} · ${esc(i.soort || "")}`,
       {leeg: "Nog geen debatten geladen.", voet: `<p class="src more">Alleen plenaire debatten en commissiedebatten over onderwerpen die gemeenten raken. <a href="https://www.tweedekamer.nl/debat_en_vergadering" target="_blank" rel="noopener">Volledige Kameragenda</a></p>`}) +
