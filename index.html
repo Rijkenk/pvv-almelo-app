@@ -217,9 +217,10 @@ details.old summary{font-weight:700}
 <!-- TAKEN -->
 <section id="taken" data-view hidden>
   <h2>Actiepunten</h2>
-  <p class="lead">Uit de fractievergaderingen van 5 en 19 oktober. Afvinken bewaart alleen op dit toestel.</p>
+  <p class="lead">Uit de fractievergaderingen. Afvinken geeft de app door; de volgende ochtend is de taak voor iedereen weg.</p>
   <div class="stack" id="todoList"></div>
-  <p class="src" style="margin-top:12px">Bijgewerkt 22-10-2026. Huishoudelijke en financiële fractiezaken staan bewust niet in deze app.</p>
+  <p class="src" id="todoMsg" role="status" style="margin-top:10px"></p>
+  <p class="src" style="margin-top:12px">Huishoudelijke en financiële fractiezaken staan bewust niet in deze app.</p>
 </section>
 
 <!-- STANDPUNTEN -->
@@ -333,7 +334,30 @@ document.getElementById("todoList").addEventListener("change", e => {
   const id = e.target.dataset.id; if(!id) return;
   const done = store("pvv-done") || {}; done[id] = e.target.checked; store("pvv-done", done);
   e.target.closest(".todo").classList.toggle("done", e.target.checked);
+  syncTodos();
 });
+// Afvinken gaat via de inzendmap naar iedereen: de ochtendverwerking haalt afgeronde taken uit data.json.
+async function syncTodos(){
+  const msg = document.getElementById("todoMsg");
+  const done = store("pvv-done") || {}, sent = store("pvv-done-sent") || {};
+  const todo = TODOS.filter(t => !!done[t.id] !== !!sent[t.id]);
+  if(!todo.length) return;
+  let code = "", from = "";
+  try{ code = localStorage.getItem("pvv-code") || ""; from = localStorage.getItem("pvv-from") || ""; }catch(e){}
+  if(!UPLOAD_URL || !code){ msg.textContent = "Afgevinkt op dit toestel. Vul één keer de fractiecode in bij Toevoegen, dan gaat afvinken naar iedereen."; return; }
+  for(const t of todo){
+    const klaar = !!done[t.id];
+    const text = `${klaar?"TAAK AFGEROND":"TAAK HEROPEND"}\nid: ${t.id}\nTaak: ${t.what}\nVan: ${from||"onbekend"}`;
+    try{
+      const res = await fetch(UPLOAD_URL, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+        body: JSON.stringify({code, from, kind:"agenda", title:(klaar?"Taak afgerond - ":"Taak heropend - ")+t.what.slice(0,50), text})});
+      const out = await res.json();
+      if(!out.ok) throw new Error(out.error);
+      sent[t.id] = klaar; store("pvv-done-sent", sent);
+      msg.textContent = "Doorgegeven. Morgenochtend is de taak voor iedereen bijgewerkt.";
+    }catch(err){ msg.textContent = "Doorgeven mislukt; de app probeert het opnieuw bij de volgende keer openen."; return; }
+  }
+}
 
 const POINTS = [
   ["Veiligheid: onze wijken weer van ons", ["Zerotolerance tegen overlast, straattuig, drugsdeals en straatintimidatie","Meer BOA's zichtbaar en actief op straat","Wijkagenten weer herkenbaar aanwezig in de wijken","Cameratoezicht op openbare en risicovolle locaties","Harde aanpak van seksueel geweld en straatintimidatie","Consequent optreden tegen georganiseerde criminaliteit","Fietsverbod in het kernwinkelgebied"]],
@@ -508,7 +532,7 @@ async function loadData(){
     const docs = Array.isArray(d.docs) ? d.docs : [];
     document.getElementById("docsBox").hidden = !docs.length;
     document.getElementById("docList").innerHTML = docs.map(x => `<div class="card"><h3><a href="${esc(x.link||"#")}" target="_blank" rel="noopener">${esc(x.titel||"Document")}</a></h3><p class="src" style="margin:2px 0 0">${esc([x.datum,x.van].filter(Boolean).join(" · "))}${x.kern?" — "+esc(x.kern):""}</p></div>`).join("");
-    renderAgenda(); renderTodos();
+    renderAgenda(); renderTodos(); syncTodos();
     return d.bijgewerkt || "";
   }catch(e){ return null; }
 }
