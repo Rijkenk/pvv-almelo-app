@@ -1,0 +1,541 @@
+{
+ "bijgewerkt": "2026-10-31T10:23:15Z",
+ "status": {
+  "lokaal": {
+   "ok": true,
+   "sinds": "2026-10-31T10:23:15Z"
+  },
+  "kamer": {
+   "ok": true,
+   "sinds": "2026-10-31T10:23:15Z"
+  },
+  "landelijk": {
+   "ok": true,
+   "sinds": "2026-10-31T10:23:15Z"
+  },
+  "eerstekamer": {
+   "ok": false,
+   "fout": "geen feed gevonden",
+   "sinds": ""
+  }
+ },
+ "lokaal": [
+  {
+   "titel": "Voetbalshirt wekt kennelijk agressie op: man krijgt klappen in Hengelo",
+   "link": "https://www.oost.nl/nieuws/3710476/voetbalshirt-wekt-kennelijk-agressie-op-man-krijgt-klappen-in-hengelo",
+   "datum": "2026-10-31T09:26:55Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Scooterrijder gewond bij botsing op kruispunt Van Rechteren Limpurgsingel in Almelo",
+   "link": "https://www.1twente.nl/artikel/6374952/scooterrijder-gewond-bij-botsing-op-kruispunt-van-rechteren-limpurgsingel-in-almelo",
+   "datum": "2026-10-31T07:36:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Reis mee met nieuwe trein van GoVolta naar Berlijn: er gaat veel mis",
+   "link": "https://www.oost.nl/nieuws/3711793/reis-mee-met-nieuwe-trein-van-govolta-naar-berlijn-er-gaat-veel-mis",
+   "datum": "2026-10-31T05:01:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Hennie Kuiper (77) krijgt 50 jaar na olympisch goud nog altijd fanmail",
+   "link": "https://www.oost.nl/sport/3711649/hennie-kuiper-77-krijgt-50-jaar-na-olympisch-goud-nog-altijd-fanmail",
+   "datum": "2026-10-30T19:01:09Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Bioscoop Hengelo verdwenen, de herinnering is nu te koop: inboedel onder de hamer",
+   "link": "https://www.oost.nl/nieuws/3713501/bioscoop-hengelo-verdwenen-de-herinnering-is-nu-te-koop-inboedel-onder-de-hamer",
+   "datum": "2026-10-30T18:42:42Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Dakarwinnaar Mirjam Pol koninklijk onderscheiden: 'Dakar voor kerels en voor Mirjam'",
+   "link": "https://www.oost.nl/nieuws/3713319/dakarwinnaar-mirjam-pol-koninklijk-onderscheiden-dakar-voor-kerels-en-voor-mirjam",
+   "datum": "2026-10-30T18:18:53Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Wie reed rond op fatbike bij huis in Enschede waar verwoestende explosie was?",
+   "link": "https://www.oost.nl/nieuws/3710472/wie-reed-rond-op-fatbike-bij-huis-in-enschede-waar-verwoestende-explosie-was",
+   "datum": "2026-10-30T17:08:32Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Trektocht Almeloos Peil maakt tussenstop bij Stadslab: iedereen welkom",
+   "link": "https://www.1twente.nl/artikel/6374037/trektocht-almeloos-peil-maakt-tussenstop-bij-stadslab-iedereen-welkom",
+   "datum": "2026-10-30T14:21:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Almelo en Stadstheater weer naar de rechter om stopzetten subsidie",
+   "link": "https://www.oost.nl/cultuur/3713231/almelo-en-stadstheater-weer-naar-de-rechter-om-stopzetten-subsidie",
+   "datum": "2026-10-30T13:39:25Z",
+   "bron": "Oost",
+   "almelo": true
+  },
+  {
+   "titel": "Wonen in oude Storkkantoren, twee parken en behoud grote fabriekshallen: zo kan de KMS er straks uitzien",
+   "link": "https://www.1twente.nl/artikel/6373275/wonen-in-oude-storkkantoren-twee-parken-en-behoud-grote-fabriekshallen-zo-kan-de-kms-er-straks-uitzien",
+   "datum": "2026-10-30T13:17:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Meerderheid raad wil onveiligheid in Enschede aanpakken: 'Mensen mijden deze plek'",
+   "link": "https://www.oost.nl/nieuws/3712994/meerderheid-raad-wil-onveiligheid-in-enschede-aanpakken-mensen-mijden-deze-plek",
+   "datum": "2026-10-30T12:26:58Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Bij het afscheid van het leven kun je rekenen op de vrijwilligers van Leendert Vriel Almelo",
+   "link": "https://www.1twente.nl/artikel/6373578/bij-het-afscheid-van-het-leven-kun-je-rekenen-op-de-vrijwilligers-van-leendert-vriel-almelo",
+   "datum": "2026-10-30T12:19:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Gemeente Tubbergen kijkt vooruit met oog voor financiële uitdagingen",
+   "link": "https://www.1twente.nl/artikel/6373479/gemeente-tubbergen-kijkt-vooruit-met-oog-voor-financiele-uitdagingen",
+   "datum": "2026-10-30T11:52:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Woning na enorme explosie in Enschede maand dicht, bewoner vangt bot bij rechter",
+   "link": "https://www.oost.nl/nieuws/3713209/woning-na-enorme-explosie-in-enschede-maand-dicht-bewoner-vangt-bot-bij-rechter",
+   "datum": "2026-10-30T09:15:06Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Almelo trapt feestelijke Sinterklaastijd af met intocht",
+   "link": "https://www.1twente.nl/artikel/6372657/almelo-trapt-feestelijke-sinterklaastijd-af-met-intocht",
+   "datum": "2026-10-30T09:06:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Zorgen bij Hengelose politiek over komst nieuwe McDonald’s, maar wethouder kan niet ingrijpen",
+   "link": "https://www.1twente.nl/artikel/6370569/zorgen-bij-hengelose-politiek-over-komst-nieuwe-mcdonalds-maar-wethouder-kan-niet-ingrijpen",
+   "datum": "2026-10-30T08:00:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Klachten door rook van de houtkachel, zo verminder je de overlast",
+   "link": "https://www.oost.nl/nieuws/3712772/klachten-door-rook-van-de-houtkachel-zo-verminder-je-de-overlast",
+   "datum": "2026-10-30T07:06:11Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Enschedese wethouder verdient bij en wordt eenmalig gekort op zijn salaris",
+   "link": "https://www.oost.nl/nieuws/3712904/enschedese-wethouder-verdient-bij-en-wordt-eenmalig-gekort-op-zijn-salaris",
+   "datum": "2026-10-30T06:58:40Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Belletje lellen zorgt voor nieuwe vriendjes in Enschede",
+   "link": "https://www.oost.nl/nieuws/3712783/belletje-lellen-zorgt-voor-nieuwe-vriendjes-in-enschede",
+   "datum": "2026-10-30T04:02:42Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Gemeente Almelo ook om verbroken subsidierelatie met Stadstheater voor tweede ronde naar de rechter",
+   "link": "https://www.1twente.nl/artikel/6371973/gemeente-almelo-ook-met-verbroken-subsidierelatie-stadstheater-voor-tweede-ronde-naar-de-rechter-kans-van-slagen",
+   "datum": "2026-10-29T19:04:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Twee dagen na de eerste vuurwerkbom volgt opnieuw explosie bij huis in Almelo",
+   "link": "https://www.oost.nl/nieuws/3710471/twee-dagen-na-de-eerste-vuurwerkbom-volgt-opnieuw-explosie-bij-huis-in-almelo",
+   "datum": "2026-10-29T18:03:00Z",
+   "bron": "Oost",
+   "almelo": true
+  },
+  {
+   "titel": "Gerrit uit Hellendoorn is al 42 jaar volksdanser: 'In het buitenland vinden ze dit mooi'",
+   "link": "https://www.oost.nl/cultuur/3704187/gerrit-uit-hellendoorn-is-al-42-jaar-volksdanser-in-het-buitenland-vinden-ze-dit-mooi",
+   "datum": "2026-10-29T17:01:47Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Geen nieuwe school bij De Trefkoel: Buurse moet het 'slechts' doen met vernieuwbouw",
+   "link": "https://www.1twente.nl/artikel/6370809/geen-nieuwe-school-bij-de-trefkoel-buurse-moet-het-slechts-doen-met-vernieuwbouw",
+   "datum": "2026-10-29T15:49:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Oldenzaal houdt vast aan Twentse ‘lijn’ bij handhaving van vuurwerkverbod",
+   "link": "https://www.1twente.nl/artikel/6370401/oldenzaal-houdt-vast-aan-twentse-lijn-bij-handhaving-van-vuurwerkverbod",
+   "datum": "2026-10-29T14:28:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "GroenLinks Overijssel draagt Annemieke Wissink voor als nieuwe gedeputeerde: 'Ineens wéér een mooie kans'",
+   "link": "https://www.1twente.nl/artikel/6370341/groenlinks-overijssel-draagt-annemieke-wissink-uit-hengelo-voor-als-nieuwe-gedeputeerde",
+   "datum": "2026-10-29T13:57:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Sahra vastgebonden en gedood in Enschedees appartement: 14 jaar cel voor bewoner",
+   "link": "https://www.oost.nl/nieuws/3712872/sahra-vastgebonden-en-gedood-in-enschedees-appartement-14-jaar-cel-voor-bewoner",
+   "datum": "2026-10-29T13:49:20Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Almelo komt met plan om zelfdodingen te voorkomen, dit jaar 43.000 euro beschikbaar voor uitvoering",
+   "link": "https://www.1twente.nl/artikel/6369573/almelo-komt-met-plan-om-zelfdodingen-te-voorkomen-dit-jaar-43-000-euro-beschikbaar-voor-uitvoering",
+   "datum": "2026-10-29T13:39:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Nieuwe gedeputeerde Wissink krijgt half jaar voor grote Overijsselse dossiers",
+   "link": "https://www.oost.nl/nieuws/3712528/nieuwe-gedeputeerde-wissink-krijgt-half-jaar-voor-grote-overijsselse-dossiers",
+   "datum": "2026-10-29T13:00:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "File op A35 bij Bornerbroek richting Borne door aanrijding",
+   "link": "https://www.1twente.nl/artikel/6369825/file-op-a35-bij-bornerbroek-richting-borne-door-aanrijding",
+   "datum": "2026-10-29T13:00:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Niet verhuizen, maar opknapbeurt: hangplek in Hengelose wijk Groot Driene blijft",
+   "link": "https://www.1twente.nl/artikel/6369543/niet-verhuizen-maar-opknapbeurt-hangplek-in-hengelose-wijk-groot-driene-blijft-staan",
+   "datum": "2026-10-29T11:58:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Halloweenroute voert bezoekers langs tientallen spookhuizen in Aadorp",
+   "link": "https://www.1twente.nl/artikel/6369297/halloweenroute-voert-bezoekers-langs-tientallen-spookhuizen-in-aadorp",
+   "datum": "2026-10-29T11:29:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Failliete regelaar van droomauto's heeft link met verdwenen transporteur met miljoen schuld",
+   "link": "https://www.oost.nl/nieuws/3712445/failliete-regelaar-van-droomautos-heeft-link-met-verdwenen-transporteur-met-miljoen-schuld",
+   "datum": "2026-10-29T10:56:24Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Enschede krijgt 'afvalavond': inwoners kunnen tot negen uur naar afvalstation",
+   "link": "https://www.oost.nl/nieuws/3712092/enschede-krijgt-afvalavond-inwoners-kunnen-tot-negen-uur-naar-afvalstation",
+   "datum": "2026-10-29T08:02:13Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Heracles start bekercampagne in Groesbeek",
+   "link": "https://www.1twente.nl/artikel/6368775/heracles-start-bekercampagne-in-groesbeek",
+   "datum": "2026-10-29T06:30:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Europees volleybal in Borne: sportief het mooiste wat er is, financieel minder",
+   "link": "https://www.oost.nl/sport/3712665/europees-volleybal-in-borne-sportief-het-mooiste-wat-er-is-financieel-minder",
+   "datum": "2026-10-29T05:07:22Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Tips uit de buurt leiden tot aanhoudingen voor handel in harddrugs",
+   "link": "https://www.oost.nl/nieuws/3712574/tips-uit-de-buurt-leiden-tot-aanhoudingen-voor-handel-in-harddrugs",
+   "datum": "2026-10-28T20:37:27Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Op zondagochtend voor croissants naar de super? In Enschede kan dat binnenkort",
+   "link": "https://www.oost.nl/nieuws/3712468/op-zondagochtend-voor-croissants-naar-de-super-in-enschede-kan-dat-binnenkort",
+   "datum": "2026-10-28T19:04:23Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Precarioverhoging gaat Almelose horeca veel te snel: ‘Kunnen terrashouders er niet bij hebben'",
+   "link": "https://www.1twente.nl/artikel/6368622/precarioverhoging-gaat-almelose-horeca-veel-te-snel-kunnen-terrashouders-er-niet-bij-hebben",
+   "datum": "2026-10-28T18:55:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Softdrugs, contant geld en schaduwboekhouding: coffeeshop The Black Sea moet sluiten",
+   "link": "https://www.oost.nl/nieuws/3712524/softdrugs-contant-geld-en-schaduwboekhouding-coffeeshop-the-black-sea-moet-sluiten",
+   "datum": "2026-10-28T15:58:02Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Gemeente Wierden onderzoekt juridische stappen om Windpark A35 te stoppen",
+   "link": "https://www.1twente.nl/artikel/6367575/gemeente-wierden-onderzoekt-juridische-stappen-om-windpark-a35-te-stoppen",
+   "datum": "2026-10-28T15:22:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  }
+ ],
+ "kamer": [
+  {
+   "titel": "Begrotingsonderdeel Artikel 31 Politie",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-11-02T09:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07848",
+   "gemeente": true
+  },
+  {
+   "titel": "Begrotingsonderdeel Artikel 31 Politie (i.v.m. wijziging aanvangs- en eindtijdstip)",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-11-02T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06206",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Binnenlandse Zaken (37 020-VII) (1e TK)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-03T16:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05418",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Klimaat en Groene Groei (37 020-XXIII) (1e TK)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-04T10:15:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05417",
+   "gemeente": false
+  },
+  {
+   "titel": "Pakket Belastingplan 2027 (1e TK)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-04T15:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06617",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Binnenlandse Zaken (37 020-VII) (voortzetting)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-05T10:15:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07993",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Klimaat en Groene Groei (37 020-XXIII) (voortzetting)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-05T16:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07995",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Buitenlandse Zaken",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-09T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05416",
+   "gemeente": false
+  },
+  {
+   "titel": "Pakket Belastingplan 2027 (voortzetting)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-09T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07998",
+   "gemeente": true
+  },
+  {
+   "titel": "Wijziging van de Wet maatschappelijke ondersteuning 2015 teneinde gemeenten in staat te stellen voor meer voorzieningen een eigen bijdrage van de cliënt te vragen die afhankelijk is van zijn financiële draagkracht (Wet vervanging abonnementstarief Wmo 2015) (36713)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-09T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05563",
+   "gemeente": true
+  },
+  {
+   "titel": "[de nog te ontvangen] Novelle uitbreiding vermogenswinstbelasting box 3",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-11-09T16:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07547",
+   "gemeente": true
+  },
+  {
+   "titel": "Economische veiligheid en strategische autonomie",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-11T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05086",
+   "gemeente": true
+  },
+  {
+   "titel": "Kernenergie (VERPLAATST NAAR 20 januari 2027)",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-11T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05144",
+   "gemeente": true
+  },
+  {
+   "titel": "Arbeidsmigratie",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-12T14:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04725",
+   "gemeente": true
+  }
+ ],
+ "landelijk": [
+  {
+   "titel": "Kabinet spreekt verder met oppositie, deadline nadert snel",
+   "link": "https://nos.nl/l/2637415",
+   "datum": "2026-10-31T09:51:17Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Premier Jetten wil weer doorpraten over belastingplan, maar niet over stikstof",
+   "link": "https://nos.nl/l/2637355",
+   "datum": "2026-10-30T18:57:49Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Podcast De Stemming: Maagzuur, een rechtse boyband en een shake-out",
+   "link": "https://nos.nl/l/2637335",
+   "datum": "2026-10-30T16:40:15Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "JA21, SGP en BBB vangen bot bij kabinet, maar ook Pro en Volt zien geen beweging",
+   "link": "https://nos.nl/l/2637288",
+   "datum": "2026-10-30T10:58:14Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Jetten spreekt oppositie: 'We kunnen vandaag zaken doen'",
+   "link": "https://nos.nl/l/2637267",
+   "datum": "2026-10-30T08:18:03Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "'Onuitvoerbaar' en 'onhaalbaar', zeggen experts over eisen rechtse partijen",
+   "link": "https://nos.nl/l/2637247",
+   "datum": "2026-10-30T05:00:02Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kabinet wil dat roken verboden wordt op plekken waar veel kinderen zijn",
+   "link": "https://nos.nl/l/2637223",
+   "datum": "2026-10-29T20:58:30Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "CDA en D66 niet blij met eisenpakket JA21, BBB en SGP: 'Maakt het niet makkelijker'",
+   "link": "https://nos.nl/l/2637208",
+   "datum": "2026-10-29T19:32:08Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Gedoe rond Belastingplan kan leiden tot chaos belastingaanslagen",
+   "link": "https://nos.nl/l/2637188",
+   "datum": "2026-10-29T16:46:58Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kabinet praat morgen met verschillende oppositie-combinaties",
+   "link": "https://nos.nl/l/2637182",
+   "datum": "2026-10-29T15:58:21Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Peilingen: coalitie tientallen zetels in de min, jaar na verkiezingen",
+   "link": "https://nos.nl/l/2637173",
+   "datum": "2026-10-29T14:56:41Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Geen AI voor kinderen in het basisonderwijs, zegt Tweede Kamer",
+   "link": "https://nos.nl/l/2637170",
+   "datum": "2026-10-29T14:30:41Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Top kabinet bijeen na nieuw eisenpakket JA21, BBB en SGP",
+   "link": "https://nos.nl/l/2637113",
+   "datum": "2026-10-29T07:22:46Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Frustratie bij linkse oppositie om draai D66 over belastingaanslag Oranjes",
+   "link": "https://nos.nl/l/2637083",
+   "datum": "2026-10-28T20:28:50Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Per direct landelijke ophokplicht voor pluimvee vanwege vogelgriep",
+   "link": "https://nos.nl/l/2637063",
+   "datum": "2026-10-28T16:57:09Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Steun van Tweede Kamer voor begroting wegen, sluizen en bruggen",
+   "link": "https://nos.nl/l/2637060",
+   "datum": "2026-10-28T16:37:53Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "'Wintersteunpakket' voor Oekraïne: Nederland geeft 500 miljoen voor luchtafweer",
+   "link": "https://nos.nl/l/2637052",
+   "datum": "2026-10-28T15:48:15Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Steeds meer kritiek op eigenzinnige optreden minister Heinen",
+   "link": "https://nos.nl/l/2637027",
+   "datum": "2026-10-28T13:48:40Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "'Ambtenaren schrappen is mooi plan, maar nog nooit gelukt'",
+   "link": "https://nos.nl/l/2637006",
+   "datum": "2026-10-28T11:54:24Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Olympisch atlete en oud-politica Mieke Sterk op 80-jarige leeftijd overleden",
+   "link": "https://nos.nl/l/2636993",
+   "datum": "2026-10-28T10:22:55Z",
+   "bron": "NOS"
+  }
+ ],
+ "eerstekamer": []
+}
