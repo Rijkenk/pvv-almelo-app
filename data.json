@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-10-26",
+ "bijgewerkt": "2026-10-31",
  "events": [
   {
    "t": "2026-10-26T19:00",
@@ -30,6 +30,13 @@
    "desc": "Onderwerp bij de griffier vóór 09.00 uur, de dag vóór de raad (art. 42)."
   },
   {
+   "t": "2026-11-02T09:00",
+   "type": "deadline",
+   "title": "Begroting: algemene beschouwingen inleveren",
+   "desc": "Vóór 09.00 uur digitaal naar de griffie: algemene beschouwingen, voorgenomen amendementen en moties, en eventueel een presentatie (gelijk meesturen, griffie test de techniek). Vanaf 12.00 uur gepubliceerd in iBabs. Bron: bericht griffie.",
+   "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
+  },
+  {
    "t": "2026-11-02T19:00",
    "end": "2026-11-02T22:00",
    "type": "fractie",
@@ -56,6 +63,13 @@
    "title": "Raad: algemene beschouwingen",
    "desc": "1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.",
    "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5"
+  },
+  {
+   "t": "2026-11-04T09:00",
+   "type": "deadline",
+   "title": "Begroting: laatste moment moties en amendementen met preadvies",
+   "desc": "Vóór 09.00 uur naar de griffie als een preadvies van het college gewenst is. Preadviezen staan eind van de dag in iBabs bij de raad van 5-11. Bron: bericht griffie.",
+   "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
   },
   {
    "t": "2026-11-05T10:00",
