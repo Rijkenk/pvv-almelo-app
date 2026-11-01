@@ -9,7 +9,7 @@
 | Datum | Vergadering | Belangrijkste punten |
 |---|---|---|
 | di 27 okt, 19:30 | [Politieke avond 1](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/941cdd86-89fe-4271-8105-9338b45faa7d), raadzaal (voorzitter Munter-Bronsvoort) | Spreekrecht: Orange the World, Verdrag van Istanbul, Beleid Beheer Openbare Ruimte. Daarna het beeld- en oordeelsvormend beraad over de programmabegroting 2027 (met presentatie van de quickscan door de Rekenkamer) en over de leges- en belastingverordeningen 2027. |
-| di 3 nov, 19:30 | [Raad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5) | Algemene beschouwingen in de 1e termijn, maximaal 5 minuten per fractie, met een door loting bepaalde volgorde. Amendementen en moties worden hier definitief ingediend. Ook de besluitenlijst van 6 oktober wordt vastgesteld. |
+| di 3 nov, 19:30 | [Raad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff) | Algemene beschouwingen in de 1e termijn, maximaal 5 minuten per fractie, met een door loting bepaalde volgorde. Amendementen en moties worden hier definitief ingediend. Ook de besluitenlijst van 6 oktober wordt vastgesteld. |
 | do 5 nov, 10:00 | [Raad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/97293f37-41de-4ff9-ae37-04a4abbcfb45) | Reactie van het college en de 2e termijn, gevolgd door besluitvorming over de amendementen, de belastingverordeningen 2027, de programmabegroting 2027 en de moties. *(Valt net buiten de periode van twee weken, maar hoort bij dezelfde behandeling.)* |
 
 Daarnaast vergadert het college van B&W vandaag (20 okt). Die vergadering is niet openbaar en heeft voor de raad geen agenda.
@@ -44,7 +44,7 @@ Daarnaast vergadert het college van B&W vandaag (20 okt). Die vergadering is nie
 - **Uiterlijk 23 okt:** het college kan een bestuurlijke reactie op de quickscan geven. Die wordt dan bij de stukken gevoegd ([aanbiedingsbrief Rekenkamer](https://almelo.bestuurlijkeinformatie.nl/Agenda/Document/941cdd86-89fe-4271-8105-9338b45faa7d?documentId=8265737c-68b5-4445-b898-774e16e0a2d3&agendaItemId=5d713998-7c3d-4618-b211-0ca3882b00be)). Vragen aan de Rekenkamer kunnen vóór 27 okt naar m.konijnendijk@almelo.nl.
 - **Zo snel mogelijk:** technische vragen over de begroting en de belastingen. Volgens de [instructie oordeelsvormend beraad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Document/941cdd86-89fe-4271-8105-9338b45faa7d?documentId=48802f74-909c-47c3-b001-6e391122b8ee) moet zo'n verzoek "een week van tevoren" bij raadsgriffie@almelo.nl zijn. Gerekend vanaf 27 okt was dat dus 20 okt (vandaag).
 - **27 okt (oordeelsvormend beraad):** voorgenomen amendementen en moties aankondigen ([agenda](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/941cdd86-89fe-4271-8105-9338b45faa7d)).
-- **3 nov (raad, 1e termijn):** amendementen en moties definitief indienen ([agenda](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5)). Een aparte indieningstermijn vóór de vergadering staat niet in de stukken (niet geverifieerd in het Reglement van orde).
+- **3 nov (raad, 1e termijn):** amendementen en moties definitief indienen ([agenda](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff)). Een aparte indieningstermijn vóór de vergadering staat niet in de stukken (niet geverifieerd in het Reglement van orde).
 
 ## 5. Aandachtspunten voor de PVV-fractie
 

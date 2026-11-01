@@ -9,7 +9,7 @@
 | Datum | Vergadering | Belangrijkste punten |
 |---|---|---|
 | di 27 okt, 19:30 | [Politieke avond 1](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0), raadzaal | Spreekrecht: Orange the World, Verdrag van Istanbul, Beleid Beheer Openbare Ruimte (verlichting parken). Oordeelsvormend beraad over deelname Veiligheidsregio Twente aan stichting KCR2. Beeld- en oordeelsvormend beraad over de programmabegroting 2027 (met presentatie quickscan Rekenkamer) en de leges- en belastingverordeningen 2027. |
-| di 3 nov, 19:30 | [Raad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5) | Algemene beschouwingen 1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier definitief ingediend en toegelicht. Ook besluitenlijst 6 oktober. |
+| di 3 nov, 19:30 | [Raad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff) | Algemene beschouwingen 1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier definitief ingediend en toegelicht. Ook besluitenlijst 6 oktober. |
 | do 5 nov, 10:00 | [Raad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/97293f37-41de-4ff9-ae37-04a4abbcfb45) | Reactie college, 2e termijn en besluitvorming over amendementen, belastingverordeningen 2027, programmabegroting 2027 en moties. Let op: de agendatekst bij punt 7 noemt nog "belastingverordeningen 2026" en "programmabegroting 2026-2029"; de bijlagen zijn wel die van 2027. |
 
 De eerstvolgende politieke avond is op 10 november, net buiten deze periode ([vergaderkalender](https://almelo.bestuurlijkeinformatie.nl/Calendar)).
@@ -32,7 +32,7 @@ De eerstvolgende politieke avond is op 10 november, net buiten deze periode ([ve
 ## 4. Deadlines
 
 - **27 okt (oordeelsvormend beraad):** fracties kondigen hun voorgenomen amendementen en moties aan. Bron: [agenda politieke avond, punt 5.1](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0)
-- **3 nov (raad, 1e termijn):** amendementen en moties definitief indienen. Bron: [agenda raad 3 november, punt 2](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/dff36205-575c-49fa-adb1-7e4e0311c5c5)
+- **3 nov (raad, 1e termijn):** amendementen en moties definitief indienen. Bron: [agenda raad 3 november, punt 2](https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff)
 - **Mondelinge vragen raad 3 nov:** maandag vóór 09:00 naar raadsgriffie@almelo.nl volgens de instructie raadsvergadering; of dat voor deze begrotingsraad geldt, staat niet op de agenda (niet geverifieerd).
 - Technische vragen voor 27 okt: de termijn ("een week van tevoren", [instructie oordeelsvormend beraad](https://almelo.bestuurlijkeinformatie.nl/Agenda/Document/50360568-0bfe-4160-9444-00e836738ca0?documentId=7b8a5325-277b-412c-9eb9-5c9d99b37b1e)) is verstreken.
 
