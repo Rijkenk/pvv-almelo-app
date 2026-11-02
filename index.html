@@ -202,14 +202,14 @@ details.old summary{font-weight:700}
 <!-- UPDATE -->
 <section id="update" data-view hidden>
   <h2>Raadsupdate</h2>
-  <p class="lead">Elke maandag een overzicht van vergaderingen, raadsvoorstellen en aandachtspunten. Nieuwste bovenaan.</p>
+  <p class="lead">Elke ochtend om 7.45 uur bijgewerkt. Maandag een volledig weekoverzicht van vergaderingen, raadsvoorstellen en aandachtspunten; dinsdag t/m zondag een korte dagupdate als er iets nieuws is. Nieuwste bovenaan.</p>
   <div class="stack" id="updList"><div class="card">Raadsupdates laden…</div></div>
 </section>
 
 <!-- NIEUWS -->
 <section id="nieuws" data-view hidden>
   <h2>Nieuws</h2>
-  <p class="lead">Koppen uit de regio en Den Haag, elk uur automatisch bijgewerkt. Wat het betekent voor Almelo staat in de raadsupdate van maandag.</p>
+  <p class="lead">Koppen uit de regio en Den Haag, elk uur automatisch bijgewerkt. Wat het betekent voor Almelo staat in de raadsupdate.</p>
   <div class="stack" id="nwsList"><div class="card">Nieuws laden…</div></div>
   <p class="src" style="margin-top:12px">Alleen koppen en links; lees het bericht bij de bron. Bronnen: <a href="https://www.oost.nl" target="_blank" rel="noopener">Oost</a>, <a href="https://www.1twente.nl/almelo" target="_blank" rel="noopener">1Twente</a>, <a href="https://nos.nl/politiek" target="_blank" rel="noopener">NOS Politiek</a>, <a href="https://opendata.tweedekamer.nl" target="_blank" rel="noopener">open data Tweede Kamer</a>, <a href="https://www.eerstekamer.nl/planning_livestreams" target="_blank" rel="noopener">Eerste Kamer</a>.</p>
 </section>
@@ -283,7 +283,7 @@ let EVENTS = [
   {t:"2026-11-03T09:00", type:"deadline", title:"Motie vreemd indienen", desc:"Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."},
   {t:"2026-11-03T19:30", type:"raad", title:"Raad: algemene beschouwingen", desc:"1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.", link:IB+"dff36205-575c-49fa-adb1-7e4e0311c5c5"},
   {t:"2026-11-05T10:00", type:"raad", title:"Raad: besluit begroting 2027", desc:"Reactie college, 2e termijn, stemming over amendementen, begroting, belastingverordeningen en moties.", link:IB+"97293f37-41de-4ff9-ae37-04a4abbcfb45"},
-  {t:"2026-11-09T19:00", type:"fractie", title:"Fractievergadering", desc:"Volgens ritme om de week op maandag; nog bevestigen.", noTime:true}
+  {t:"2026-11-09T19:00", type:"fractie", title:"Fractievergadering", desc:"Wekelijks op maandag, behalve in reces.", noTime:true}
 ];
 const TYPE = {raad:["Raad","p-raad"], beraad:["Beraad","p-beraad"], fractie:["Fractie","p-fractie"], deadline:["Deadline","p-deadline"], overig:["Overig","p-fractie"], reces:["Reces","p-reces"]};
 const MONTHS = ["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
@@ -462,7 +462,7 @@ async function loadUpdates(){
     const res = await fetch("updates.json", {cache:"no-store"});
     if(!res.ok) throw new Error(res.status);
     const list = (await res.json()).sort((a,b) => b.datum.localeCompare(a.datum));
-    if(!list.length){ box.innerHTML = `<div class="card">Nog geen raadsupdates. De eerste verschijnt maandagochtend.</div>`; return; }
+    if(!list.length){ box.innerHTML = `<div class="card">Nog geen raadsupdates. De volgende verschijnt morgenochtend als er iets nieuws is, en anders maandagochtend.</div>`; return; }
     box.innerHTML = "";
     for(const [i,u] of list.entries()){
       const md = await (await fetch(u.bestand, {cache:"no-store"})).text();
