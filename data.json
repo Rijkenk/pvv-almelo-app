@@ -96,7 +96,7 @@
    "t": "2026-11-11T15:00",
    "type": "overig",
    "title": "Werkbezoek Aeronamic",
-   "desc": "Kenneth en Manon; Marnick opgegeven. Bron: fractieagenda 2-11."
+   "desc": "Kenneth, Manon en Marnick. Bron: fractieagenda 2-11."
   },
   {
    "t": "2026-11-13T09:00",
@@ -109,7 +109,7 @@
    "t": "2026-11-14T10:00",
    "type": "overig",
    "title": "Bijeenkomst AZC",
-   "desc": "Kenneth en Manon; Marnick nog laten weten. Bron: fractieagenda 2-11.",
+   "desc": "Kenneth, Manon en Marnick. Bron: fractieagenda 2-11.",
    "end": "2026-11-14T13:30"
   },
   {
@@ -155,6 +155,13 @@
    "type": "fractie",
    "title": "Fractievergadering",
    "desc": "Dinsdag 1-12: hamerraad en politieke avond.",
+   "noTime": true
+  },
+  {
+   "t": "2026-11-30T20:00",
+   "type": "overig",
+   "title": "Politiek café PVV Almelo",
+   "desc": "Eerste editie, De Zwarte Parochie. Voortaan elke laatste maandag van de maand. Tijd nog bevestigen. Bron: fractievergadering 2-11.",
    "noTime": true
   },
   {
@@ -225,20 +232,14 @@
   {
    "id": "politiek-cafe",
    "who": "Fractie",
-   "what": "Locatie politiek café kiezen en daarna aankondigen op Facebook en de officiële pagina",
-   "when": "open"
+   "what": "Politiek café (eerste editie ma 30-11, De Zwarte Parochie) aankondigen op Facebook en de officiële pagina",
+   "when": "ruim vóór 30-11"
   },
   {
    "id": "vragen-wethouders",
    "who": "Fractie",
    "what": "Vragen voorbereiden voor bezoek wethouders Van Rees en Wessels",
    "when": "vóór ma 7-12"
-  },
-  {
-   "id": "marnick-bezoeken",
-   "who": "Marnick",
-   "what": "Laten weten of hij meegaat naar Aeronamic (11-11) en de AZC-bijeenkomst (14-11)",
-   "when": "vóór 11-11"
   }
  ],
  "docs": [
