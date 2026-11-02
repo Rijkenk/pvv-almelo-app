@@ -86,13 +86,6 @@
    "noTime": true
   },
   {
-   "t": "2026-11-11T14:00",
-   "type": "overig",
-   "title": "Bijeenkomst Enexis",
-   "desc": "Deelname nog open. Bron: fractieagenda 2-11.",
-   "end": "2026-11-11T19:00"
-  },
-  {
    "t": "2026-11-11T15:00",
    "type": "overig",
    "title": "Werkbezoek Aeronamic",
@@ -127,12 +120,6 @@
    "title": "Hamerraad",
    "desc": "Afhandeling ingekomen stukken, o.a. brief KHN Almelo over spreiding precariobelasting.",
    "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c855de77-5a2b-4261-9cca-e117400a499c"
-  },
-  {
-   "t": "2026-11-18T19:30",
-   "type": "overig",
-   "title": "Bijeenkomst Samen Twente",
-   "desc": "Bron: fractieagenda 2-11."
   },
   {
    "t": "2026-11-23T19:00",
