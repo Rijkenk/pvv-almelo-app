@@ -78,6 +78,13 @@
    "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/97293f37-41de-4ff9-ae37-04a4abbcfb45"
   },
   {
+   "t": "2026-11-06T20:00",
+   "type": "overig",
+   "title": "Heracles – Roda JC",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
    "t": "2026-11-09T19:00",
    "end": "2026-11-09T22:00",
    "type": "fractie",
@@ -122,6 +129,13 @@
    "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c855de77-5a2b-4261-9cca-e117400a499c"
   },
   {
+   "t": "2026-11-20T20:00",
+   "type": "overig",
+   "title": "Heracles – Jong PSV",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
    "t": "2026-11-23T19:00",
    "end": "2026-11-23T22:00",
    "type": "fractie",
@@ -152,6 +166,13 @@
    "noTime": true
   },
   {
+   "t": "2026-12-04T20:00",
+   "type": "overig",
+   "title": "Heracles – FC Emmen",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
    "t": "2026-12-07T19:00",
    "end": "2026-12-07T22:00",
    "type": "fractie",
@@ -165,6 +186,13 @@
    "title": "Bezoek wethouders Van Rees en Wessels",
    "desc": "Bij de fractievergadering; vragen vooraf voorbereiden. Bron: fractieagenda 2-11.",
    "noTime": true
+  },
+  {
+   "t": "2026-12-11T20:00",
+   "type": "overig",
+   "title": "Heracles – FC Volendam",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
   },
   {
    "t": "2026-12-14T19:00",
@@ -189,6 +217,69 @@
    "title": "Reces",
    "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
    "noTime": true
+  },
+  {
+   "t": "2027-01-10T12:15",
+   "type": "overig",
+   "title": "Heracles – NAC Breda",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-01-22T20:00",
+   "type": "overig",
+   "title": "Heracles – Helmond Sport",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-02-05T20:00",
+   "type": "overig",
+   "title": "Heracles – VVV-Venlo",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-02-26T20:00",
+   "type": "overig",
+   "title": "Heracles – Jong FC Utrecht",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-03-12T20:00",
+   "type": "overig",
+   "title": "Heracles – MVV",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-04-03T16:30",
+   "type": "overig",
+   "title": "Heracles – FC Eindhoven",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-04-16T20:00",
+   "type": "overig",
+   "title": "Heracles – Jong Ajax",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-04-30T20:00",
+   "type": "overig",
+   "title": "Heracles – Almere City FC",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-05-07T20:00",
+   "type": "overig",
+   "title": "Heracles – FC Dordrecht",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
   }
  ],
  "todos": [
