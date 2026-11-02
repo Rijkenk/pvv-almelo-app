@@ -98,6 +98,7 @@ tr.pvv td{background:var(--accent-soft);font-weight:600}
 .person:hover,.person:focus-visible{color:var(--navy)}
 .copy{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
 .src{font-size:13px;color:var(--muted)}
+.btn:disabled{opacity:.45;cursor:default!important}
 .btn{display:inline-block;background:var(--navy);color:var(--surface);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:10px}
 nav{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);
   padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(8px,env(safe-area-inset-left,0px));padding-right:max(8px,env(safe-area-inset-right,0px))}
@@ -217,9 +218,10 @@ details.old summary{font-weight:700}
 <!-- TAKEN -->
 <section id="taken" data-view hidden>
   <h2>Actiepunten</h2>
-  <p class="lead">Uit de fractievergaderingen. Afvinken geeft de app door; de volgende ochtend is de taak voor iedereen weg.</p>
+  <p class="lead">Uit de fractievergaderingen. Vink af en tik op Opslaan. Afgeronde taken staan daarna voor iedereen doorgestreept en verdwijnen na een week.</p>
   <div class="stack" id="todoList"></div>
-  <p class="src" id="todoMsg" role="status" style="margin-top:10px"></p>
+  <button id="todoSave" class="btn" type="button" disabled style="border:0;font:inherit;font-weight:700;cursor:pointer;margin-top:12px">Opslaan</button>
+  <p class="src" id="todoMsg" role="status" style="margin-top:8px"></p>
   <p class="src" style="margin-top:12px">Huishoudelijke en financiële fractiezaken staan bewust niet in deze app.</p>
 </section>
 
@@ -323,28 +325,41 @@ let TODOS = [
 ];
 function store(k,v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)||"null"); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; } }
 function renderTodos(){
-  const done = store("pvv-done") || {};
+  const local = store("pvv-done") || {};
+  const isDone = t => t.id in local ? !!local[t.id] : !!t.klaar;
   document.getElementById("todoList").innerHTML = TODOS.map(t => `
-    <div class="card todo${done[t.id]?" done":""}">
-      <input type="checkbox" id="todo-${t.id}" data-id="${t.id}"${done[t.id]?" checked":""}>
-      <label for="todo-${t.id}"><span>${esc(t.what)}</span><span class="meta">${esc(t.who)} · ${esc(t.when)}</span></label>
+    <div class="card todo${isDone(t)?" done":""}">
+      <input type="checkbox" id="todo-${t.id}" data-id="${t.id}"${isDone(t)?" checked":""}>
+      <label for="todo-${t.id}"><span>${esc(t.what)}</span><span class="meta">${esc(t.who)} · ${t.klaar?"afgerond "+esc(t.klaar):esc(t.when)}</span></label>
     </div>`).join("");
+  pendingTodos();
 }
 document.getElementById("todoList").addEventListener("change", e => {
   const id = e.target.dataset.id; if(!id) return;
   const done = store("pvv-done") || {}; done[id] = e.target.checked; store("pvv-done", done);
   e.target.closest(".todo").classList.toggle("done", e.target.checked);
-  syncTodos();
+  pendingTodos();
 });
+// Wijzigingen ten opzichte van wat de server weet: lokaal vinkje tegenover "klaar" in data.json en wat al is opgeslagen.
+function changedTodos(){
+  const done = store("pvv-done") || {}, sent = store("pvv-done-sent") || {};
+  return TODOS.filter(t => t.id in done && !!done[t.id] !== (t.id in sent ? !!sent[t.id] : !!t.klaar));
+}
+function pendingTodos(){
+  const n = changedTodos().length, btn = document.getElementById("todoSave");
+  btn.disabled = !n;
+  document.getElementById("todoMsg").textContent = n ? `${n} wijziging${n>1?"en":""} nog niet opgeslagen.` : "";
+}
+document.getElementById("todoSave").addEventListener("click", syncTodos);
 // Afvinken gaat via de inzendmap naar iedereen: de ochtendverwerking haalt afgeronde taken uit data.json.
 async function syncTodos(){
   const msg = document.getElementById("todoMsg");
   const done = store("pvv-done") || {}, sent = store("pvv-done-sent") || {};
-  const todo = TODOS.filter(t => !!done[t.id] !== !!sent[t.id]);
+  const todo = changedTodos();
   if(!todo.length) return;
   let code = "", from = "";
   try{ code = localStorage.getItem("pvv-code") || ""; from = localStorage.getItem("pvv-from") || ""; }catch(e){}
-  if(!UPLOAD_URL || !code){ msg.textContent = "Afgevinkt op dit toestel. Vul één keer de fractiecode in bij Toevoegen, dan gaat afvinken naar iedereen."; return; }
+  if(!UPLOAD_URL || !code){ msg.textContent = "Vul eerst één keer de fractiecode in bij Toevoegen (Agenda), dan kun je opslaan."; return; }
   for(const t of todo){
     const klaar = !!done[t.id];
     const text = `${klaar?"TAAK AFGEROND":"TAAK HEROPEND"}\nid: ${t.id}\nTaak: ${t.what}\nVan: ${from||"onbekend"}`;
@@ -354,8 +369,9 @@ async function syncTodos(){
       const out = await res.json();
       if(!out.ok) throw new Error(out.error);
       sent[t.id] = klaar; store("pvv-done-sent", sent);
-      msg.textContent = "Doorgegeven. Morgenochtend is de taak voor iedereen bijgewerkt.";
-    }catch(err){ msg.textContent = "Doorgeven mislukt; de app probeert het opnieuw bij de volgende keer openen."; return; }
+      document.getElementById("todoSave").disabled = true;
+      msg.textContent = "Opgeslagen. Morgenochtend is het voor iedereen bijgewerkt; afgeronde taken blijven een week doorgestreept staan.";
+    }catch(err){ msg.textContent = "Opslaan mislukt. Controleer je verbinding en tik nog eens op Opslaan."; return; }
   }
 }
 
@@ -532,7 +548,7 @@ async function loadData(){
     const docs = Array.isArray(d.docs) ? d.docs : [];
     document.getElementById("docsBox").hidden = !docs.length;
     document.getElementById("docList").innerHTML = docs.map(x => `<div class="card"><h3><a href="${esc(x.link||"#")}" target="_blank" rel="noopener">${esc(x.titel||"Document")}</a></h3><p class="src" style="margin:2px 0 0">${esc([x.datum,x.van].filter(Boolean).join(" · "))}${x.kern?" — "+esc(x.kern):""}</p></div>`).join("");
-    renderAgenda(); renderTodos(); syncTodos();
+    renderAgenda(); renderTodos();
     return d.bijgewerkt || "";
   }catch(e){ return null; }
 }
