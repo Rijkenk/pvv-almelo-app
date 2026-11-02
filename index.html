@@ -296,7 +296,7 @@ const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'
 function renderAgenda(){
   const now = new Date();
   const list = document.getElementById("eventList");
-  // Komende items bovenaan; voorbije items ingeklapt onderaan, zodat je niet hoeft te scrollen.
+  // Voorbije items ingeklapt bovenaan, daarna de komende items; alles op volgorde van datum.
   const isPast = e => new Date(e.end||e.t) < now;
   const item = e => {
     const d = new Date(e.t), past = isPast(e);
@@ -308,9 +308,9 @@ function renderAgenda(){
         <p>${esc(e.desc)}</p></div></div>`;
   };
   const sorted = [...EVENTS].sort((a,b) => a.t.localeCompare(b.t));
-  const done = sorted.filter(isPast).reverse();
-  list.innerHTML = sorted.filter(e => !isPast(e)).map(item).join("")
-    + (done.length ? `<details class="card old"><summary>Eerdere items (${done.length})</summary><div class="stack" style="margin-top:10px">${done.map(item).join("")}</div></details>` : "");
+  const done = sorted.filter(isPast);
+  list.innerHTML = (done.length ? `<details class="card old"><summary>Eerdere items (${done.length})</summary><div class="stack" style="margin-top:10px">${done.map(item).join("")}</div></details>` : "")
+    + sorted.filter(e => !isPast(e)).map(item).join("");
   const next = EVENTS.find(e => new Date(e.end||e.t) >= now);
   const card = document.getElementById("nextCard");
   if(!next){ card.innerHTML = `<div class="label">Eerstvolgende</div><h3>Geen geplande items</h3><p style="margin:0">De agenda wordt bijgewerkt na de begrotingsbehandeling.</p>`; return; }
