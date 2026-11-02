@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-01",
+  "bijgewerkt": "2026-11-02",
   "events": [
     {
       "t": "2026-10-26T19:00",
@@ -93,6 +93,14 @@
       "title": "Fractievergadering",
       "desc": "Dinsdag 17-11: politieke avond.",
       "noTime": true
+    },
+    {
+      "t": "2026-11-17T19:30",
+      "end": "2026-11-17T19:45",
+      "type": "raad",
+      "title": "Hamerraad",
+      "desc": "Afhandeling ingekomen stukken, o.a. brief KHN Almelo over spreiding precariobelasting.",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c855de77-5a2b-4261-9cca-e117400a499c"
     },
     {
       "t": "2026-11-23T19:00",
