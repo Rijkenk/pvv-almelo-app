@@ -1,4 +1,4 @@
-"""Haalt nieuwskoppen op voor de tab Nieuws (Oost, 1Twente, NOS, Tweede en Eerste Kamer) en schrijft nieuws.json.
+"""Haalt nieuwskoppen op voor de tab Nieuws (Oost, 1Twente, Almelo1, NOS, Tweede en Eerste Kamer) en schrijft nieuws.json.
 
 Alleen kop, datum, bron en link; geen intro's of foto's (auteursrecht).
 Valt een bron uit, dan blijven de koppen van de vorige run staan.
@@ -56,22 +56,28 @@ def een_twente():
     for i in eigen: i["almelo"] = True
     return eigen + rss("https://www.1twente.nl/feed/politiek", "1Twente")
 
+def almelo1():
+    eigen = rss("https://almelo1.nl/feed/", "Almelo1")
+    for i in eigen: i["almelo"] = True
+    return eigen
+
 def lokaal(vorig):
     # Elke omroep apart ophalen; valt er één uit, dan blijven diens vorige koppen staan.
     items, fouten = [], []
-    for bron, fn in (("Oost", oost), ("1Twente", een_twente)):
+    for bron, fn in (("Oost", oost), ("1Twente", een_twente), ("Almelo1", almelo1)):
         try: items += fn()
         except Exception as e:
             fouten.append(f"{bron}: {e}")
             items += [i for i in vorig.get("lokaal", []) if i.get("bron") == bron]
     if not items: raise ValueError("; ".join(fouten))
     uit = []
-    for i in sorted(items, key=lambda i: i["bron"] != "Oost"):  # Oost eerst; 1Twente vult aan zonder dubbele koppen
+    volgorde = {"Oost": 0, "1Twente": 1, "Almelo1": 2}
+    for i in sorted(items, key=lambda i: volgorde.get(i["bron"], 9)):  # Oost eerst; 1Twente en Almelo1 vullen aan zonder dubbele koppen
         if any(i["link"] == j["link"] or dubbel(i, j) for j in uit): continue
         i["almelo"] = i.get("almelo") or almelo(i); uit.append(i)
     uit.sort(key=lambda i: i["datum"], reverse=True)
     if fouten: print("; ".join(fouten), file=sys.stderr)
-    return uit[:40]
+    return uit[:50]
 
 def nos():
     return rss("https://feeds.nos.nl/nosnieuwspolitiek", "NOS")[:20]
