@@ -98,6 +98,9 @@ tr.pvv td{background:var(--accent-soft);font-weight:600}
 .person:hover,.person:focus-visible{color:var(--navy)}
 .copy{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
 .src{font-size:13px;color:var(--muted)}
+.her-sel{font:inherit;font-size:15px;padding:4px 6px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.her-v{font-weight:700;text-align:center}
+.her-me{background:var(--ok-soft)}
 .btn:disabled{opacity:.45;cursor:default!important}
 .btn{display:inline-block;background:var(--navy);color:var(--surface);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:10px}
 nav{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);
@@ -161,6 +164,15 @@ details.old summary{font-weight:700}
     </div>
     <div class="stack" id="eventList"></div>
     <div id="docsBox" hidden><h2 style="margin-top:8px">Ingestuurde documenten</h2><div class="stack" id="docList"></div></div>
+    <div class="card" id="heracles" hidden>
+      <div class="label">Seizoenskaarten</div>
+      <h3 style="margin:4px 0 6px">Heracles: wie gaat er mee?</h3>
+      <p style="margin:0 0 10px;color:var(--muted);font-size:15px">Kies je naam, vul per wedstrijd je voorkeur in en tik op Opslaan. <b>++</b> heel graag · <b>+</b> graag mee · <b>=</b> geen voorkeur · <b>X</b> kan niet.</p>
+      <label class="fld" style="max-width:220px;margin-bottom:10px"><span class="label">Ik ben</span><select id="herWie"><option>Manon</option><option>Marnick</option><option>Kenneth</option><option>Remco</option><option>Mart</option></select></label>
+      <div class="tablewrap"><table id="herTable"></table></div>
+      <button id="herSave" class="btn" type="button" disabled style="border:0;font:inherit;font-weight:700;cursor:pointer;margin-top:12px">Opslaan</button>
+      <p id="herMsg" class="src" role="status" style="margin:8px 0 0"></p>
+    </div>
     <div class="grid2">
       <div class="card stat"><div class="label">Woonlasten 2027</div><div class="big">+8,6%</div><p>gemiddeld € 86 per huishouden</p></div>
       <div class="card stat"><div class="label">OZB</div><div class="big">+2,5%</div><p>extra, bovenop 3,5% indexatie</p></div>
@@ -551,10 +563,11 @@ async function loadData(){
     const d = await res.json();
     if(Array.isArray(d.events)) EVENTS = d.events;
     if(Array.isArray(d.todos)) TODOS = d.todos;
+    HER = d.heracles && d.heracles.voorkeuren || {};
     const docs = Array.isArray(d.docs) ? d.docs : [];
     document.getElementById("docsBox").hidden = !docs.length;
     document.getElementById("docList").innerHTML = docs.map(x => `<div class="card"><h3><a href="${esc(x.link||"#")}" target="_blank" rel="noopener">${esc(x.titel||"Document")}</a></h3><p class="src" style="margin:2px 0 0">${esc([x.datum,x.van].filter(Boolean).join(" · "))}${x.kern?" — "+esc(x.kern):""}</p></div>`).join("");
-    renderAgenda(); renderTodos();
+    renderAgenda(); renderTodos(); renderHeracles();
     return d.bijgewerkt || "";
   }catch(e){ return null; }
 }
@@ -613,7 +626,57 @@ document.getElementById("docForm").addEventListener("submit", async e => {
   if(sent) e.target.reset();
 });
 document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible") refreshAll(); });
-renderAgenda(); renderTodos(); renderPoints(); refreshAll();
+
+// Heracles-voorkeuren: eigen keuzes staan lokaal tot de ochtendverwerking ze in data.json zet (veld heracles.voorkeuren).
+const HER_NAMEN = ["Manon","Marnick","Kenneth","Remco","Mart"], HER_OPT = ["","++","+","=","X"];
+let HER = {};
+function herWie(){ return document.getElementById("herWie").value; }
+function herLokaal(){ return store("pvv-heracles") || {}; }
+function herMatches(){ const now = new Date(); return [...EVENTS].filter(e => e.title.startsWith("Heracles – ") && new Date(e.t) >= new Date(now.getFullYear(),now.getMonth(),now.getDate())).sort((a,b)=>a.t.localeCompare(b.t)); }
+function herWaarde(dag, naam){
+  const lok = herLokaal()[naam] || {};
+  return dag in lok ? lok[dag] : ((HER[dag]||{})[naam] || "");
+}
+function herGewijzigd(){
+  const naam = herWie(), lok = herLokaal()[naam] || {}, sent = (store("pvv-heracles-sent") || {})[naam] || {};
+  return Object.keys(lok).filter(dag => lok[dag] !== (dag in sent ? sent[dag] : ((HER[dag]||{})[naam] || "")));
+}
+function renderHeracles(){
+  const ms = herMatches(), box = document.getElementById("heracles");
+  box.hidden = !ms.length; if(!ms.length) return;
+  const wie = herWie();
+  const kop = `<thead><tr><th>Datum</th><th>Tegenstander</th>${HER_NAMEN.map(n=>`<th class="${n===wie?"her-me":""}" style="text-align:center">${n}</th>`).join("")}</tr></thead>`;
+  const rijen = ms.map(e => {
+    const d = new Date(e.t), dag = e.t.slice(0,10);
+    const cellen = HER_NAMEN.map(n => {
+      const v = herWaarde(dag, n);
+      if(n !== wie) return `<td class="her-v">${esc(v)}</td>`;
+      return `<td class="her-me" style="text-align:center"><select class="her-sel" data-dag="${dag}" aria-label="Voorkeur ${esc(e.title)}">${HER_OPT.map(o=>`<option value="${o}"${o===v?" selected":""}>${o||"–"}</option>`).join("")}</select></td>`;
+    }).join("");
+    return `<tr><td style="white-space:nowrap">${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}${e.noTime?"":" · "+fmtTime(d)}</td><td>${esc(e.title.replace("Heracles – ",""))}</td>${cellen}</tr>`;
+  }).join("");
+  document.getElementById("herTable").innerHTML = kop + `<tbody>${rijen}</tbody>`;
+  const n = herGewijzigd().length;
+  document.getElementById("herSave").disabled = !n;
+  document.getElementById("herMsg").textContent = n ? `${n} wijziging${n>1?"en":""} nog niet opgeslagen.` : "";
+}
+document.getElementById("herTable").addEventListener("change", e => {
+  const dag = e.target.dataset.dag; if(!dag) return;
+  const lok = herLokaal(), naam = herWie(); (lok[naam] = lok[naam] || {})[dag] = e.target.value; store("pvv-heracles", lok);
+  renderHeracles();
+});
+document.getElementById("herWie").addEventListener("change", () => { try{ localStorage.setItem("pvv-from", herWie()); }catch(e){} document.getElementById("addFrom").value = herWie(); renderHeracles(); });
+document.getElementById("herSave").addEventListener("click", async e => {
+  const naam = herWie(), lok = herLokaal()[naam] || {};
+  const regels = herMatches().map(m => m.t.slice(0,10)).filter(dag => dag in lok || (HER[dag]||{})[naam])
+    .map(dag => `${dag}: ${herWaarde(dag, naam) || "leeg"}`);
+  const text = `HERACLES VOORKEUREN\nNaam: ${naam}\n${regels.join("\n")}`;
+  document.getElementById("addFrom").value = naam;
+  const ok = await send({kind:"agenda", title:"Heracles voorkeuren - "+naam, text}, document.getElementById("herMsg"), e.target);
+  if(ok){ const sent = store("pvv-heracles-sent") || {}; sent[naam] = Object.assign({}, lok); store("pvv-heracles-sent", sent); e.target.disabled = true; document.getElementById("herMsg").textContent = "Opgeslagen. Morgenochtend ziet de hele fractie je voorkeuren."; }
+});
+try{ const f = localStorage.getItem("pvv-from"); if(f && HER_NAMEN.includes(f)) document.getElementById("herWie").value = f; }catch(e){}
+renderAgenda(); renderTodos(); renderPoints(); renderHeracles(); refreshAll();
 show((location.hash||"").slice(1) || "agenda");
 setInterval(renderAgenda, 60000);
 
