@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-11-04",
+ "bijgewerkt": "2026-11-05",
  "events": [
   {
    "t": "2026-10-26T19:00",
@@ -335,5 +335,48 @@
    "kern": "Afbeelding, ingestuurd via de app (eerste test van het uploaden).",
    "link": "https://drive.google.com/file/d/19DR34rArUMYv4qgld1HAXcxlXdseFYMT/view"
   }
- ]
+ ],
+ "heracles": {
+  "voorkeuren": {
+   "2026-11-06": {
+    "Manon": "++"
+   },
+   "2026-11-20": {
+    "Manon": "="
+   },
+   "2026-12-04": {
+    "Manon": "="
+   },
+   "2026-12-11": {
+    "Manon": "++"
+   },
+   "2027-01-10": {
+    "Manon": "X"
+   },
+   "2027-01-22": {
+    "Manon": "="
+   },
+   "2027-02-05": {
+    "Manon": "="
+   },
+   "2027-02-26": {
+    "Manon": "="
+   },
+   "2027-03-12": {
+    "Manon": "="
+   },
+   "2027-04-03": {
+    "Manon": "++"
+   },
+   "2027-04-16": {
+    "Manon": "+"
+   },
+   "2027-04-30": {
+    "Manon": "="
+   },
+   "2027-05-07": {
+    "Manon": "="
+   }
+  }
+ }
 }
