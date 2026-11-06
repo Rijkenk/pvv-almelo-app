@@ -1,382 +1,385 @@
 {
- "bijgewerkt": "2026-11-05",
- "events": [
-  {
-   "t": "2026-10-26T19:00",
-   "end": "2026-10-26T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Voorbereiding beraad begroting 2027 (dinsdag 27-10).",
-   "noTime": true
-  },
-  {
-   "t": "2026-10-27T19:30",
-   "type": "deadline",
-   "title": "Amendementen en moties aankondigen",
-   "desc": "Voorgenomen amendementen en moties begroting 2027 aankondigen in het oordeelsvormend beraad.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
-  },
-  {
-   "t": "2026-10-27T19:30",
-   "type": "beraad",
-   "title": "Politieke avond: beraad begroting 2027",
-   "desc": "Spreekrecht, zienswijze Veiligheidsregio Twente (KCR2), quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadzaal.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
-  },
-  {
-   "t": "2026-11-02T09:00",
-   "type": "deadline",
-   "title": "Vragenhalfuur aanmelden",
-   "desc": "Onderwerp bij de griffier vóór 09.00 uur, de dag vóór de raad (art. 42)."
-  },
-  {
-   "t": "2026-11-02T09:00",
-   "type": "deadline",
-   "title": "Begroting: algemene beschouwingen inleveren",
-   "desc": "Vóór 09.00 uur digitaal naar de griffie: algemene beschouwingen, voorgenomen amendementen en moties, en eventueel een presentatie (gelijk meesturen, griffie test de techniek). Vanaf 12.00 uur gepubliceerd in iBabs. Bron: bericht griffie.",
-   "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
-  },
-  {
-   "t": "2026-11-02T18:00",
-   "end": "2026-11-02T21:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Gemeentehuis. Dinsdag 3-11: raad, algemene beschouwingen."
-  },
-  {
-   "t": "2026-11-02T20:00",
-   "type": "overig",
-   "title": "Heracles – TOP Oss",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2026-11-03T09:00",
-   "type": "deadline",
-   "title": "Motie vreemd indienen",
-   "desc": "Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."
-  },
-  {
-   "t": "2026-11-03T19:30",
-   "type": "deadline",
-   "title": "Amendementen en moties definitief indienen",
-   "desc": "In de 1e termijn van de begrotingsraad.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff"
-  },
-  {
-   "t": "2026-11-03T19:30",
-   "type": "raad",
-   "title": "Raad: algemene beschouwingen",
-   "desc": "1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff"
-  },
-  {
-   "t": "2026-11-04T09:00",
-   "type": "deadline",
-   "title": "Begroting: laatste moment moties en amendementen met preadvies",
-   "desc": "Vóór 09.00 uur naar de griffie als een preadvies van het college gewenst is. Preadviezen staan eind van de dag in iBabs bij de raad van 5-11. Bron: bericht griffie.",
-   "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
-  },
-  {
-   "t": "2026-11-05T10:00",
-   "type": "raad",
-   "title": "Raad: besluit begroting 2027",
-   "desc": "10.00 reactie college, 13.00 tweede termijn, 16.30 stemming. 20 moties en 5 amendementen; preadviezen in iBabs (PVV-motie rotonde: negatief).",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/97293f37-41de-4ff9-ae37-04a4abbcfb45"
-  },
-  {
-   "t": "2026-11-06T20:00",
-   "type": "overig",
-   "title": "Heracles – Roda JC",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2026-11-09T19:00",
-   "end": "2026-11-09T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Bevestigd in de fractieagenda.",
-   "noTime": true
-  },
-  {
-   "t": "2026-11-11T15:00",
-   "type": "overig",
-   "title": "Werkbezoek Aeronamic",
-   "desc": "Kenneth, Manon en Marnick. Bron: fractieagenda 2-11."
-  },
-  {
-   "t": "2026-11-13T09:00",
-   "type": "overig",
-   "title": "Euregio Academy Nordhorn",
-   "desc": "Manon. Bron: fractieagenda 2-11.",
-   "noTime": true
-  },
-  {
-   "t": "2026-11-14T10:00",
-   "type": "overig",
-   "title": "Bijeenkomst AZC",
-   "desc": "Kenneth, Manon en Marnick. Bron: fractieagenda 2-11.",
-   "end": "2026-11-14T13:30"
-  },
-  {
-   "t": "2026-11-16T19:00",
-   "end": "2026-11-16T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Dinsdag 17-11: politieke avond.",
-   "noTime": true
-  },
-  {
-   "t": "2026-11-17T19:30",
-   "end": "2026-11-17T19:45",
-   "type": "raad",
-   "title": "Hamerraad",
-   "desc": "Afhandeling ingekomen stukken, o.a. brief KHN Almelo over spreiding precariobelasting.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c855de77-5a2b-4261-9cca-e117400a499c"
-  },
-  {
-   "t": "2026-11-20T20:00",
-   "type": "overig",
-   "title": "Heracles – Jong PSV",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2026-11-23T19:00",
-   "end": "2026-11-23T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Dinsdag 24-11: hoorzitting en fractievoorzittersoverleg.",
-   "noTime": true
-  },
-  {
-   "t": "2026-11-27T09:00",
-   "type": "overig",
-   "title": "Euregio-vergadering",
-   "desc": "Manon. Bron: fractieagenda 2-11.",
-   "noTime": true
-  },
-  {
-   "t": "2026-11-30T19:00",
-   "end": "2026-11-30T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Dinsdag 1-12: hamerraad en politieke avond.",
-   "noTime": true
-  },
-  {
-   "t": "2026-11-30T20:00",
-   "type": "overig",
-   "title": "Politiek café PVV Almelo",
-   "desc": "Eerste editie, De Zwarte Parochie. Voortaan elke laatste maandag van de maand. Tijd nog bevestigen. Bron: fractievergadering 2-11.",
-   "noTime": true
-  },
-  {
-   "t": "2026-12-04T20:00",
-   "type": "overig",
-   "title": "Heracles – FC Emmen",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2026-12-07T19:00",
-   "end": "2026-12-07T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Dinsdag 8-12: auditcommissie en rekenkamer.",
-   "noTime": true
-  },
-  {
-   "t": "2026-12-07T19:00",
-   "type": "overig",
-   "title": "Bezoek wethouders Van Rees en Wessels",
-   "desc": "Bij de fractievergadering; vragen vooraf voorbereiden. Bron: fractieagenda 2-11.",
-   "noTime": true
-  },
-  {
-   "t": "2026-12-11T20:00",
-   "type": "overig",
-   "title": "Heracles – FC Volendam",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2026-12-14T19:00",
-   "end": "2026-12-14T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Dinsdag 15-12: raad (o.a. slotrapportage).",
-   "noTime": true
-  },
-  {
-   "t": "2026-12-21T00:00",
-   "end": "2026-12-21T23:59",
-   "type": "reces",
-   "title": "Reces",
-   "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
-   "noTime": true
-  },
-  {
-   "t": "2026-12-28T00:00",
-   "end": "2026-12-28T23:59",
-   "type": "reces",
-   "title": "Reces",
-   "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
-   "noTime": true
-  },
-  {
-   "t": "2027-01-10T12:15",
-   "type": "overig",
-   "title": "Heracles – NAC Breda",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-01-22T20:00",
-   "type": "overig",
-   "title": "Heracles – Helmond Sport",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-02-05T20:00",
-   "type": "overig",
-   "title": "Heracles – VVV-Venlo",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-02-26T20:00",
-   "type": "overig",
-   "title": "Heracles – Jong FC Utrecht",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-03-12T20:00",
-   "type": "overig",
-   "title": "Heracles – MVV",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-04-03T16:30",
-   "type": "overig",
-   "title": "Heracles – FC Eindhoven",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-04-16T20:00",
-   "type": "overig",
-   "title": "Heracles – Jong Ajax",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-04-30T20:00",
-   "type": "overig",
-   "title": "Heracles – Almere City FC",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
-   "t": "2027-05-07T20:00",
-   "type": "overig",
-   "title": "Heracles – FC Dordrecht",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  "bijgewerkt": "2026-11-06",
+  "events": [
+    {
+      "t": "2026-10-26T19:00",
+      "end": "2026-10-26T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Voorbereiding beraad begroting 2027 (dinsdag 27-10).",
+      "noTime": true
+    },
+    {
+      "t": "2026-10-27T19:30",
+      "type": "deadline",
+      "title": "Amendementen en moties aankondigen",
+      "desc": "Voorgenomen amendementen en moties begroting 2027 aankondigen in het oordeelsvormend beraad.",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
+    },
+    {
+      "t": "2026-10-27T19:30",
+      "type": "beraad",
+      "title": "Politieke avond: beraad begroting 2027",
+      "desc": "Spreekrecht, zienswijze Veiligheidsregio Twente (KCR2), quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadzaal.",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
+    },
+    {
+      "t": "2026-11-02T09:00",
+      "type": "deadline",
+      "title": "Vragenhalfuur aanmelden",
+      "desc": "Onderwerp bij de griffier vóór 09.00 uur, de dag vóór de raad (art. 42)."
+    },
+    {
+      "t": "2026-11-02T09:00",
+      "type": "deadline",
+      "title": "Begroting: algemene beschouwingen inleveren",
+      "desc": "Vóór 09.00 uur digitaal naar de griffie: algemene beschouwingen, voorgenomen amendementen en moties, en eventueel een presentatie (gelijk meesturen, griffie test de techniek). Vanaf 12.00 uur gepubliceerd in iBabs. Bron: bericht griffie.",
+      "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
+    },
+    {
+      "t": "2026-11-02T18:00",
+      "end": "2026-11-02T21:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Gemeentehuis. Dinsdag 3-11: raad, algemene beschouwingen."
+    },
+    {
+      "t": "2026-11-02T20:00",
+      "type": "overig",
+      "title": "Heracles – TOP Oss",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2026-11-03T09:00",
+      "type": "deadline",
+      "title": "Motie vreemd indienen",
+      "desc": "Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."
+    },
+    {
+      "t": "2026-11-03T19:30",
+      "type": "deadline",
+      "title": "Amendementen en moties definitief indienen",
+      "desc": "In de 1e termijn van de begrotingsraad.",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff"
+    },
+    {
+      "t": "2026-11-03T19:30",
+      "type": "raad",
+      "title": "Raad: algemene beschouwingen",
+      "desc": "1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff"
+    },
+    {
+      "t": "2026-11-04T09:00",
+      "type": "deadline",
+      "title": "Begroting: laatste moment moties en amendementen met preadvies",
+      "desc": "Vóór 09.00 uur naar de griffie als een preadvies van het college gewenst is. Preadviezen staan eind van de dag in iBabs bij de raad van 5-11. Bron: bericht griffie.",
+      "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
+    },
+    {
+      "t": "2026-11-05T10:00",
+      "type": "raad",
+      "title": "Raad: besluit begroting 2027",
+      "desc": "10.00 reactie college, 13.00 tweede termijn, 16.30 stemming. 20 moties en 5 amendementen; preadviezen in iBabs (PVV-motie rotonde: negatief).",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/97293f37-41de-4ff9-ae37-04a4abbcfb45"
+    },
+    {
+      "t": "2026-11-06T20:00",
+      "type": "overig",
+      "title": "Heracles – Roda JC",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2026-11-09T19:00",
+      "end": "2026-11-09T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Bevestigd in de fractieagenda.",
+      "noTime": true
+    },
+    {
+      "t": "2026-11-11T15:00",
+      "type": "overig",
+      "title": "Werkbezoek Aeronamic",
+      "desc": "Kenneth, Manon en Marnick. Bron: fractieagenda 2-11."
+    },
+    {
+      "t": "2026-11-13T09:00",
+      "type": "overig",
+      "title": "Euregio Academy Nordhorn",
+      "desc": "Manon. Bron: fractieagenda 2-11.",
+      "noTime": true
+    },
+    {
+      "t": "2026-11-14T10:00",
+      "type": "overig",
+      "title": "Bijeenkomst AZC",
+      "desc": "Kenneth, Manon en Marnick. Bron: fractieagenda 2-11.",
+      "end": "2026-11-14T13:30"
+    },
+    {
+      "t": "2026-11-16T19:00",
+      "end": "2026-11-16T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Dinsdag 17-11: politieke avond.",
+      "noTime": true
+    },
+    {
+      "t": "2026-11-17T19:30",
+      "end": "2026-11-17T19:45",
+      "type": "raad",
+      "title": "Hamerraad",
+      "desc": "Afhandeling ingekomen stukken, o.a. brief KHN Almelo over spreiding precariobelasting.",
+      "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c855de77-5a2b-4261-9cca-e117400a499c"
+    },
+    {
+      "t": "2026-11-20T20:00",
+      "type": "overig",
+      "title": "Heracles – Jong PSV",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2026-11-23T19:00",
+      "end": "2026-11-23T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Dinsdag 24-11: hoorzitting en fractievoorzittersoverleg.",
+      "noTime": true
+    },
+    {
+      "t": "2026-11-27T09:00",
+      "type": "overig",
+      "title": "Euregio-vergadering",
+      "desc": "Manon. Bron: fractieagenda 2-11.",
+      "noTime": true
+    },
+    {
+      "t": "2026-11-30T19:00",
+      "end": "2026-11-30T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Dinsdag 1-12: hamerraad en politieke avond.",
+      "noTime": true
+    },
+    {
+      "t": "2026-11-30T20:00",
+      "type": "overig",
+      "title": "Politiek café PVV Almelo",
+      "desc": "Eerste editie, De Zwarte Parochie. Voortaan elke laatste maandag van de maand. Tijd nog bevestigen. Bron: fractievergadering 2-11.",
+      "noTime": true
+    },
+    {
+      "t": "2026-12-04T20:00",
+      "type": "overig",
+      "title": "Heracles – FC Emmen",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2026-12-07T19:00",
+      "end": "2026-12-07T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Dinsdag 8-12: auditcommissie en rekenkamer.",
+      "noTime": true
+    },
+    {
+      "t": "2026-12-07T19:00",
+      "type": "overig",
+      "title": "Bezoek wethouders Van Rees en Wessels",
+      "desc": "Bij de fractievergadering; vragen vooraf voorbereiden. Bron: fractieagenda 2-11.",
+      "noTime": true
+    },
+    {
+      "t": "2026-12-11T20:00",
+      "type": "overig",
+      "title": "Heracles – FC Volendam",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2026-12-14T19:00",
+      "end": "2026-12-14T22:00",
+      "type": "fractie",
+      "title": "Fractievergadering",
+      "desc": "Dinsdag 15-12: raad (o.a. slotrapportage).",
+      "noTime": true
+    },
+    {
+      "t": "2026-12-21T00:00",
+      "end": "2026-12-21T23:59",
+      "type": "reces",
+      "title": "Reces",
+      "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
+      "noTime": true
+    },
+    {
+      "t": "2026-12-28T00:00",
+      "end": "2026-12-28T23:59",
+      "type": "reces",
+      "title": "Reces",
+      "desc": "Kerstreces: geen politieke avond, geen fractievergadering.",
+      "noTime": true
+    },
+    {
+      "t": "2027-01-10T12:15",
+      "type": "overig",
+      "title": "Heracles – NAC Breda",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-01-22T20:00",
+      "type": "overig",
+      "title": "Heracles – Helmond Sport",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-02-05T20:00",
+      "type": "overig",
+      "title": "Heracles – VVV-Venlo",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-02-26T20:00",
+      "type": "overig",
+      "title": "Heracles – Jong FC Utrecht",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-03-12T20:00",
+      "type": "overig",
+      "title": "Heracles – MVV",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-04-03T16:30",
+      "type": "overig",
+      "title": "Heracles – FC Eindhoven",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-04-16T20:00",
+      "type": "overig",
+      "title": "Heracles – Jong Ajax",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-04-30T20:00",
+      "type": "overig",
+      "title": "Heracles – Almere City FC",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    },
+    {
+      "t": "2027-05-07T20:00",
+      "type": "overig",
+      "title": "Heracles – FC Dordrecht",
+      "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+      "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+    }
+  ],
+  "todos": [
+    {
+      "id": "motie",
+      "who": "Kenneth",
+      "what": "Eigen motie uitwerken, losgekoppeld van de VVD-motie van 6-10",
+      "when": "open"
+    },
+    {
+      "id": "vragen-begroting",
+      "who": "Fractie",
+      "what": "Begroting: politieke vragen klaar voor di 3-11 (avond) en do 5-11 (middag); afspreken wie de motie meeondertekent of steunt",
+      "when": "vóór 3-11",
+      "klaar": "06-11-2026"
+    },
+    {
+      "id": "motie-rotonde",
+      "who": "Kenneth en fractie",
+      "what": "Motie verkeersveiligheid rotonde Aalderinkssingel–Thorbeckelaan dateren en laten ondertekenen door Manon en Marnick",
+      "when": "vóór raad 3-11",
+      "klaar": "06-11-2026"
+    },
+    {
+      "id": "griffie-begroting",
+      "who": "Manon",
+      "what": "Met de griffie zitten over de begroting",
+      "when": "vóór 3-11",
+      "klaar": "06-11-2026"
+    },
+    {
+      "id": "politiek-cafe",
+      "who": "Fractie",
+      "what": "Politiek café (eerste editie ma 30-11, De Zwarte Parochie) aankondigen op Facebook en de officiële pagina",
+      "when": "ruim vóór 30-11"
+    },
+    {
+      "id": "vragen-wethouders",
+      "who": "Fractie",
+      "what": "Vragen voorbereiden voor bezoek wethouders Van Rees en Wessels",
+      "when": "vóór ma 7-12"
+    }
+  ],
+  "docs": [
+    {
+      "titel": "pvvtar.png",
+      "datum": "23-10-2026",
+      "van": "Kenneth",
+      "kern": "Afbeelding, ingestuurd via de app (eerste test van het uploaden).",
+      "link": "https://drive.google.com/file/d/19DR34rArUMYv4qgld1HAXcxlXdseFYMT/view"
+    }
+  ],
+  "heracles": {
+    "voorkeuren": {
+      "2026-11-06": {
+        "Manon": "++"
+      },
+      "2026-11-20": {
+        "Manon": "="
+      },
+      "2026-12-04": {
+        "Manon": "="
+      },
+      "2026-12-11": {
+        "Manon": "++"
+      },
+      "2027-01-10": {
+        "Manon": "X"
+      },
+      "2027-01-22": {
+        "Manon": "="
+      },
+      "2027-02-05": {
+        "Manon": "="
+      },
+      "2027-02-26": {
+        "Manon": "="
+      },
+      "2027-03-12": {
+        "Manon": "="
+      },
+      "2027-04-03": {
+        "Manon": "++"
+      },
+      "2027-04-16": {
+        "Manon": "+"
+      },
+      "2027-04-30": {
+        "Manon": "="
+      },
+      "2027-05-07": {
+        "Manon": "="
+      }
+    }
   }
- ],
- "todos": [
-  {
-   "id": "motie",
-   "who": "Kenneth",
-   "what": "Eigen motie uitwerken, losgekoppeld van de VVD-motie van 6-10",
-   "when": "open"
-  },
-  {
-   "id": "vragen-begroting",
-   "who": "Fractie",
-   "what": "Begroting: politieke vragen klaar voor di 3-11 (avond) en do 5-11 (middag); afspreken wie de motie meeondertekent of steunt",
-   "when": "vóór 3-11"
-  },
-  {
-   "id": "motie-rotonde",
-   "who": "Kenneth en fractie",
-   "what": "Motie verkeersveiligheid rotonde Aalderinkssingel–Thorbeckelaan dateren en laten ondertekenen door Manon en Marnick",
-   "when": "vóór raad 3-11"
-  },
-  {
-   "id": "griffie-begroting",
-   "who": "Manon",
-   "what": "Met de griffie zitten over de begroting",
-   "when": "vóór 3-11"
-  },
-  {
-   "id": "politiek-cafe",
-   "who": "Fractie",
-   "what": "Politiek café (eerste editie ma 30-11, De Zwarte Parochie) aankondigen op Facebook en de officiële pagina",
-   "when": "ruim vóór 30-11"
-  },
-  {
-   "id": "vragen-wethouders",
-   "who": "Fractie",
-   "what": "Vragen voorbereiden voor bezoek wethouders Van Rees en Wessels",
-   "when": "vóór ma 7-12"
-  }
- ],
- "docs": [
-  {
-   "titel": "pvvtar.png",
-   "datum": "23-10-2026",
-   "van": "Kenneth",
-   "kern": "Afbeelding, ingestuurd via de app (eerste test van het uploaden).",
-   "link": "https://drive.google.com/file/d/19DR34rArUMYv4qgld1HAXcxlXdseFYMT/view"
-  }
- ],
- "heracles": {
-  "voorkeuren": {
-   "2026-11-06": {
-    "Manon": "++"
-   },
-   "2026-11-20": {
-    "Manon": "="
-   },
-   "2026-12-04": {
-    "Manon": "="
-   },
-   "2026-12-11": {
-    "Manon": "++"
-   },
-   "2027-01-10": {
-    "Manon": "X"
-   },
-   "2027-01-22": {
-    "Manon": "="
-   },
-   "2027-02-05": {
-    "Manon": "="
-   },
-   "2027-02-26": {
-    "Manon": "="
-   },
-   "2027-03-12": {
-    "Manon": "="
-   },
-   "2027-04-03": {
-    "Manon": "++"
-   },
-   "2027-04-16": {
-    "Manon": "+"
-   },
-   "2027-04-30": {
-    "Manon": "="
-   },
-   "2027-05-07": {
-    "Manon": "="
-   }
-  }
- }
 }
