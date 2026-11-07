@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-11-06",
+ "bijgewerkt": "2026-11-07",
  "events": [
   {
    "t": "2026-10-26T19:00",
@@ -81,7 +81,7 @@
    "t": "2026-11-05T10:00",
    "type": "raad",
    "title": "Raad: besluit begroting 2027",
-   "desc": "10.00 reactie college, 13.00 tweede termijn, 16.30 stemming. 20 moties en 5 amendementen; preadviezen in iBabs (PVV-motie rotonde: negatief).",
+   "desc": "Begroting 2027 vastgesteld (94% voor, PVV voor). Alle amendementen verworpen, ook A4 OZB. PVV-motie M16 rotonde unaniem aangenomen.",
    "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/a3e2ff09-ba1d-48fa-bd58-2a15714d99cb"
   },
   {
@@ -294,6 +294,14 @@
    "title": "Heracles – FC Dordrecht",
    "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
    "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-05-05T00:00",
+   "type": "deadline",
+   "title": "Uiterlijk: college informeert raad over motie M16 rotonde",
+   "desc": "Binnen zes maanden na aanname (5-11-2026): maatregelen, kosten en planning rotonde Aalderinkssingel–Thorbeckelaan.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Reports/Item/a90e7689-b110-4448-a08b-49a24555b277",
+   "noTime": true
   }
  ],
  "todos": [
