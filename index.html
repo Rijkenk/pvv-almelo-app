@@ -228,7 +228,7 @@ details.old summary{font-weight:700}
   <div class="card" style="margin-top:20px" id="heracles" hidden>
     <div class="label">Seizoenskaarten</div>
     <h3 style="margin:4px 0 6px">Heracles: wie gaat er mee?</h3>
-    <p style="margin:0 0 10px;color:var(--muted);font-size:15px">Kies je naam, vul per wedstrijd je voorkeur in en tik op Opslaan. <b>++</b> heel graag · <b>+</b> graag mee · <b>=</b> geen voorkeur · <b>X</b> kan niet.</p>
+    <p style="margin:0 0 10px;color:var(--muted);font-size:15px">Kies je naam, vul per wedstrijd je voorkeur in en tik op Opslaan.<br>❤️ <b>Heel graag!</b> (max. 5 per persoon) · ✅ <b>Lijkt me leuk</b> · 🤷 <b>Maakt me niet uit</b> · ❌ <b>Kan niet</b> · ⬜ <b>Nog niet ingevuld</b></p>
     <label class="fld" style="max-width:220px;margin-bottom:10px"><span class="label">Ik ben</span><select id="herWie"><option>Manon</option><option>Marnick</option><option>Kenneth</option><option>Remco</option><option>Mart</option></select></label>
     <div class="tablewrap"><table id="herTable"></table></div>
     <button id="herSave" class="btn" type="button" disabled style="border:0;font:inherit;font-weight:700;cursor:pointer;margin-top:12px">Opslaan</button>
@@ -628,7 +628,7 @@ document.getElementById("docForm").addEventListener("submit", async e => {
 document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible") refreshAll(); });
 
 // Heracles-voorkeuren: eigen keuzes staan lokaal tot de ochtendverwerking ze in data.json zet (veld heracles.voorkeuren).
-const HER_NAMEN = ["Manon","Marnick","Kenneth","Remco","Mart"], HER_OPT = ["","++","+","=","X"];
+const HER_NAMEN = ["Manon","Marnick","Kenneth","Remco","Mart"], HER_OPT = ["","++","+","=","X"], HER_ICO = {"":"⬜","++":"❤️","+":"✅","=":"🤷","X":"❌"}, HER_TXT = {"":"Nog niet ingevuld","++":"Heel graag!","+":"Lijkt me leuk","=":"Maakt me niet uit","X":"Kan niet"}, HER_MAX = 5;
 let HER = {};
 function herWie(){ return document.getElementById("herWie").value; }
 function herLokaal(){ return store("pvv-heracles") || {}; }
@@ -645,20 +645,21 @@ function renderHeracles(){
   const ms = herMatches(), box = document.getElementById("heracles");
   box.hidden = !ms.length; if(!ms.length) return;
   const wie = herWie();
+  const harten = ms.filter(e => herWaarde(e.t.slice(0,10), wie) === "++").length;
   const kop = `<thead><tr><th>Datum</th><th>Tegenstander</th>${HER_NAMEN.map(n=>`<th class="${n===wie?"her-me":""}" style="text-align:center">${n}</th>`).join("")}</tr></thead>`;
   const rijen = ms.map(e => {
     const d = new Date(e.t), dag = e.t.slice(0,10);
     const cellen = HER_NAMEN.map(n => {
       const v = herWaarde(dag, n);
-      if(n !== wie) return `<td class="her-v">${esc(v)}</td>`;
-      return `<td class="her-me" style="text-align:center"><select class="her-sel" data-dag="${dag}" aria-label="Voorkeur ${esc(e.title)}">${HER_OPT.map(o=>`<option value="${o}"${o===v?" selected":""}>${o||"–"}</option>`).join("")}</select></td>`;
+      if(n !== wie) return `<td class="her-v" title="${HER_TXT[v]||""}">${HER_ICO[v]??esc(v)}</td>`;
+      return `<td class="her-me" style="text-align:center"><select class="her-sel" data-dag="${dag}" aria-label="Voorkeur ${esc(e.title)}">${HER_OPT.map(o=>`<option value="${o}"${o===v?" selected":""}${o==="++"&&v!=="++"&&harten>=HER_MAX?" disabled":""}>${HER_ICO[o]} ${HER_TXT[o]}</option>`).join("")}</select></td>`;
     }).join("");
     return `<tr><td style="white-space:nowrap">${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}${e.noTime?"":" · "+fmtTime(d)}</td><td>${esc(e.title.replace("Heracles – ",""))}</td>${cellen}</tr>`;
   }).join("");
   document.getElementById("herTable").innerHTML = kop + `<tbody>${rijen}</tbody>`;
   const n = herGewijzigd().length;
   document.getElementById("herSave").disabled = !n;
-  document.getElementById("herMsg").textContent = n ? `${n} wijziging${n>1?"en":""} nog niet opgeslagen.` : "";
+  document.getElementById("herMsg").textContent = `❤️ ${harten} van ${HER_MAX} gebruikt.` + (harten>=HER_MAX ? " Wil je een andere wedstrijd een hartje geven, haal er dan eerst één weg." : "") + (n ? ` ${n} wijziging${n>1?"en":""} nog niet opgeslagen.` : "");
 }
 document.getElementById("herTable").addEventListener("change", e => {
   const dag = e.target.dataset.dag; if(!dag) return;
