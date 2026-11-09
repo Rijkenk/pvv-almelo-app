@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-11-08",
+ "bijgewerkt": "2026-11-09",
  "events": [
   {
    "t": "2026-10-26T19:00",
@@ -132,7 +132,7 @@
    "end": "2026-11-17T19:45",
    "type": "raad",
    "title": "Hamerraad",
-   "desc": "Afhandeling ingekomen stukken, o.a. brief KHN Almelo over spreiding precariobelasting.",
+   "desc": "Besluitenlijst 3 en 5 november, afhandeling ingekomen stukken (o.a. KHN precario, SSBA sfeerverlichting, VNG-akkoord flexwonen statushouders) en hamerstuk zienswijze Veiligheidsregio Twente (KCR2).",
    "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c855de77-5a2b-4261-9cca-e117400a499c"
   },
   {
@@ -171,6 +171,13 @@
    "title": "Politiek café PVV Almelo",
    "desc": "Eerste editie, De Zwarte Parochie. Voortaan elke laatste maandag van de maand. Tijd nog bevestigen. Bron: fractievergadering 2-11.",
    "noTime": true
+  },
+  {
+   "t": "2026-12-01T19:30",
+   "type": "raad",
+   "title": "Hamerraad",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/379b5b2a-6ff2-4c13-bd8b-bea4126d9b02"
   },
   {
    "t": "2026-12-04T20:00",
