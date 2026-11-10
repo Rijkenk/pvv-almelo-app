@@ -1,14 +1,6 @@
 {
- "bijgewerkt": "2026-11-09",
+ "bijgewerkt": "2026-11-10",
  "events": [
-  {
-   "t": "2026-10-26T19:00",
-   "end": "2026-10-26T22:00",
-   "type": "fractie",
-   "title": "Fractievergadering",
-   "desc": "Voorbereiding beraad begroting 2027 (dinsdag 27-10).",
-   "noTime": true
-  },
   {
    "t": "2026-10-27T19:30",
    "type": "deadline",
@@ -363,14 +355,11 @@
  ],
  "heracles": {
   "voorkeuren": {
-   "2026-11-06": {
-    "Manon": "++"
-   },
    "2026-11-20": {
-    "Manon": "="
+    "Manon": "+"
    },
    "2026-12-04": {
-    "Manon": "="
+    "Manon": "+"
    },
    "2026-12-11": {
     "Manon": "++"
@@ -379,16 +368,16 @@
     "Manon": "X"
    },
    "2027-01-22": {
-    "Manon": "="
+    "Manon": "++"
    },
    "2027-02-05": {
-    "Manon": "="
+    "Manon": "++"
    },
    "2027-02-26": {
-    "Manon": "="
+    "Manon": "+"
    },
    "2027-03-12": {
-    "Manon": "="
+    "Manon": "+"
    },
    "2027-04-03": {
     "Manon": "++"
@@ -397,10 +386,10 @@
     "Manon": "+"
    },
    "2027-04-30": {
-    "Manon": "="
+    "Manon": "+"
    },
    "2027-05-07": {
-    "Manon": "="
+    "Manon": "+"
    }
   }
  }
