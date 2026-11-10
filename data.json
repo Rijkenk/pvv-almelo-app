@@ -92,6 +92,13 @@
    "noTime": true
   },
   {
+   "t": "2026-11-10T19:30",
+   "end": "2026-11-10T22:00",
+   "type": "overig",
+   "title": "Symposium OP KOErs",
+   "desc": "Staat in de besloten iBabs-agenda (niet in de openbare kalender). Bron: schermafbeelding iBabs Kenneth 10-11."
+  },
+  {
    "t": "2026-11-11T15:00",
    "type": "overig",
    "title": "Werkbezoek Aeronamic",
@@ -118,6 +125,13 @@
    "title": "Fractievergadering",
    "desc": "Dinsdag 17-11: politieke avond.",
    "noTime": true
+  },
+  {
+   "t": "2026-11-17T18:00",
+   "end": "2026-11-17T19:00",
+   "type": "overig",
+   "title": "Presidium",
+   "desc": "Staat in de besloten iBabs-agenda (niet in de openbare kalender). Bron: schermafbeelding iBabs Kenneth 10-11."
   },
   {
    "t": "2026-11-17T19:30",
@@ -287,19 +301,19 @@
    "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
   },
   {
-   "t": "2027-05-07T20:00",
-   "type": "overig",
-   "title": "Heracles – FC Dordrecht",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
-  {
    "t": "2027-05-05T00:00",
    "type": "deadline",
    "title": "Uiterlijk: college informeert raad over motie M16 rotonde",
    "desc": "Binnen zes maanden na aanname (5-11-2026): maatregelen, kosten en planning rotonde Aalderinkssingel–Thorbeckelaan.",
    "link": "https://almelo.bestuurlijkeinformatie.nl/Reports/Item/a90e7689-b110-4448-a08b-49a24555b277",
    "noTime": true
+  },
+  {
+   "t": "2027-05-07T20:00",
+   "type": "overig",
+   "title": "Heracles – FC Dordrecht",
+   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
+   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
   }
  ],
  "todos": [

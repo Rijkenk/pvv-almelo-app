@@ -1,5 +1,6 @@
 # Haalt elk uur nieuwskoppen op (Oost, 1Twente, Almelo1, NOS Politiek, Tweede en Eerste Kamer) voor de tab Nieuws.
-# Het resultaat staat als nieuws.json op de aparte branch nieuws-data, zodat main schoon blijft.
+# Haalt ook de openbare iBabs-vergaderkalender op (ibabs.json) voor de agenda.
+# Het resultaat staat als nieuws.json en ibabs.json op de aparte branch nieuws-data, zodat main schoon blijft.
 name: Nieuws ophalen
 on:
   schedule:
@@ -20,12 +21,14 @@ jobs:
           if git fetch -q --depth=1 origin nieuws-data; then git show FETCH_HEAD:nieuws.json > vorige.json; else echo '{}' > vorige.json; fi
       - name: Koppen ophalen
         run: python3 scripts/nieuws.py vorige.json out/nieuws.json
+      - name: iBabs-kalender ophalen
+        run: python3 scripts/ibabs.py out/ibabs.json || (git show FETCH_HEAD:ibabs.json > out/ibabs.json 2>/dev/null || echo '{"events":[]}' > out/ibabs.json)
       - name: Publiceren op branch nieuws-data
         working-directory: out
         run: |
           git init -q -b nieuws-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nieuws.json
+          git add nieuws.json ibabs.json
           git commit -qm "Nieuws $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:nieuws-data

@@ -160,7 +160,7 @@ details.old summary{font-weight:700}
     <div class="card next" id="nextCard"></div>
     <div>
       <h2>Agenda</h2>
-      <p class="lead">Raad, beraden, fractieoverleg en deadlines. Bron: <a href="https://almelo.bestuurlijkeinformatie.nl" target="_blank" rel="noopener">almelo.bestuurlijkeinformatie.nl</a>.</p>
+      <p class="lead">Raad, beraden, fractieoverleg en deadlines. Raad en politieke avonden komen elk uur automatisch uit de openbare kalender van <a href="https://almelo.bestuurlijkeinformatie.nl/Calendar" target="_blank" rel="noopener">iBabs</a>. Wat alleen na inloggen in iBabs staat (presidium, symposia, raadsledendagen) stuur je in via Toevoegen.</p>
     </div>
     <div class="stack" id="eventList"></div>
     <div id="docsBox" hidden><h2 style="margin-top:8px">Ingestuurde documenten</h2><div class="stack" id="docList"></div></div>
@@ -556,12 +556,31 @@ function show(v){
 }
 document.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => show(b.dataset.tab)));
 
+// Openbare iBabs-kalender: elk uur opgehaald door scripts/ibabs.py (branch nieuws-data) en samengevoegd met data.json.
+// Een vergadering uit iBabs vervalt als data.json dezelfde vergadering al heeft (zelfde iBabs-link, of zelfde dag en soort).
+const IBABS_URL = "https://raw.githubusercontent.com/Rijkenk/pvv-almelo-app/nieuws-data/ibabs.json";
+let BASE_EVENTS = null, IB_EVENTS = [];
+const ibId = l => ((l||"").match(/[0-9a-f]{8}-[0-9a-f-]{27}/)||[""])[0];
+function mergeEvents(){
+  const base = BASE_EVENTS || EVENTS.filter(e => e.bron !== "ibabs");
+  const ids = new Set(base.map(e => ibId(e.link)).filter(Boolean));
+  const dagSoort = new Set(base.map(e => e.t.slice(0,10)+"|"+e.type));
+  EVENTS = base.concat(IB_EVENTS.filter(e => !ids.has(ibId(e.link)) && !dagSoort.has(e.t.slice(0,10)+"|"+e.type)));
+}
+async function loadIbabs(){
+  try{
+    const res = await fetch(IBABS_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error(res.status);
+    const d = await res.json();
+    if(Array.isArray(d.events)){ IB_EVENTS = d.events; mergeEvents(); renderAgenda(); }
+  }catch(e){}
+}
 async function loadData(){
   try{
     const res = await fetch("data.json", {cache:"no-store"});
     if(!res.ok) throw new Error(res.status);
     const d = await res.json();
-    if(Array.isArray(d.events)) EVENTS = d.events;
+    if(Array.isArray(d.events)){ BASE_EVENTS = d.events; mergeEvents(); }
     if(Array.isArray(d.todos)) TODOS = d.todos;
     HER = d.heracles && d.heracles.voorkeuren || {};
     const docs = Array.isArray(d.docs) ? d.docs : [];
@@ -574,7 +593,7 @@ async function loadData(){
 async function refreshAll(){
   const btn = document.getElementById("refresh"), stamp = document.getElementById("stamp");
   btn.classList.add("busy"); btn.disabled = true;
-  const [b] = await Promise.all([loadData(), loadUpdates(), loadNieuws()]);
+  const [b] = await Promise.all([loadData(), loadUpdates(), loadNieuws(), loadIbabs()]);
   const now = new Date();
   stamp.textContent = b === null ? "Vernieuwen mislukt; je ziet de laatst geladen gegevens."
     : `Gegevens van ${b.split("-").reverse().join("-")} · geladen om ${fmtTime(now)}`;
