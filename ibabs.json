@@ -1,0 +1,230 @@
+{
+ "opgehaald": "2026-11-14T11:27Z",
+ "events": [
+  {
+   "t": "2026-11-03T19:30",
+   "type": "raad",
+   "title": "Raad",
+   "desc": "Vaststellen besluitenlijst; Raadsdebat 1e termijn; Schorsing",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff",
+   "bron": "ibabs",
+   "end": "2026-11-03T23:00"
+  },
+  {
+   "t": "2026-11-05T10:20",
+   "type": "raad",
+   "title": "Raad",
+   "desc": "Reactie van het college 1e termijn 10.00 uur; Schorsing 12.00 uur; Raadsdebat 2e termijn 13.00 uur; Schorsing 14.30 uur; Reactie van het college 2e termijn 15.00 uur; Schorsing 16.00 uur; Besluitvorming 16.30 uur; Amendementen; Programmabegroting 2027; Belastingverordeningen 2027; Moties; Excel lijst met overzicht moties en amendementen 5-11 DEFINITIEF; Pre-advies college moties en amendementen Pr…",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/a3e2ff09-ba1d-48fa-bd58-2a15714d99cb",
+   "bron": "ibabs",
+   "end": "2026-11-05T17:00"
+  },
+  {
+   "t": "2026-11-10T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Politieke avond 1: Kennismaking Twente Board - Raadzaken; Hoofdlijnen Omgevingsvisie Almelo 2050 - Beeldvormend beraad; Het vaststellen van het TAM-omgevingsplan hoofdstuk 22i Almelo Badweg 8 - Oordeelsvormend beraad",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Session/9ae7d7a6-3877-4541-a91b-6a2fda314c33",
+   "bron": "ibabs",
+   "end": "2026-11-10T23:00"
+  },
+  {
+   "t": "2026-11-17T19:30",
+   "type": "raad",
+   "title": "Hamerraad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; aan de gemeenteraad; Zienswijze deelname Veiligheidsregio Twente aan stichting Knooppunt Coördinatie Rijk-Regio's (KCR2); Het vaststellen van het TAM-omgevingsplan hoofdstuk 22i Almelo Badweg 8; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/514514fe-b8ff-4bcd-8e5e-4477ba2689d2",
+   "bron": "ibabs",
+   "end": "2026-11-17T19:45"
+  },
+  {
+   "t": "2026-11-17T19:45",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Politieke avond 1: Gebiedsbiografie Twente - Raadzaken",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Session/c6f411f8-cbc0-406d-8e29-75717c8ef258",
+   "bron": "ibabs",
+   "end": "2026-11-17T23:00"
+  },
+  {
+   "t": "2026-12-08T19:45",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c0610adb-caba-49b9-a4b3-0bccc8862bd6",
+   "bron": "ibabs",
+   "end": "2026-12-08T23:00"
+  },
+  {
+   "t": "2026-12-15T19:30",
+   "type": "raad",
+   "title": "Raad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; aan de gemeenteraad; Raadsvoorstel hamerstuk; Mondelinge vragenhalfuur; Raadsvoorstel bespreekstuk; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/ce62a415-d46b-495e-a341-98b46640162f",
+   "bron": "ibabs",
+   "end": "2026-12-15T23:00"
+  },
+  {
+   "t": "2027-01-05T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/1301f2e3-d4d7-4825-8967-260c95217349",
+   "bron": "ibabs",
+   "end": "2027-01-05T23:00"
+  },
+  {
+   "t": "2027-01-12T19:30",
+   "type": "beraad",
+   "title": "Politieke avond - Reserve avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/00d492cc-d6ce-4853-ab89-e4e1051c1e69",
+   "bron": "ibabs",
+   "end": "2027-01-12T23:00"
+  },
+  {
+   "t": "2027-01-19T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/48c22955-3145-43bb-8804-387d649672d5",
+   "bron": "ibabs",
+   "end": "2027-01-19T23:00"
+  },
+  {
+   "t": "2027-01-26T19:30",
+   "type": "raad",
+   "title": "Raad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; aan de gemeenteraad; Raadsvoorstel hamerstuk; Mondelinge vragenhalfuur; Raadsvoorstel bespreekstuk; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/1ba8ac90-082d-498b-8804-bd1da65fe903",
+   "bron": "ibabs",
+   "end": "2027-01-26T23:00"
+  },
+  {
+   "t": "2027-02-02T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/c51383fc-6edb-4e0d-a6b0-25bc309cf84f",
+   "bron": "ibabs",
+   "end": "2027-02-02T23:00"
+  },
+  {
+   "t": "2027-02-09T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/aad3f961-2dfa-4be2-921c-b78034c494cc",
+   "bron": "ibabs",
+   "end": "2027-02-09T23:00"
+  },
+  {
+   "t": "2027-02-16T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/5c8bc11d-0a9f-431d-ab5b-1a7ca1423ac0",
+   "bron": "ibabs",
+   "end": "2027-02-16T23:00"
+  },
+  {
+   "t": "2027-03-02T19:30",
+   "type": "raad",
+   "title": "Raad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; aan de gemeenteraad; Raadsvoorstel hamerstuk; Mondelinge vragenhalfuur; Raadsvoorstel bespreekstuk; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/7ffe829b-be7a-4d9d-91b9-9d01a18872a1",
+   "bron": "ibabs",
+   "end": "2027-03-02T23:00"
+  },
+  {
+   "t": "2027-03-09T19:30",
+   "type": "beraad",
+   "title": "Politieke avond - Reserve avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/ec6e8045-2092-4b42-a42d-f44966ed62ae",
+   "bron": "ibabs",
+   "end": "2027-03-09T23:00"
+  },
+  {
+   "t": "2027-03-16T19:30",
+   "type": "raad",
+   "title": "Hamerraad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; raadsbrieven vanuit B&W; aan de gemeenteraad; Raadsvoorstel hamerstuk; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/4e980b4a-e1af-4c3d-ab89-c4afc391cbbb",
+   "bron": "ibabs",
+   "end": "2027-03-16T19:45"
+  },
+  {
+   "t": "2027-03-16T19:45",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/e33885d7-5b11-447f-8922-8219d4db5ba3",
+   "bron": "ibabs",
+   "end": "2027-03-16T23:00"
+  },
+  {
+   "t": "2027-03-23T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/6fa5f984-ae34-4d24-959b-55719ec1fc70",
+   "bron": "ibabs",
+   "end": "2027-03-23T23:00"
+  },
+  {
+   "t": "2027-03-30T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/1c239b47-0ab3-4ead-801a-e5ccf4e116c5",
+   "bron": "ibabs",
+   "end": "2027-03-30T23:00"
+  },
+  {
+   "t": "2027-04-06T19:30",
+   "type": "raad",
+   "title": "Raad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; aan de gemeenteraad; Raadsvoorstel hamerstuk; Mondelinge vragenhalfuur; Raadsvoorstel bespreekstuk; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/a2aa9727-89d9-4a35-9466-8b67c24a2a94",
+   "bron": "ibabs",
+   "end": "2027-04-06T23:00"
+  },
+  {
+   "t": "2027-04-13T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/07806be8-c53d-4e65-9e4e-b331f508577e",
+   "bron": "ibabs",
+   "end": "2027-04-13T23:00"
+  },
+  {
+   "t": "2027-04-20T19:30",
+   "type": "raad",
+   "title": "Hamerraad",
+   "desc": "Vaststellen besluitenlijst; Vaststellen afhandelwijze ingekomen stukken; raadsbrieven vanuit B&W; aan de gemeenteraad; Raadsvoorstel hamerstuk; Ordevoorstel",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f073d007-ba45-4288-a78f-73e974215f62",
+   "bron": "ibabs",
+   "end": "2027-04-20T19:45"
+  },
+  {
+   "t": "2027-04-20T19:45",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f8b22304-285a-445b-adc8-af9ba14a211f",
+   "bron": "ibabs",
+   "end": "2027-04-20T23:00"
+  },
+  {
+   "t": "2027-05-11T19:30",
+   "type": "beraad",
+   "title": "Politieke avond",
+   "desc": "Agenda nog niet gepubliceerd.",
+   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/5b78145f-4357-4c14-b652-aca888edffe1",
+   "bron": "ibabs",
+   "end": "2027-05-11T23:00"
+  }
+ ]
+}

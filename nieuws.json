@@ -1,0 +1,643 @@
+{
+ "bijgewerkt": "2026-11-14T11:26:56Z",
+ "status": {
+  "lokaal": {
+   "ok": true,
+   "sinds": "2026-11-14T11:26:56Z"
+  },
+  "kamer": {
+   "ok": true,
+   "sinds": "2026-11-14T11:26:56Z"
+  },
+  "landelijk": {
+   "ok": true,
+   "sinds": "2026-11-14T11:26:56Z"
+  },
+  "eerstekamer": {
+   "ok": false,
+   "fout": "geen feed gevonden",
+   "sinds": ""
+  }
+ },
+ "lokaal": [
+  {
+   "titel": "Bouw 40 appartementen aan Albert Cuypstraat vordert gestaag",
+   "link": "https://almelo1.nl/bouw-40-appartementen-aan-albert-cuypstraat-vordert-gestaag/",
+   "datum": "2026-11-14T11:24:01Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Droom Dit brengt oost en west samen met eigen festival: 'We willen iets terugdoen'",
+   "link": "https://www.oost.nl/cultuur/3719262/droom-dit-brengt-oost-en-west-samen-met-eigen-festival-we-willen-iets-terugdoen",
+   "datum": "2026-11-14T09:27:53Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Lezing van stadsherder Willem Dijkema: “Met schapen breng je een stukje platteland naar de stad”",
+   "link": "https://almelo1.nl/lezing-van-stadsherder-willem-dijkema-met-schapen-breng-je-een-stukje-platteland-naar-de-stad/",
+   "datum": "2026-11-14T07:38:05Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "'Zingen tot de tranen over je wangen stromen': TCOV Concertkoor bestaat 90 jaar",
+   "link": "https://www.oost.nl/cultuur/3719126/zingen-tot-de-tranen-over-je-wangen-stromen-tcov-concertkoor-bestaat-90-jaar",
+   "datum": "2026-11-14T07:00:48Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Eén persoon naar ziekenhuis na woningbrand in Almelo",
+   "link": "https://www.oost.nl/nieuws/3719487/een-persoon-naar-ziekenhuis-na-woningbrand-in-almelo",
+   "datum": "2026-11-14T06:22:02Z",
+   "bron": "Oost",
+   "almelo": true
+  },
+  {
+   "titel": "Wie is de lachende pinner aan de Dorpsstraat in Hellendoorn?",
+   "link": "https://www.oost.nl/nieuws/3715815/wie-is-de-lachende-pinner-aan-de-dorpsstraat-in-hellendoorn",
+   "datum": "2026-11-14T06:03:28Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Duitsland wil zich inkopen in Urenco, dat grote fabriek in Almelo heeft",
+   "link": "https://www.oost.nl/nieuws/3719345/duitsland-wil-zich-inkopen-in-urenco-dat-grote-fabriek-in-almelo-heeft",
+   "datum": "2026-11-13T18:05:34Z",
+   "bron": "Oost",
+   "almelo": true
+  },
+  {
+   "titel": "Bibliotheek Almelo helpt inwoners op weg met DigiD en digitale overheid",
+   "link": "https://almelo1.nl/bibliotheek-almelo-helpt-inwoners-op-weg-met-digid-en-digitale-overheid/",
+   "datum": "2026-11-13T16:39:30Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Nog voor er over verlenging van het azc in Enschede wordt gesproken is er politieke consternatie: 'Houdt college zich aan de opdracht?'",
+   "link": "https://www.1twente.nl/artikel/6398198/nog-voor-er-over-verlenging-van-het-azc-in-enschede-wordt-gesproken-is-er-politieke-consternatie-houdt-college-zich-aan-de-opdracht",
+   "datum": "2026-11-13T15:52:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Heracles treft gehavende laagvlieger: zes internationals afwezig bij FC Dordrecht",
+   "link": "https://www.1twente.nl/artikel/6398318/heracles-treft-gehavende-laagvlieger-zes-internationals-afwezig-bij-fc-dordrecht",
+   "datum": "2026-11-13T12:56:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Vincent Heilmann over FC Dordrecht – Heracles Almelo: “We moeten gewoon ons eigen spel op de mat leggen”",
+   "link": "https://almelo1.nl/vincent-heilmann-over-fc-dordrecht-heracles-almelo-we-moeten-gewoon-ons-eigen-spel-op-de-mat-leggen/",
+   "datum": "2026-11-13T12:23:59Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Blind voltanken in Almelo; zestien klanten konden doorrijden zonder betalen",
+   "link": "https://www.1twente.nl/artikel/6398345/blind-voltanken-in-almelo-zestien-klanten-konden-doorrijden-zonder-betalen",
+   "datum": "2026-11-13T12:16:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Jongen (13) na compliment over jas mishandeld in Almelo, politie zoekt getuigen",
+   "link": "https://almelo1.nl/man-na-compliment-over-jas-mishandeld-in-almelo-politie-zoekt-getuigen/",
+   "datum": "2026-11-13T11:14:34Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Wereldwijde storing bij Microsoft raakt ook Overijssel: mailverkeer verstoord",
+   "link": "https://www.oost.nl/nieuws/3719057/wereldwijde-storing-bij-microsoft-raakt-ook-overijssel-mailverkeer-verstoord",
+   "datum": "2026-11-13T10:19:51Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Stroatproat: welk liedje brengt jou terug naar een mooie herinnering?",
+   "link": "https://almelo1.nl/stroatproat-welk-liedje-brengt-jou-terug-naar-een-mooie-herinnering/",
+   "datum": "2026-11-13T08:39:15Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Jury Herman Krikhaarprijs 2026: ‘Onafhankelijke blik vanuit verschillende disciplines'",
+   "link": "https://www.1twente.nl/artikel/6396512/jury-herman-krikhaarprijs-2026-onafhankelijke-blik-vanuit-verschillende-disciplines",
+   "datum": "2026-11-13T07:08:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Herman Krikhaar Prijs keert na twee jaar terug: Almelose kunstenaars opnieuw in de schijnwerpers",
+   "link": "https://almelo1.nl/herman-krikhaar-prijs-keert-na-twee-jaar-terug-almelose-kunstenaars-opnieuw-in-de-schijnwerpers/",
+   "datum": "2026-11-13T06:46:33Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Ziekenhuis in Oldenzaal krijgt CT-scan, parkeerterrein straks afgesloten",
+   "link": "https://www.oost.nl/nieuws/3718232/ziekenhuis-in-oldenzaal-krijgt-ct-scan-parkeerterrein-straks-afgesloten",
+   "datum": "2026-11-13T06:02:21Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Kinderkoor heet Sinterklaas welkom met eigen lied: 'Hopelijk wordt het traditie'",
+   "link": "https://www.oost.nl/cultuur/3717696/kinderkoor-heet-sinterklaas-welkom-met-eigen-lied-hopelijk-wordt-het-traditie",
+   "datum": "2026-11-13T06:01:09Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Veiling bioscoop Hengelo: 'Stoelen zijn het populairst'",
+   "link": "https://www.oost.nl/nieuws/3718251/veiling-bioscoop-hengelo-stoelen-zijn-het-populairst",
+   "datum": "2026-11-13T05:00:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Zorgpremie Menzis stijgt met bijna 10 euro per maand: 'Kosten blijven oplopen'",
+   "link": "https://www.oost.nl/nieuws/3715742/zorgpremie-menzis-stijgt-met-bijna-10-euro-per-maand-kosten-blijven-oplopen",
+   "datum": "2026-11-12T22:59:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Blinddoek om en tanken maar: zestien geluksvogels winnen gratis benzine",
+   "link": "https://www.oost.nl/nieuws/3718957/blinddoek-om-en-tanken-maar-zestien-geluksvogels-winnen-gratis-benzine",
+   "datum": "2026-11-12T20:31:30Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Marinus Hannink, oud-voorzitter van Heracles Almelo, overleden",
+   "link": "https://www.1twente.nl/artikel/6397619/marinus-hannink-oud-voorzitter-van-heracles-almelo-overleden",
+   "datum": "2026-11-12T18:49:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Adventswandeling voert langs midwinterhoorns en bijzondere verhalen",
+   "link": "https://almelo1.nl/adventswandeling-voert-langs-midwinterhoorns-en-bijzondere-verhalen/",
+   "datum": "2026-11-12T18:28:00Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Kind (12) loopt weg uit zorginstelling Enschede, even later wordt hij verkracht",
+   "link": "https://www.oost.nl/nieuws/3718274/kind-12-loopt-weg-uit-zorginstelling-enschede-even-later-wordt-hij-verkracht",
+   "datum": "2026-11-12T17:35:16Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "“Het maakt niet uit waar ik ben, Almelo is één” – Annemarijn Clement, coördinator Gluren bij de Buren Almelo",
+   "link": "https://almelo1.nl/het-maakt-niet-uit-waar-ik-ben-almelo-is-een-annemarijn-clement-coordinator-gluren-bij-de-buren-almelo/",
+   "datum": "2026-11-12T16:54:21Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Map met kopieën ID-bewijzen van voormalig personeel duikt op bij veiling Hengelose bioscoop",
+   "link": "https://www.1twente.nl/artikel/6397031/map-met-kopieen-id-bewijzen-van-voormalig-personeel-duikt-op-bij-veiling-hengelose-bioscoop",
+   "datum": "2026-11-12T16:23:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Celstraffen voor vijf jonge mannen na ontploffingen bij zonnestudio in Borne",
+   "link": "https://www.oost.nl/nieuws/3718188/celstraffen-voor-vijf-jonge-mannen-na-ontploffingen-bij-zonnestudio-in-borne",
+   "datum": "2026-11-12T15:26:45Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Enschede gebruikt verplichte gezichtsscan bij gemeentebalie nu nog 'op eigen risico', maar staatssecretaris wil wet wijzigen",
+   "link": "https://www.1twente.nl/artikel/6393866/verplichte-gezichtsscan-bij-gemeentebalie-in-enschede-is-nu-nog-op-eigen-risico-maar-staatssecretaris-wil-wet-wijzigen",
+   "datum": "2026-11-12T15:06:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Een flinke dosis genöl: kleine ergernissen krijgen een plek op website Almelose Mona van Os",
+   "link": "https://www.1twente.nl/artikel/6396488/een-flinke-dosis-genol-kleine-ergernissen-krijgen-een-plek-op-nieuwe-website",
+   "datum": "2026-11-12T14:17:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Samen in gesprek over Het Diner tijdens Open Leesclub in Almelo",
+   "link": "https://almelo1.nl/samen-in-gesprek-over-het-diner-tijdens-open-leesclub-in-almelo/",
+   "datum": "2026-11-12T14:16:52Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Hengelose raad akkoord met begroting, maar oppositie wil meer grip op groei en investeringen",
+   "link": "https://www.1twente.nl/artikel/6395747/hengelose-raad-akkoord-met-begroting-maar-oppositie-wil-meer-grip-op-groei-en-investeringen",
+   "datum": "2026-11-12T11:02:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Zaak insulinedrama Wierden vertraagd: verdachte verpleegkundige opnieuw onderzocht",
+   "link": "https://www.oost.nl/nieuws/3716974/zaak-insulinedrama-wierden-vertraagd-verdachte-verpleegkundige-opnieuw-onderzocht",
+   "datum": "2026-11-12T10:27:26Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Groen licht voor begroting gemeente Losser; oppositiepartijen PRO en D66 steunen begroting niet",
+   "link": "https://www.1twente.nl/artikel/6395237/groen-licht-voor-begroting-gemeente-losser-oppositie-pro-en-d66-steunen-begroting-niet",
+   "datum": "2026-11-12T07:53:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Na 17 jaar gaat bouw van nieuwe moskee in Enschede nu écht van start",
+   "link": "https://www.oost.nl/nieuws/3717658/na-17-jaar-gaat-bouw-van-nieuwe-moskee-in-enschede-nu-echt-van-start",
+   "datum": "2026-11-12T04:02:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Oldenzaalse carnavalsgemeenschap trapt het seizoen af met busrit naar Keulen",
+   "link": "https://www.oost.nl/cultuur/3717740/oldenzaalse-carnavalsgemeenschap-trapt-het-seizoen-af-met-busrit-naar-keulen",
+   "datum": "2026-11-11T20:28:22Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Opa-moordenaar nog niet klaar voor terugkeer in maatschappij en krijgt enkelband",
+   "link": "https://www.oost.nl/nieuws/3717813/opa-moordenaar-nog-niet-klaar-voor-terugkeer-in-maatschappij-en-krijgt-enkelband",
+   "datum": "2026-11-11T19:01:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Minimagezinnen uit Twente kunnen weer terecht bij mobiele voedselbank",
+   "link": "https://www.oost.nl/nieuws/3717545/minimagezinnen-uit-twente-kunnen-weer-terecht-bij-mobiele-voedselbank",
+   "datum": "2026-11-11T17:30:03Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Man uit Enschede levensgevaarlijk gewond na avondje stappen in Duitsland",
+   "link": "https://www.oost.nl/nieuws/3717775/man-uit-enschede-levensgevaarlijk-gewond-na-avondje-stappen-in-duitsland",
+   "datum": "2026-11-11T17:25:16Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Winst voor Heracles ondanks degradatie",
+   "link": "https://www.1twente.nl/artikel/6394466/winst-voor-heracles-ondanks-degradatie",
+   "datum": "2026-11-11T16:09:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Twentse gemeente neemt omstreden Oekraïense broers over van Hengelo",
+   "link": "https://www.oost.nl/nieuws/3717699/twentse-gemeente-neemt-omstreden-oekraiense-broers-over-van-hengelo",
+   "datum": "2026-11-11T15:30:14Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "'Sint-Maarten, Sint-Maarten…', is de traditie in Overijssel uitgezongen?",
+   "link": "https://www.oost.nl/cultuur/3714123/sint-maarten-sint-maarten-is-de-traditie-in-overijssel-uitgezongen",
+   "datum": "2026-11-11T14:41:05Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Voetbalclub wil sportpark afsluiten: afgebrand kunstgrasveld druppel in discussie",
+   "link": "https://www.oost.nl/nieuws/3717745/voetbalclub-wil-sportpark-afsluiten-afgebrand-kunstgrasveld-druppel-in-discussie",
+   "datum": "2026-11-11T12:51:23Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Identiteit van RTV Oost-presentatrice José de Bruin gekaapt door fraudeurs",
+   "link": "https://www.oost.nl/nieuws/3717716/identiteit-van-rtv-oost-presentatrice-jose-de-bruin-gekaapt-door-fraudeurs",
+   "datum": "2026-11-11T11:58:21Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Parkeren langs straat bij Enschedese binnenstad mag straks langer tegen extra kosten (en er verandert meer)",
+   "link": "https://www.1twente.nl/artikel/6392976/parkeren-langs-straat-bij-enschedese-binnenstad-mag-straks-langer-tegen-extra-kosten-en-er-verandert-meer",
+   "datum": "2026-11-11T09:42:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Drie partijen in raad Tubbergen stemden in met krappe begroting 2027: een miljoen naar De Ransuil, OZB stijgt met 6,5 procent",
+   "link": "https://www.1twente.nl/artikel/6393663/tubbergen-stemt-in-met-krappe-begroting-2027-1-miljoen-naar-de-ransuil-maar-ozb-stijgt-met-6-5",
+   "datum": "2026-11-11T07:30:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "In de ‘herkansing’  stemt Oldenzaalse raad binnen 10 minuten in met begroting",
+   "link": "https://www.1twente.nl/artikel/6393468/in-de-herkansing-stemt-oldenzaalse-raad-binnen-10-minuten-in-met-begroting",
+   "datum": "2026-11-11T07:12:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Plan voor meer treinen én snellere verbinding naar Duitsland",
+   "link": "https://www.oost.nl/nieuws/3717403/plan-voor-meer-treinen-en-snellere-verbinding-naar-duitsland",
+   "datum": "2026-11-11T04:05:20Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Raad Wierden gaat unaniem akkoord met begroting 2027",
+   "link": "https://www.1twente.nl/artikel/6393345/raad-wierden-gaat-unaniem-akkoord-met-begroting-2027",
+   "datum": "2026-11-10T20:48:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Doek valt voor vier speeltuinen in Enschede, bezuinigingen gaan niet van tafel",
+   "link": "https://www.oost.nl/nieuws/3717439/doek-valt-voor-vier-speeltuinen-in-enschede-bezuinigingen-gaan-niet-van-tafel",
+   "datum": "2026-11-10T19:58:59Z",
+   "bron": "Oost",
+   "almelo": false
+  }
+ ],
+ "kamer": [
+  {
+   "titel": "Fonds voor stikstof, landbouw en natuur",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-11-16T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06484",
+   "gemeente": true
+  },
+  {
+   "titel": "Tweeminutendebat Luchthavenbesluit Rotterdam (31936-1327)",
+   "soort": "Plenair debat (tweeminutendebat)",
+   "datum": "2026-11-17T16:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08205",
+   "gemeente": false
+  },
+  {
+   "titel": "Tweeminutendebat Kernenergie (CD 2/7)",
+   "soort": "Plenair debat (tweeminutendebat)",
+   "datum": "2026-11-17T16:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06131",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Justitie en Veiligheid (37020-VI)1e TK",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-17T16:50:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05412",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Asiel en Migratie (37020-XX) 1e TK",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-18T10:15:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05414",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Buitenlandse Zaken (37020-V) (2e termijn)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-18T16:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08373",
+   "gemeente": false
+  },
+  {
+   "titel": "Debat over de verslechterende veiligheidssituatie in de wereld",
+   "soort": "Plenair debat (debat)",
+   "datum": "2026-11-18T19:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06852",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Justitie en Veiligheid (37020-VI) voortzetting",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-19T10:15:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08433",
+   "gemeente": true
+  },
+  {
+   "titel": "Staat van de Volkshuisvesting",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-19T15:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07869",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Asiel en Migratie (37020-XX) voortzetting",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-19T16:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08434",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Economische Zaken (37020-XIII) voortzetting",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-23T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07511",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-23T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05409",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Buitenlandse Handel en Ontwikkelingssamenwerking",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-23T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05410",
+   "gemeente": false
+  },
+  {
+   "titel": "Goedkeuring van het Aanvullend Protocol inzake de toepassing van het Verdrag over waarborgen met betrekking tot de Nederlandse Antillen in verband met de niet-verspreiding van kernwapens 37006",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-11-23T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08077",
+   "gemeente": true
+  },
+  {
+   "titel": "Villa Expertcare/ Medische kindzorg",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-25T14:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08353",
+   "gemeente": true
+  },
+  {
+   "titel": "Participatiewet",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-25T14:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07595",
+   "gemeente": true
+  },
+  {
+   "titel": "Drugspreventie en verslavingszorg",
+   "soort": "Commissiedebat",
+   "datum": "2026-11-26T13:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2023A03420",
+   "gemeente": true
+  },
+  {
+   "titel": "Intrekking van de Rijkswet van 10 februari 2017, houdende wijziging van de Rijkswet op het Nederlanderschap in verband met het intrekken van het Nederlanderschap in het belang van de nationale veiligheid (Stb. 2017, 52) en tot wijziging van de Wet op de inlichtingen- en veiligheidsdiensten 2017 (36984-(R2222))",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-11-26T14:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08187",
+   "gemeente": true
+  }
+ ],
+ "landelijk": [
+  {
+   "titel": "Crisisoverleg D66, VVD en CDA in Hilversum, premier en vicepremiers aangekomen",
+   "link": "https://nos.nl/l/2639451",
+   "datum": "2026-11-14T10:28:22Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "D66, VVD en CDA zetten crisisoverleg voort in Hilversum, uitkomst ongewis",
+   "link": "https://nos.nl/l/2639424",
+   "datum": "2026-11-14T04:29:33Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Het kan nog steeds fout gaan, is de conclusie na urenlang crisisoverleg",
+   "link": "https://nos.nl/l/2639395",
+   "datum": "2026-11-13T21:15:47Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Podcast De Stemming: Klein bier, een bloemenwijkje en Argentijnse voetballers",
+   "link": "https://nos.nl/l/2639379",
+   "datum": "2026-11-13T20:04:36Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kabinet zit er voorlopig nog, maar crisissfeer blijft",
+   "link": "https://nos.nl/l/2639364",
+   "datum": "2026-11-13T18:30:31Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "13/11 in Nieuwsuur: Hoe nu verder met de crisis in het minderheidskabinet?",
+   "link": "https://nos.nl/l/2639286",
+   "datum": "2026-11-13T10:34:09Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Crisisoverleg Jetten over toekomst coalitie, wachten op duidelijkheid VVD",
+   "link": "https://nos.nl/l/2639247",
+   "datum": "2026-11-13T05:38:17Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Belastingplan aangenomen, en nu is de vraag wat de VVD gaat doen",
+   "link": "https://nos.nl/l/2639225",
+   "datum": "2026-11-12T21:50:45Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Maatschappelijke organisaties uiten onvrede over kabinetscrisis: 'Los dit samen op'",
+   "link": "https://nos.nl/l/2639206",
+   "datum": "2026-11-12T18:24:46Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Pas na de stemmingen wordt duidelijk hoe het verder gaat met belastingplan en kabinet",
+   "link": "https://nos.nl/l/2639200",
+   "datum": "2026-11-12T17:20:28Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Podcast De Dag: de VVD in (kabinets)crisis",
+   "link": "https://nos.nl/l/2639179",
+   "datum": "2026-11-12T14:21:08Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Partijen geven elkaar de schuld in debat over belastingplan",
+   "link": "https://nos.nl/l/2639156",
+   "datum": "2026-11-12T11:41:53Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Minister: doel van nul daklozen in 2030 niet haalbaar, 'het is ongelooflijk taai'",
+   "link": "https://nos.nl/l/2639077",
+   "datum": "2026-11-11T21:31:10Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Toekomst minderheidskabinet aan zijden draadje, VVD twijfelt openlijk",
+   "link": "https://nos.nl/l/2639075",
+   "datum": "2026-11-11T21:17:39Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Hoogspanning in coalitie over belastingplan: 'Dit geeft krassen'",
+   "link": "https://nos.nl/l/2639038",
+   "datum": "2026-11-11T16:33:28Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "11/11 in Nieuwsuur: Deal over belastingplan, hoe nu verder? • Hoe (on)veilig is Syrië? • Bedrijven willen minder thuiswerkers",
+   "link": "https://nos.nl/l/2639013",
+   "datum": "2026-11-11T14:10:11Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "D66 en CDA sluiten deal met Pro en Volt rond belastingplan, nog geen reactie VVD",
+   "link": "https://nos.nl/l/2639001",
+   "datum": "2026-11-11T13:15:18Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "'Kabinet toont weinig interesse in beheer van de Nederlandse goudvoorraad'",
+   "link": "https://nos.nl/l/2638976",
+   "datum": "2026-11-11T10:00:02Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Coalitie en Kamer nog geen steek verder met belastingplan",
+   "link": "https://nos.nl/l/2638942",
+   "datum": "2026-11-10T22:05:10Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Meer en snellere treinen: Nederland en Duitsland sluiten spoorakkoord",
+   "link": "https://nos.nl/l/2638924",
+   "datum": "2026-11-10T19:30:02Z",
+   "bron": "NOS"
+  }
+ ],
+ "eerstekamer": []
+}
