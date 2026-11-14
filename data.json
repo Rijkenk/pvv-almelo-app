@@ -1,20 +1,6 @@
 {
- "bijgewerkt": "2026-11-13",
+ "bijgewerkt": "2026-11-14",
  "events": [
-  {
-   "t": "2026-10-27T19:30",
-   "type": "deadline",
-   "title": "Amendementen en moties aankondigen",
-   "desc": "Voorgenomen amendementen en moties begroting 2027 aankondigen in het oordeelsvormend beraad.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
-  },
-  {
-   "t": "2026-10-27T19:30",
-   "type": "beraad",
-   "title": "Politieke avond: beraad begroting 2027",
-   "desc": "Spreekrecht, zienswijze Veiligheidsregio Twente (KCR2), quickscan Rekenkamer, beeld- en oordeelsvorming programmabegroting en belastingverordeningen 2027. Raadzaal.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/50360568-0bfe-4160-9444-00e836738ca0"
-  },
   {
    "t": "2026-11-02T09:00",
    "type": "deadline",
@@ -322,27 +308,6 @@
    "who": "Kenneth",
    "what": "Eigen motie uitwerken, losgekoppeld van de VVD-motie van 6-10",
    "when": "open"
-  },
-  {
-   "id": "vragen-begroting",
-   "who": "Fractie",
-   "what": "Begroting: politieke vragen klaar voor di 3-11 (avond) en do 5-11 (middag); afspreken wie de motie meeondertekent of steunt",
-   "when": "vóór 3-11",
-   "klaar": "06-11-2026"
-  },
-  {
-   "id": "motie-rotonde",
-   "who": "Kenneth en fractie",
-   "what": "Motie verkeersveiligheid rotonde Aalderinkssingel–Thorbeckelaan dateren en laten ondertekenen door Manon en Marnick",
-   "when": "vóór raad 3-11",
-   "klaar": "06-11-2026"
-  },
-  {
-   "id": "griffie-begroting",
-   "who": "Manon",
-   "what": "Met de griffie zitten over de begroting",
-   "when": "vóór 3-11",
-   "klaar": "06-11-2026"
   },
   {
    "id": "politiek-cafe",
