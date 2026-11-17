@@ -308,51 +308,63 @@
   "voorkeuren": {
    "2026-11-20": {
     "Manon": "+",
-    "Marnick": "+"
+    "Marnick": "+",
+    "Kenneth": "+"
    },
    "2026-12-04": {
     "Manon": "+",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    },
    "2026-12-11": {
     "Manon": "++",
-    "Marnick": "+"
+    "Marnick": "+",
+    "Kenneth": "+"
    },
    "2027-01-10": {
     "Manon": "X",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    },
    "2027-01-22": {
     "Manon": "++",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    },
    "2027-02-05": {
     "Manon": "++",
-    "Marnick": "+"
+    "Marnick": "+",
+    "Kenneth": "+"
    },
    "2027-02-26": {
     "Manon": "+",
-    "Marnick": "+"
+    "Marnick": "+",
+    "Kenneth": "+"
    },
    "2027-03-12": {
     "Manon": "+",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    },
    "2027-04-03": {
     "Manon": "++",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    },
    "2027-04-16": {
     "Manon": "+",
-    "Marnick": "++"
+    "Marnick": "++",
+    "Kenneth": "+"
    },
    "2027-04-30": {
     "Manon": "+",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    },
    "2027-05-07": {
     "Manon": "+",
-    "Marnick": "="
+    "Marnick": "=",
+    "Kenneth": "+"
    }
   }
  }
