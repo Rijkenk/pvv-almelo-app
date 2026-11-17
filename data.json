@@ -309,62 +309,74 @@
    "2026-11-20": {
     "Manon": "+",
     "Marnick": "+",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "X"
    },
    "2026-12-04": {
     "Manon": "+",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "+"
    },
    "2026-12-11": {
     "Manon": "++",
     "Marnick": "+",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "++"
    },
    "2027-01-10": {
     "Manon": "X",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "X"
    },
    "2027-01-22": {
     "Manon": "++",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "+"
    },
    "2027-02-05": {
     "Manon": "++",
     "Marnick": "+",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "++"
    },
    "2027-02-26": {
     "Manon": "+",
     "Marnick": "+",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "+"
    },
    "2027-03-12": {
     "Manon": "+",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "++"
    },
    "2027-04-03": {
     "Manon": "++",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "X"
    },
    "2027-04-16": {
     "Manon": "+",
     "Marnick": "++",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "+"
    },
    "2027-04-30": {
     "Manon": "+",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "++"
    },
    "2027-05-07": {
     "Manon": "+",
     "Marnick": "=",
-    "Kenneth": "+"
+    "Kenneth": "+",
+    "Remco": "X"
    }
   }
  }
