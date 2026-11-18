@@ -1,26 +1,6 @@
 {
- "bijgewerkt": "2026-11-17",
+ "bijgewerkt": "2026-11-18",
  "events": [
-  {
-   "t": "2026-11-03T09:00",
-   "type": "deadline",
-   "title": "Motie vreemd indienen",
-   "desc": "Motie over een onderwerp dat niet op de agenda staat vóór 09.00 uur naar de griffier (art. 36)."
-  },
-  {
-   "t": "2026-11-03T19:30",
-   "type": "deadline",
-   "title": "Amendementen en moties definitief indienen",
-   "desc": "In de 1e termijn van de begrotingsraad.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff"
-  },
-  {
-   "t": "2026-11-03T19:30",
-   "type": "raad",
-   "title": "Raad: algemene beschouwingen",
-   "desc": "1e termijn, max. 5 minuten per fractie, volgorde door loting. Amendementen en moties worden hier ingediend.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/f838def6-d3c1-4aab-aae3-e0a3925370ff"
-  },
   {
    "t": "2026-11-04T09:00",
    "type": "deadline",
@@ -286,7 +266,8 @@
    "id": "politiek-cafe",
    "who": "Fractie",
    "what": "Politiek café (eerste editie ma 30-11, De Zwarte Parochie) aankondigen op Facebook en de officiële pagina",
-   "when": "ruim vóór 30-11"
+   "when": "ruim vóór 30-11",
+   "klaar": "17-11-2026"
   },
   {
    "id": "vragen-wethouders",
