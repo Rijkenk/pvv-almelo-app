@@ -1,27 +1,6 @@
 {
- "bijgewerkt": "2026-11-20",
+ "bijgewerkt": "2026-11-23",
  "events": [
-  {
-   "t": "2026-11-04T09:00",
-   "type": "deadline",
-   "title": "Begroting: laatste moment moties en amendementen met preadvies",
-   "desc": "Vóór 09.00 uur naar de griffie als een preadvies van het college gewenst is. Preadviezen staan eind van de dag in iBabs bij de raad van 5-11. Bron: bericht griffie.",
-   "link": "https://drive.google.com/file/d/12E__HvU62bmv0L6sFkVF8GGgnFGA50Tl/view"
-  },
-  {
-   "t": "2026-11-05T10:00",
-   "type": "raad",
-   "title": "Raad: besluit begroting 2027",
-   "desc": "Begroting 2027 vastgesteld (94% voor, PVV voor). Alle amendementen verworpen, ook A4 OZB. PVV-motie M16 rotonde unaniem aangenomen.",
-   "link": "https://almelo.bestuurlijkeinformatie.nl/Agenda/Index/a3e2ff09-ba1d-48fa-bd58-2a15714d99cb"
-  },
-  {
-   "t": "2026-11-06T20:00",
-   "type": "overig",
-   "title": "Heracles – Roda JC",
-   "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
-   "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
-  },
   {
    "t": "2026-11-09T19:00",
    "end": "2026-11-09T22:00",
@@ -184,11 +163,27 @@
    "noTime": true
   },
   {
+   "t": "2027-01-04T19:00",
+   "end": "2027-01-04T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering",
+   "desc": "Dinsdag 5-1: politieke avond.",
+   "noTime": true
+  },
+  {
    "t": "2027-01-10T12:15",
    "type": "overig",
    "title": "Heracles – NAC Breda",
    "desc": "Thuiswedstrijd, Keuken Kampioen Divisie. Seizoenskaarten fractie. Aanvangstijd kan nog wijzigen.",
    "link": "https://maak-agenda.nl/team/Heracles_Almelo/home"
+  },
+  {
+   "t": "2027-01-11T19:00",
+   "end": "2027-01-11T22:00",
+   "type": "fractie",
+   "title": "Fractievergadering (onder voorbehoud)",
+   "desc": "Dinsdag 12-1: alleen reserve-avond politieke avond.",
+   "noTime": true
   },
   {
    "t": "2027-01-22T20:00",
@@ -287,13 +282,6 @@
  ],
  "heracles": {
   "voorkeuren": {
-   "2026-11-20": {
-    "Manon": "+",
-    "Marnick": "+",
-    "Kenneth": "+",
-    "Remco": "X",
-    "Mart": "+"
-   },
    "2026-12-04": {
     "Manon": "+",
     "Marnick": "=",
