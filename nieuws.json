@@ -1,0 +1,771 @@
+{
+ "bijgewerkt": "2026-11-27T22:41:31Z",
+ "status": {
+  "lokaal": {
+   "ok": true,
+   "sinds": "2026-11-27T22:41:31Z"
+  },
+  "kamer": {
+   "ok": true,
+   "sinds": "2026-11-27T22:41:31Z"
+  },
+  "landelijk": {
+   "ok": true,
+   "sinds": "2026-11-27T22:41:31Z"
+  },
+  "eerstekamer": {
+   "ok": false,
+   "fout": "geen feed gevonden",
+   "sinds": ""
+  }
+ },
+ "lokaal": [
+  {
+   "titel": "Heracles Almelo behaalt benauwd gelijkspel in Amsterdam tegen Jong Ajax (4-4)",
+   "link": "https://almelo1.nl/heracles-almelo-behaalt-benauwd-gelijkspel-in-amsterdam-tegen-jong-ajax-4-4/",
+   "datum": "2026-11-27T21:06:03Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "'Universiteit Twente onderzoekt mogelijk racistische incidenten op campus'",
+   "link": "https://www.oost.nl/nieuws/3724443/universiteit-twente-onderzoekt-mogelijk-racistische-incidenten-op-campus",
+   "datum": "2026-11-27T19:04:16Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Betaald parkeren voor mantelzorgers in Hengelo? Zo regelen andere gemeentes het",
+   "link": "https://www.1twente.nl/artikel/6443750/betaald-parkeren-voor-mantelzorgers-in-hengelo-zo-regelen-andere-gemeentes-het",
+   "datum": "2026-11-27T16:48:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Suna wil landbouw verduurzamen zonder microplastics en wint prijs",
+   "link": "https://www.oost.nl/nieuws/3724317/suna-wil-landbouw-verduurzamen-zonder-microplastics-en-wint-prijs",
+   "datum": "2026-11-27T15:41:58Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Twee jaar ‘Heerlijk Almelo’: gemeente geeft geen inzicht in kosten en resultaten",
+   "link": "https://almelo1.nl/twee-jaar-heerlijk-almelo-gemeente-geeft-geen-inzicht-in-kosten-en-resultaten/",
+   "datum": "2026-11-27T14:46:24Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Almelo wil stationsgebied verbeteren, maar uitvoering kan twintig jaar duren",
+   "link": "https://almelo1.nl/almelo-wil-stationsgebied-verbeteren-maar-uitvoering-kan-twintig-jaar-duren/",
+   "datum": "2026-11-27T13:52:22Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Wie meldt zich om te praten over appgroep 't Haviksoog?",
+   "link": "https://www.oost.nl/nieuws/3724203/wie-meldt-zich-om-te-praten-over-appgroep-t-haviksoog",
+   "datum": "2026-11-27T13:18:12Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Veiligheid Destinus in Hengelo voortdurend gevolgd en besproken: 'Is continu proces'",
+   "link": "https://www.oost.nl/nieuws/3724158/veiligheid-destinus-in-hengelo-voortdurend-gevolgd-en-besproken-is-continu-proces",
+   "datum": "2026-11-27T12:04:48Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Midwinterhoorn klinkt vanaf zondag weer in de Gravenallee",
+   "link": "https://almelo1.nl/midwinterhoorn-klinkt-vanaf-zondag-weer-in-de-gravenallee/",
+   "datum": "2026-11-27T11:14:11Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Snackbarhouder joeg overvaller zijn zaak uit, verdachte nu opgepakt",
+   "link": "https://www.oost.nl/nieuws/3724205/snackbarhouder-joeg-overvaller-zijn-zaak-uit-verdachte-nu-opgepakt",
+   "datum": "2026-11-27T10:55:33Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "ZGT Almelo kijkt bij kwetsbare ouderen verder dan de acute klacht: ‘Soms is thuis toch mogelijk’",
+   "link": "https://almelo1.nl/zgt-almelo-kijkt-bij-kwetsbare-ouderen-verder-dan-de-acute-klacht-soms-is-thuis-toch-mogelijk/",
+   "datum": "2026-11-27T08:39:32Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Smeer je stembanden en neem opa mee; zo win je de Almelose PopquizXL",
+   "link": "https://www.1twente.nl/artikel/6432653/smeer-je-stembanden-en-neem-opa-mee-zo-win-je-de-almelose-popquizxl",
+   "datum": "2026-11-27T08:17:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Sportclubs klagen: veiligheid en hygiëne sporthallen Hengelo ver onder de maat",
+   "link": "https://www.oost.nl/sport/3723856/sportclubs-klagen-veiligheid-en-hygiene-sporthallen-hengelo-ver-onder-de-maat",
+   "datum": "2026-11-27T07:02:03Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Almelovoorelkaar bedankt vrijwilligers met 19 dagen vol cadeautjes",
+   "link": "https://almelo1.nl/almelovoorelkaar-bedankt-vrijwilligers-met-19-dagen-vol-cadeautjes/",
+   "datum": "2026-11-27T06:28:03Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "'Onweerstaanbiedingen' op Black Friday: niet elke knalprijs is een koopje",
+   "link": "https://www.oost.nl/nieuws/3723973/onweerstaanbiedingen-op-black-friday-niet-elke-knalprijs-is-een-koopje",
+   "datum": "2026-11-27T06:04:29Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Vier eredoctoraten op 65e verjaardag Universiteit Twente",
+   "link": "https://www.oost.nl/nieuws/3723780/vier-eredoctoraten-op-65e-verjaardag-universiteit-twente",
+   "datum": "2026-11-27T04:03:36Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Twentse uitvinding moet bevolkingsonderzoek voor vrouwen eenvoudiger maken",
+   "link": "https://www.oost.nl/nieuws/3723720/twentse-uitvinding-moet-bevolkingsonderzoek-voor-vrouwen-eenvoudiger-maken",
+   "datum": "2026-11-26T18:58:35Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Rechten studeren in Enschede komt dichterbij: UT breidt aanbod uit",
+   "link": "https://www.oost.nl/nieuws/3723999/rechten-studeren-in-enschede-komt-dichterbij-ut-breidt-aanbod-uit",
+   "datum": "2026-11-26T18:52:44Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Haaksbergen grijpt weer naast eerste natuurijsmarathon: 'Bij het huilen af'",
+   "link": "https://www.oost.nl/nieuws/3723682/haaksbergen-grijpt-weer-naast-eerste-natuurijsmarathon-bij-het-huilen-af",
+   "datum": "2026-11-26T17:01:21Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Een nacht in de vrieskou: medewerkers Tactus ervaren het leven op straat",
+   "link": "https://www.oost.nl/nieuws/3723823/een-nacht-in-de-vrieskou-medewerkers-tactus-ervaren-het-leven-op-straat",
+   "datum": "2026-11-26T16:15:09Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Almelo biedt podium aan muzikaal talent uit heel Overijssel tijdens Solistenconcours",
+   "link": "https://almelo1.nl/almelo-biedt-podium-aan-muzikaal-talent-uit-heel-overijssel-tijdens-solistenconcours/",
+   "datum": "2026-11-26T15:16:51Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Plan voor nieuwe huisartsenpraktijk Losser neemt vaste vorm aan; college wil ruim 8 ton beschikbaar stellen",
+   "link": "https://www.1twente.nl/artikel/6432551/plan-voor-nieuwe-huisartsenpraktijk-losser-neemt-verder-vorm-aan-college-wil-ruim-8-ton-beschikbaar-stellen",
+   "datum": "2026-11-26T15:00:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Mirani onzeker over toekomst bij Heracles: 'Het is aan de club om bij mij op de lijn te komen'",
+   "link": "https://www.1twente.nl/artikel/6432428/mirani-onzeker-over-toekomst-bij-heracles-het-is-aan-de-club-om-bij-mij-op-de-lijn-te-komen",
+   "datum": "2026-11-26T14:59:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Klachten over kerosinelucht rond Destinus in Hengelo, bedrijf neemt maatregelen",
+   "link": "https://www.oost.nl/nieuws/3723830/klachten-over-kerosinelucht-rond-destinus-in-hengelo-bedrijf-neemt-maatregelen",
+   "datum": "2026-11-26T14:35:45Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Vincent Heilmann over Jong Ajax – Heracles Almelo: “Wij moeten er echt een fysieke wedstrijd van maken”",
+   "link": "https://almelo1.nl/vincent-heilmann-over-jong-ajax-heracles-almelo-wij-moeten-er-echt-een-fysieke-wedstrijd-van-maken/",
+   "datum": "2026-11-26T12:32:12Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Eerste rondjes op de schaats: vrijdagavond gratis het ijs op in Almelo",
+   "link": "https://almelo1.nl/eerste-rondjes-op-de-schaats-vrijdagavond-gratis-het-ijs-op-in-almelo/",
+   "datum": "2026-11-26T11:43:50Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Almelose ijsbaan opent met kunstschaatsdemonstratie en vrij schaatsen",
+   "link": "https://www.1twente.nl/artikel/6432155/almelose-ijsbaan-opent-met-kunstschaatsdemonstratie-en-vrij-schaatsen",
+   "datum": "2026-11-26T10:57:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Kozijnenhandelaar, zorgbureau en vuurhaarden: deze bedrijven gingen failliet",
+   "link": "https://www.oost.nl/nieuws/3723277/kozijnenhandelaar-zorgbureau-en-vuurhaarden-deze-bedrijven-gingen-failliet",
+   "datum": "2026-11-26T09:27:26Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Vechtstromen erkent problemen met waterkwaliteit, maar weerspreekt kritiek op aanpak pesticiden",
+   "link": "https://almelo1.nl/vechtstromen-erkent-problemen-met-waterkwaliteit-maar-weerspreekt-kritiek-op-aanpak-pesticiden/",
+   "datum": "2026-11-26T09:21:38Z",
+   "bron": "Almelo1",
+   "almelo": true
+  },
+  {
+   "titel": "Kat Tijger doodgeschoten in Hengelo: 'Kinderen zijn er kapot van'",
+   "link": "https://www.oost.nl/nieuws/3723353/kat-tijger-doodgeschoten-in-hengelo-kinderen-zijn-er-kapot-van",
+   "datum": "2026-11-26T06:02:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Verkeersmaatregelen bij Saasveld: CDA Dinkelland wil overleg",
+   "link": "https://www.1twente.nl/artikel/6426113/cda-dinkelland-wil-overleg-over-verkeersmaatregelen-bij-saasveld",
+   "datum": "2026-11-26T06:00:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "KLM haalt Airbus A330-200’s uit de vloot, twee toestellen naar Twente Airport",
+   "link": "https://www.oost.nl/nieuws/3723312/klm-haalt-airbus-a330-200s-uit-de-vloot-twee-toestellen-naar-twente-airport",
+   "datum": "2026-11-26T05:02:00Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Huisartsen in Enschede niet te spreken over nieuwe 'te dure' parkeervergunning",
+   "link": "https://www.oost.nl/nieuws/3721543/huisartsen-in-enschede-niet-te-spreken-over-nieuwe-te-dure-parkeervergunning",
+   "datum": "2026-11-26T04:02:06Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Een jaar lang de stem van alle kinderen in Haaksbergen: 11-jarige Berend is de nieuwe kinderburgemeester",
+   "link": "https://www.1twente.nl/artikel/6426563/een-jaar-lang-de-stem-van-alle-kinderen-in-haaksbergen-11-jarige-berend-is-de-nieuwe-kinderburgemeester",
+   "datum": "2026-11-25T20:27:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Vrieskou legt zwakke accu’s bloot: drukke dagen voor de wegenwacht",
+   "link": "https://www.oost.nl/nieuws/3723291/vrieskou-legt-zwakke-accus-bloot-drukke-dagen-voor-de-wegenwacht",
+   "datum": "2026-11-25T17:03:12Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Erven van Rudi Bakker eisen documenten over concurrent Haarman Vuurwerk",
+   "link": "https://www.oost.nl/nieuws/3723263/erven-van-rudi-bakker-eisen-documenten-over-concurrent-haarman-vuurwerk",
+   "datum": "2026-11-25T15:28:31Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Gemeenteraad Tubbergen steunt unaniem bredere evaluatie AZC Albergen",
+   "link": "https://www.1twente.nl/artikel/6426518/gemeenteraad-tubbergen-steunt-unaniem-bredere-evaluatie-azc-albergen",
+   "datum": "2026-11-25T15:00:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Autobrand op A1 bij knooppunt Azelo zorgt voor verkeershinder",
+   "link": "https://www.1twente.nl/artikel/6427925/autobrand-op-a1-bij-knooppunt-azelo-zorgt-voor-verkeershinder",
+   "datum": "2026-11-25T14:30:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Ringweg bij Huize Almelo 'kan gewoon onder Gravenallee door': Brussels geld jarenlang onaangeroerd",
+   "link": "https://www.1twente.nl/artikel/6421874/fietstunnel-bij-huize-almelo-kan-gewoon-worden-aangelegd-geld-ligt-in-brussel-op-de-plank-te-wachten",
+   "datum": "2026-11-25T13:48:00Z",
+   "bron": "1Twente",
+   "almelo": true
+  },
+  {
+   "titel": "Duitse krant meldt mogelijke overname van wapenfabrikant Destinus in Hengelo",
+   "link": "https://www.oost.nl/nieuws/3723224/duitse-krant-meldt-mogelijke-overname-van-wapenfabrikant-destinus-in-hengelo",
+   "datum": "2026-11-25T11:06:32Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Groen licht voor verbouw Kulturhus Irene in Notter/Zuna: raad stelt krediet van bijna 6 ton beschikbaar",
+   "link": "https://www.1twente.nl/artikel/6426197/groen-licht-voor-verbouw-kulturhus-irene-in-notter-zuna-raad-stelt-krediet-van-bijna-6-ton-beschikbaar",
+   "datum": "2026-11-25T07:51:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Enschede maakt zich grote zorgen over jeugdzorg: ‘Delen van het systeem zijn failliet’",
+   "link": "https://www.1twente.nl/artikel/6424349/enschede-maakt-zich-grote-zorgen-over-jeugdzorg-delen-van-het-systeem-zijn-failliet",
+   "datum": "2026-11-25T07:07:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Nog drie gemeenten in Overijssel hebben straks hondenbelasting",
+   "link": "https://www.oost.nl/nieuws/3721240/nog-drie-gemeenten-in-overijssel-hebben-straks-hondenbelasting",
+   "datum": "2026-11-25T04:58:15Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Een maand voor de schop in de grond gaat, vragen zes partijen in de Tweede Kamer om moskee in Enschede tegen te houden",
+   "link": "https://www.1twente.nl/artikel/6424700/een-maand-voor-de-schop-in-de-grond-gaat-vragen-zes-partijen-in-de-tweede-kamer-om-moskee-in-enschede-tegen-te-houden",
+   "datum": "2026-11-24T23:05:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Miljarden apparaten gebruiken zijn uitvinding, maar Jaap werd er niet rijk van",
+   "link": "https://www.oost.nl/nieuws/3713033/miljarden-apparaten-gebruiken-zijn-uitvinding-maar-jaap-werd-er-niet-rijk-van",
+   "datum": "2026-11-24T18:04:57Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "In politiek Enschede gebeurt elke maandag iets bijzonders: 'Dorpsplein van stad'",
+   "link": "https://www.oost.nl/nieuws/3722759/in-politiek-enschede-gebeurt-elke-maandag-iets-bijzonders-dorpsplein-van-stad",
+   "datum": "2026-11-24T17:02:40Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "CDA Dinkelland wil meer keuzevrijheid bij afspraken consultatiebureau",
+   "link": "https://www.1twente.nl/artikel/6422843/cda-dinkelland-wil-meer-keuzevrijheid-bij-afspraken-consultatiebureau",
+   "datum": "2026-11-24T16:00:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Woningen in Goor en Diepenheim geïsoleerd met UF-schuim",
+   "link": "https://www.oost.nl/nieuws/3722823/woningen-in-goor-en-diepenheim-geisoleerd-met-uf-schuim",
+   "datum": "2026-11-24T15:26:24Z",
+   "bron": "Oost",
+   "almelo": false
+  },
+  {
+   "titel": "Betaald parkeren in Berflo Es maanden uitgesteld: onzekerheid over tijdige levering en plaatsing parkeerautomaten",
+   "link": "https://www.1twente.nl/artikel/6424466/betaald-parkeren-in-berflo-es-maanden-uitgesteld-onzekerheid-over-tijdige-levering-en-plaatsing-parkeerautomaten",
+   "datum": "2026-11-24T15:00:00Z",
+   "bron": "1Twente",
+   "almelo": false
+  },
+  {
+   "titel": "Failliete ondernemer met drugslabs in IJsselmuiden en Enschede: 'Ben zwaar bedreigd'",
+   "link": "https://www.oost.nl/nieuws/3722917/failliete-ondernemer-met-drugslabs-in-ijsselmuiden-en-enschede-ben-zwaar-bedreigd",
+   "datum": "2026-11-24T14:36:25Z",
+   "bron": "Oost",
+   "almelo": false
+  }
+ ],
+ "kamer": [
+  {
+   "titel": "Begrotingsonderdeel Jeugd",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-11-30T14:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06326",
+   "gemeente": true
+  },
+  {
+   "titel": "(onder voorbehoud) Tweeminutendebat Formele EU Gezondheidsraad 8 december 2026 (2026Z25499)",
+   "soort": "Plenair debat (tweeminutendebat)",
+   "datum": "2026-12-01T16:25:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08906",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Volkshuisvesting en Ruimtelijke Ordening (37020-XXII) 1TK",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-01T16:45:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05404",
+   "gemeente": true
+  },
+  {
+   "titel": "Tweeminutendebat Raad voor Werkgelegenheid en Sociaal Beleid op 7 december 2026 (CD 24/11)",
+   "soort": "Plenair debat (tweeminutendebat)",
+   "datum": "2026-12-02T10:15:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08781",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Sociale Zaken en Werkgelegenheid (37020-XV) 1TK",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-02T10:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05405",
+   "gemeente": false
+  },
+  {
+   "titel": "Onderwijskwaliteit, curriculum en basisvaardigheden",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-02T13:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04926",
+   "gemeente": true
+  },
+  {
+   "titel": "Langdurige zorg",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-02T13:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A01175",
+   "gemeente": true
+  },
+  {
+   "titel": "Voorstel van wet van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij (36562) 1TK",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-02T18:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07452",
+   "gemeente": false
+  },
+  {
+   "titel": "Begroting Volkshuisvesting en Ruimtelijke Ordening (37020-XXII) voortzettting",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-03T10:16:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08908",
+   "gemeente": true
+  },
+  {
+   "titel": "Spoorveiligheid en ERTMS - verplaatst i.v.m. planning voortgangsrapportage ERTMS",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-03T13:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02827",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Sociale Zaken en Werkgelegenheid (37020-XV) voortzetting",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-03T15:30:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08909",
+   "gemeente": false
+  },
+  {
+   "titel": "Debat over de artikel-100 brief inzake een Nederlandse bijdrage aan ASPIDES (korte plenaire afronding)",
+   "soort": "Plenair debat (debat)",
+   "datum": "2026-12-03T23:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08729",
+   "gemeente": false
+  },
+  {
+   "titel": "Voorstel van wet van de leden Straatman en Mutluer tot wijziging van het Wetboek van Strafrecht en het Wetboek van Strafrecht BES in verband met het strafbaar stellen van het openbaar maken van beeldmateriaal van slachtoffers (36381)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03453",
+   "gemeente": false
+  },
+  {
+   "titel": "Wijziging van de Mediawet 2008 houdende aanpassing van de rijksmediabijdrage 36995",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08208",
+   "gemeente": false
+  },
+  {
+   "titel": "Regels over de uitvoering van internationale sanctiemaatregelen (Wet internationale sanctiemaatregelen) (36898)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05400",
+   "gemeente": false
+  },
+  {
+   "titel": "Debat over de najaarsnota 2026 (37060-1)",
+   "soort": "Plenair debat (overig)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08590",
+   "gemeente": false
+  },
+  {
+   "titel": "Wijziging van de Wet gelijke behandeling van mannen en vrouwen en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2023/970 ter versterking van de toepassing van het beginsel van gelijke beloning van mannen en vrouwen voor gelijke of gelijkwaardige arbeid door middel van beloningstransparantie en handhavingsmechanismen (Wet implementatie Richtlijn loontransparantie mannen en vrouwen) (36949)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06383",
+   "gemeente": false
+  },
+  {
+   "titel": "Regels over de marktordening van het aanbod van voorzieningen op verzorgingsplaatsen (Wet voorzieningen verzorgingsplaatsen) (36976)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07702",
+   "gemeente": true
+  },
+  {
+   "titel": "Debat over de Europese top van 17 en 18 december 2026",
+   "soort": "Plenair debat (overig)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08121",
+   "gemeente": false
+  },
+  {
+   "titel": "Wijziging van de Wet stelsel openbare bibliotheekvoorzieningen in verband met onder andere de toevoeging van een verplichting voor gemeenten en openbare lichamen om ten minste één volwaardige bibliotheekvoorziening in stand te houden, alsmede tot wijziging van de Auteurswet en de Wet op de naburige rechten in verband met onder andere de toevoeging van een regeling voor een leenrechtvergoeding bij uitleningen door schoolbibliotheken (36902)",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06658",
+   "gemeente": true
+  },
+  {
+   "titel": "Begroting Justitie en Veiligheid (37020-VI) voortzetting",
+   "soort": "Plenair debat (wetgeving)",
+   "datum": "2026-12-07T00:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08433",
+   "gemeente": true
+  },
+  {
+   "titel": "Regels betreffende de financiering van politieke partijen en transparantieregels met betrekking tot hun interne organisatie en financiën, evenals regels met betrekking tot het toezicht en het verbieden van politieke partijen (Wet op de politieke partijen) (36742) (1e termijn Kamer) (verplaatst naar 14.00 uur i.v.m. onvoorziene overlap in planning wetgevingsoverleggen)",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-12-07T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06195",
+   "gemeente": true
+  },
+  {
+   "titel": "Regels betreffende de financiering van politieke partijen en transparantieregels met betrekking tot hun interne organisatie en financiën, evenals regels met betrekking tot het toezicht en het verbieden van politieke partijen (Wet op de politieke partijen) (36742) (1e termijn Kamer)",
+   "soort": "Wetgevingsoverleg",
+   "datum": "2026-12-07T14:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07549",
+   "gemeente": true
+  },
+  {
+   "titel": "Energieraad (formeel) d.d. 10 december 2026 en klimaatonderwerpen Milieuraad (formeel) d.d. 11 december 2026”",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-08T18:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04755",
+   "gemeente": true
+  },
+  {
+   "titel": "Spoorveiligheid en ERTMS",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-09T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05262",
+   "gemeente": true
+  },
+  {
+   "titel": "Mbo, onderwijskwaliteit en studiefinanciering",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-09T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04928",
+   "gemeente": true
+  },
+  {
+   "titel": "Zeden en (on)veiligheid van vrouwen",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-09T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A03674",
+   "gemeente": true
+  },
+  {
+   "titel": "Arbeidsmigratie",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-09T14:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08412",
+   "gemeente": true
+  },
+  {
+   "titel": "Vreemdelingen- en asielbeleid",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-10T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01922",
+   "gemeente": true
+  },
+  {
+   "titel": "Kinderopvang - verplaatst naar 27 januari 2027",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-10T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04810",
+   "gemeente": true
+  },
+  {
+   "titel": "Passend onderwijs",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-10T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04930",
+   "gemeente": true
+  },
+  {
+   "titel": "Online veiligheid en cybersecurity (commissiedebat is tot nader order uitgesteld)",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-10T10:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A01471",
+   "gemeente": true
+  },
+  {
+   "titel": "Externe veiligheid",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-10T13:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02828",
+   "gemeente": true
+  },
+  {
+   "titel": "Verward/onbegrepen gedrag en veiligheid",
+   "soort": "Commissiedebat",
+   "datum": "2026-12-10T15:00:00+01:00",
+   "bron": "Tweede Kamer",
+   "link": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05702",
+   "gemeente": true
+  }
+ ],
+ "landelijk": [
+  {
+   "titel": "Podcast De Stemming: De Tuinslang, een stootkussen en stille Buma",
+   "link": "https://nos.nl/l/2641295",
+   "datum": "2026-11-27T18:13:38Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "VVD-ministers verdedigen Yesilgöz, die zelf camera's even mijdt",
+   "link": "https://nos.nl/l/2641231",
+   "datum": "2026-11-27T11:31:45Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Erkens wil sluiting slachthuis bij intimidatie controleurs, nieuwe regels maken",
+   "link": "https://nos.nl/l/2641164",
+   "datum": "2026-11-26T21:28:00Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Buma nodigt alle fractievoorzitters uit, ook gesprek met deskundigen",
+   "link": "https://nos.nl/l/2641148",
+   "datum": "2026-11-26T18:42:52Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Meer kritische geluiden over VVD-leider Yesilgöz, maar niet uit fractie en kabinet",
+   "link": "https://nos.nl/l/2641140",
+   "datum": "2026-11-26T17:24:01Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Verzekering arbeidsongeschiktheid voor zzp'ers verder uitgesteld",
+   "link": "https://nos.nl/l/2641126",
+   "datum": "2026-11-26T15:59:43Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kamer wil 10 miljoen euro voor winternoodpakket Gaza, kabinet heeft geen bezwaar",
+   "link": "https://nos.nl/l/2641107",
+   "datum": "2026-11-26T13:27:07Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kabinet over regels VS voor ASML: wij laten ons de wet niet voorschrijven",
+   "link": "https://nos.nl/l/2641087",
+   "datum": "2026-11-26T10:39:10Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Overheid probeert het opnieuw: campagne om buiten de spits te reizen",
+   "link": "https://nos.nl/l/2641080",
+   "datum": "2026-11-26T10:11:47Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kamer wil ADHD-medicijn inzetten tegen crack-verslaving",
+   "link": "https://nos.nl/l/2641049",
+   "datum": "2026-11-26T06:25:03Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Jetten zet zich schrap voor 'bloedig gevecht' over EU-begroting",
+   "link": "https://nos.nl/l/2641042",
+   "datum": "2026-11-26T05:14:39Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Onvrede binnen VVD over dubbelfunctie Yesilgöz, zegt oud-voorzitter Van der Wal",
+   "link": "https://nos.nl/l/2641036",
+   "datum": "2026-11-25T23:56:18Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Pro en SP doen laatste poging om versobering schadevergoeding Groningen te voorkomen",
+   "link": "https://nos.nl/l/2641002",
+   "datum": "2026-11-25T17:01:03Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Staatssecretaris: toezichthouders bang om in slachthuizen te werken",
+   "link": "https://nos.nl/l/2640966",
+   "datum": "2026-11-25T12:05:59Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Treinkaartjes voorlopig niet duurder: prijs blijft tot zeker eind mei gelijk",
+   "link": "https://nos.nl/l/2640888",
+   "datum": "2026-11-24T21:13:45Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Kamer wil omstreden term 'remigratie' uit de wet hebben",
+   "link": "https://nos.nl/l/2640852",
+   "datum": "2026-11-24T16:34:04Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Scholieren in kindervragenuur: hoe zorgt instabiel kabinet dat plannen werken?",
+   "link": "https://nos.nl/l/2640848",
+   "datum": "2026-11-24T16:05:38Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Honden lijken misschien op hun baasje, maar ze passen er niet altijd bij",
+   "link": "https://nos.nl/l/2640786",
+   "datum": "2026-11-24T05:26:44Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Nederland stuurt delegatie naar India om ontvoerde Insiya terug te krijgen",
+   "link": "https://nos.nl/l/2640677",
+   "datum": "2026-11-23T08:15:26Z",
+   "bron": "NOS"
+  },
+  {
+   "titel": "Partij voor de Dieren viert 20 jaar in de Tweede Kamer als 'luis in de pels'",
+   "link": "https://nos.nl/l/2640594",
+   "datum": "2026-11-22T14:37:15Z",
+   "bron": "NOS"
+  }
+ ],
+ "eerstekamer": []
+}
